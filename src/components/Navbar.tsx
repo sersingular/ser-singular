@@ -16,6 +16,9 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const isHome = pathname === "/";
+  const dark = isHome && !scrolled;
+
   const links = [
     { href: "/", label: "Home" },
     { href: "/profissionais", label: "Profissionais" },
@@ -25,8 +28,10 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 bg-white/97 backdrop-blur-md border-b border-[#e2e8f0] px-8 flex items-center justify-between h-[70px] transition-shadow duration-300 ${
-        scrolled ? "shadow-[0_4px_24px_rgba(20,58,98,0.10)]" : ""
+      className={`fixed top-0 left-0 right-0 z-50 px-8 flex items-center justify-between h-[70px] transition-all duration-300 ${
+        dark
+          ? "bg-transparent border-b border-white/10"
+          : "bg-white/97 backdrop-blur-md border-b border-[#e2e8f0] shadow-[0_4px_24px_rgba(20,58,98,0.10)]"
       }`}
     >
       <Link href="/" className="flex items-center no-underline">
@@ -35,7 +40,7 @@ export default function Navbar() {
           alt="Ser Singular — Centro de Desenvolvimento e Treinamento"
           width={300}
           height={112}
-          className="h-[54px] w-auto object-contain"
+          className={`h-[54px] w-auto object-contain transition-all duration-300 ${dark ? "brightness-0 invert" : ""}`}
           priority
         />
       </Link>
@@ -47,7 +52,11 @@ export default function Navbar() {
             key={link.href}
             href={link.href}
             className={`text-sm font-medium px-[0.85rem] py-2 rounded-lg transition-all duration-200 no-underline ${
-              pathname === link.href
+              dark
+                ? pathname === link.href
+                  ? "text-white bg-white/15"
+                  : "text-white/85 hover:text-white hover:bg-white/10"
+                : pathname === link.href
                 ? "text-[#143a62] bg-[#eef2f7]"
                 : "text-[#111827] hover:text-[#143a62] hover:bg-[#eef2f7]"
             }`}
@@ -58,13 +67,20 @@ export default function Navbar() {
         <Link
           href="/contato"
           className="ml-2 text-sm font-semibold px-5 py-2 rounded-[10px] no-underline transition-all duration-200"
-          style={{
-            background: "rgba(31,140,123,0.15)",
-            color: "#1f8c7b",
-            border: "1.5px solid rgba(31,140,123,0.4)",
-            boxShadow:
-              "0 2px 12px rgba(31,140,123,0.12), inset 0 1px 0 rgba(255,255,255,0.5)",
-          }}
+          style={
+            dark
+              ? {
+                  background: "rgba(255,255,255,0.15)",
+                  color: "white",
+                  border: "1.5px solid rgba(255,255,255,0.4)",
+                }
+              : {
+                  background: "rgba(31,140,123,0.15)",
+                  color: "#1f8c7b",
+                  border: "1.5px solid rgba(31,140,123,0.4)",
+                  boxShadow: "0 2px 12px rgba(31,140,123,0.12), inset 0 1px 0 rgba(255,255,255,0.5)",
+                }
+          }
         >
           Agendar Avaliação
         </Link>
@@ -76,21 +92,9 @@ export default function Navbar() {
         onClick={() => setMenuOpen(!menuOpen)}
         aria-label="Menu"
       >
-        <span
-          className={`block w-6 h-0.5 bg-[#143a62] rounded-sm transition-all duration-300 ${
-            menuOpen ? "rotate-45 translate-y-[7px]" : ""
-          }`}
-        />
-        <span
-          className={`block w-6 h-0.5 bg-[#143a62] rounded-sm transition-all duration-300 ${
-            menuOpen ? "opacity-0" : ""
-          }`}
-        />
-        <span
-          className={`block w-6 h-0.5 bg-[#143a62] rounded-sm transition-all duration-300 ${
-            menuOpen ? "-rotate-45 -translate-y-[7px]" : ""
-          }`}
-        />
+        <span className={`block w-6 h-0.5 rounded-sm transition-all duration-300 ${dark ? "bg-white" : "bg-[#143a62]"} ${menuOpen ? "rotate-45 translate-y-[7px]" : ""}`} />
+        <span className={`block w-6 h-0.5 rounded-sm transition-all duration-300 ${dark ? "bg-white" : "bg-[#143a62]"} ${menuOpen ? "opacity-0" : ""}`} />
+        <span className={`block w-6 h-0.5 rounded-sm transition-all duration-300 ${dark ? "bg-white" : "bg-[#143a62]"} ${menuOpen ? "-rotate-45 -translate-y-[7px]" : ""}`} />
       </button>
 
       {/* Mobile menu */}
