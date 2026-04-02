@@ -11,7 +11,7 @@ export default function ContatoPage() {
     <>
       <div
         className="pt-[70px] py-16 px-8 text-center"
-        style={{ background: "linear-gradient(135deg, #143a62, #1f8c7b)" }}
+        style={{ background: "linear-gradient(160deg, #0f2440 0%, #143a62 100%)" }}
       >
         <h1 className="text-3xl lg:text-4xl text-white font-bold mb-3">Entre em Contato</h1>
         <p className="text-white/80 text-base max-w-[480px] mx-auto">

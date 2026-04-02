@@ -155,7 +155,7 @@ export default function ContactForm() {
           boxShadow: "0 4px 16px rgba(20,58,98,0.2)",
         }}
       >
-        {state === "loading" ? "Enviando..." : "Enviar e Aguardar Contato 💚"}
+        {state === "loading" ? "Enviando..." : "Enviar mensagem"}
       </button>
     </form>
   );

@@ -185,7 +185,7 @@ export default function HomePage() {
                   boxShadow: "0 4px 24px rgba(255,255,255,0.06), inset 0 1px 0 rgba(255,255,255,0.18)",
                 }}
               >
-                📅 Agendar Avaliação
+                Agendar Avaliação
               </Link>
             </div>
 
