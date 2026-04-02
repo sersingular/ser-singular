@@ -31,7 +31,7 @@ export default function Navbar() {
       className={`fixed top-0 left-0 right-0 z-50 px-8 flex items-center justify-between h-[70px] transition-all duration-300 ${
         dark
           ? "bg-transparent border-b border-white/10"
-          : "bg-white/97 backdrop-blur-md border-b border-[#e2e8f0] shadow-[0_4px_24px_rgba(20,58,98,0.10)]"
+          : "bg-white border-b border-[#e2e8f0] shadow-[0_4px_24px_rgba(20,58,98,0.10)]"
       }`}
     >
       <Link href="/" className="flex items-center no-underline">
