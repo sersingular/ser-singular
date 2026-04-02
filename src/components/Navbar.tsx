@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 
 export default function Navbar() {
@@ -28,21 +29,15 @@ export default function Navbar() {
         scrolled ? "shadow-[0_4px_24px_rgba(20,58,98,0.10)]" : ""
       }`}
     >
-      <Link href="/" className="flex items-center gap-2.5 no-underline">
-        <div
-          className="w-[38px] h-[38px] rounded-[10px] flex items-center justify-center text-white font-bold text-lg"
-          style={{ background: "linear-gradient(135deg, #143a62, #1f8c7b)" }}
-        >
-          S
-        </div>
-        <div className="leading-tight">
-          <strong className="block text-[1rem] text-[#143a62] font-bold tracking-tight">
-            Ser Singular
-          </strong>
-          <span className="text-[0.65rem] text-[#1f8c7b] uppercase tracking-widest font-medium">
-            Centro de Desenvolvimento
-          </span>
-        </div>
+      <Link href="/" className="flex items-center no-underline">
+        <Image
+          src="/logo.png"
+          alt="Ser Singular — Centro de Desenvolvimento e Treinamento"
+          width={160}
+          height={60}
+          className="h-[52px] w-auto object-contain"
+          priority
+        />
       </Link>
 
       {/* Desktop links */}
