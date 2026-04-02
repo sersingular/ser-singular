@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --navy: #143a62;
+  --teal: #1f8c7b;
+  --teal-light: #e8f5f3;
+  --navy-light: #eef2f7;
+  --gold: #c9a84c;
+  --white: #ffffff;
+  --off-white: #f8f9fb;
+  --text: #1a2332;
+  --text-muted: #5a6a7e;
+  --border: #e2e8f0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  color: var(--text);
+  background: var(--white);
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+@keyframes pulse-wa {
+  0%, 100% { box-shadow: 0 8px 28px rgba(37, 211, 102, 0.45); }
+  50% { box-shadow: 0 8px 28px rgba(37, 211, 102, 0.45), 0 0 0 12px rgba(37, 211, 102, 0.12); }
+}
+
+.wa-pulse {
+  animation: pulse-wa 2.5s infinite;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
