@@ -196,6 +196,10 @@ export default function HomePage() {
                 <div className="text-[0.78rem] text-white/60 mt-1">Anos de experiência</div>
               </div>
               <div>
+                <div className="text-3xl font-bold text-white leading-none">300+</div>
+                <div className="text-[0.78rem] text-white/60 mt-1">Famílias atendidas</div>
+              </div>
+              <div>
                 <div className="text-3xl font-bold text-white leading-none">4</div>
                 <div className="text-[0.78rem] text-white/60 mt-1">Especialidades</div>
               </div>
