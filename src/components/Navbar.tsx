@@ -33,9 +33,9 @@ export default function Navbar() {
         <Image
           src="/logo.png"
           alt="Ser Singular — Centro de Desenvolvimento e Treinamento"
-          width={220}
-          height={220}
-          className="h-[58px] w-auto object-contain"
+          width={300}
+          height={112}
+          className="h-[54px] w-auto object-contain"
           priority
         />
       </Link>
