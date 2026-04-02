@@ -33,9 +33,9 @@ export default function Navbar() {
         <Image
           src="/logo.png"
           alt="Ser Singular — Centro de Desenvolvimento e Treinamento"
-          width={160}
-          height={60}
-          className="h-[52px] w-auto object-contain"
+          width={220}
+          height={220}
+          className="h-[58px] w-auto object-contain"
           priority
         />
       </Link>
@@ -49,7 +49,7 @@ export default function Navbar() {
             className={`text-sm font-medium px-[0.85rem] py-2 rounded-lg transition-all duration-200 no-underline ${
               pathname === link.href
                 ? "text-[#143a62] bg-[#eef2f7]"
-                : "text-[#2d3748] hover:text-[#143a62] hover:bg-[#eef2f7]"
+                : "text-[#111827] hover:text-[#143a62] hover:bg-[#eef2f7]"
             }`}
           >
             {link.label}
@@ -104,7 +104,7 @@ export default function Navbar() {
               className={`text-sm font-medium px-4 py-2.5 rounded-lg no-underline transition-all ${
                 pathname === link.href
                   ? "text-[#143a62] bg-[#eef2f7]"
-                  : "text-[#2d3748] hover:text-[#143a62] hover:bg-[#eef2f7]"
+                  : "text-[#111827] hover:text-[#143a62] hover:bg-[#eef2f7]"
               }`}
             >
               {link.label}
