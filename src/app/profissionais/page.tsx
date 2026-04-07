@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 const profissionais = [
   {
-    name: "Daiana Plauth Cardoso",
+    name: "Daiana Plauth",
     badge: "Fundadora & Psicóloga",
     featured: true,
     desc: "Com 13 anos de experiência em desenvolvimento infantil, Daiana fundou a Ser Singular com a missão de transformar vidas através de um atendimento singular, acolhedor e baseado em evidências. Especialista em avaliação neuropsicológica e orientação de famílias.",
