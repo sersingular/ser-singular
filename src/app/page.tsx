@@ -254,11 +254,8 @@ export default function HomePage() {
                   D
                 </div>
                 <div>
-                  <strong className="block text-[0.88rem] text-[#143a62] font-bold">Daiana</strong>
-                  <span className="text-[0.72rem] text-[#5a6a7e]">
-                    <span className="inline-block w-2 h-2 rounded-full bg-[#25D366] mr-1" style={{ boxShadow: "0 0 0 2px rgba(37,211,102,0.2)" }} />
-                    Disponível agora
-                  </span>
+                  <strong className="block text-[0.88rem] text-[#143a62] font-bold">Daiana Plauth</strong>
+                  <span className="text-[0.72rem] text-[#5a6a7e]">Psicóloga Infantil</span>
                 </div>
               </div>
             </div>
