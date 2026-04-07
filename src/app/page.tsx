@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { AnimateIn, Stagger, StaggerItem } from "@/components/AnimateIn";
 
 const problems = [
@@ -221,18 +222,20 @@ export default function HomePage() {
           <AnimateIn delay={0.2} direction="right" className="flex justify-center">
             <div className="relative">
               <div
-                className="w-[340px] h-[420px] lg:w-[380px] lg:h-[480px] rounded-[24px] overflow-hidden flex items-center justify-center"
+                className="w-[340px] h-[420px] lg:w-[380px] lg:h-[480px] rounded-[24px] overflow-hidden relative"
                 style={{
                   border: "3px solid rgba(255,255,255,0.15)",
                   boxShadow: "0 32px 64px rgba(0,0,0,0.35)",
-                  background: "linear-gradient(135deg, rgba(31,140,123,0.3), rgba(20,58,98,0.5))",
                 }}
               >
-                <div className="text-center text-white/60 p-8">
-                  <div className="text-6xl mb-4">👨‍👩‍👧</div>
-                  <p className="text-sm">Adicione a foto da clínica aqui</p>
-                  <p className="text-xs mt-1 opacity-60">Substitua pelo componente {'<Image>'} do Next.js</p>
-                </div>
+                <Image
+                  src="/daiana-hero.jpg"
+                  alt="Daiana Plauth — Psicóloga Ser Singular"
+                  fill
+                  className="object-cover object-top"
+                  priority
+                  sizes="(max-width: 1024px) 340px, 380px"
+                />
               </div>
               {/* Card */}
               <div
@@ -356,11 +359,14 @@ export default function HomePage() {
           </AnimateIn>
           <AnimateIn direction="right">
           <div className="relative">
-            <div className="rounded-[24px] overflow-hidden shadow-[0_24px_56px_rgba(20,58,98,0.15)] h-[420px] flex items-center justify-center" style={{ background: "linear-gradient(135deg, #e8f5f3, #eef2f7)" }}>
-              <div className="text-center p-8">
-                <div className="text-6xl mb-4">🏥</div>
-                <p className="text-[#5a6a7e] text-sm">Foto da clínica</p>
-              </div>
+            <div className="rounded-[24px] overflow-hidden shadow-[0_24px_56px_rgba(20,58,98,0.15)] h-[420px] relative">
+              <Image
+                src="/daiana-hero.jpg"
+                alt="Daiana Plauth — Psicóloga Ser Singular"
+                fill
+                className="object-cover object-center"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+              />
             </div>
             <div
               className="absolute -top-5 -right-5 w-[100px] h-[100px] rounded-full flex flex-col items-center justify-center"
