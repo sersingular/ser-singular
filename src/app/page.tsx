@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { AnimateIn, Stagger, StaggerItem } from "@/components/AnimateIn";
 
 const problems = [
   {
@@ -137,6 +138,7 @@ export default function HomePage() {
         <div className="max-w-[1200px] mx-auto px-8 py-16 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center relative z-10">
           {/* Left */}
           <div>
+            <AnimateIn delay={0}>
             <div
               className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-[0.78rem] font-medium tracking-widest uppercase text-[#7dd8cc] mb-6"
               style={{
@@ -147,15 +149,21 @@ export default function HomePage() {
               <span className="text-[#1f8c7b] text-[0.6rem]">●</span>
               Medianeira · PR
             </div>
+            </AnimateIn>
+            <AnimateIn delay={0.1}>
             <h1 className="text-4xl lg:text-5xl text-white leading-tight mb-5 font-bold tracking-tight">
               Seu filho merece evoluir com quem{" "}
               <em className="not-italic text-[#7dd8cc]">
                 realmente entende dele
               </em>
             </h1>
+            </AnimateIn>
+            <AnimateIn delay={0.2}>
             <p className="text-white/75 text-lg leading-relaxed mb-8 font-light">
               Dificuldades na fala, comportamento, aprendizagem ou desenvolvimento? Na Ser Singular, cada criança é única — e o tratamento também é.
             </p>
+            </AnimateIn>
+            <AnimateIn delay={0.3}>
             <div className="flex gap-4 flex-wrap">
               <a
                 href="https://wa.me/554599771331?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20para%20meu%20filho."
@@ -189,7 +197,9 @@ export default function HomePage() {
               </Link>
             </div>
 
+            </AnimateIn>
             {/* Stats */}
+            <AnimateIn delay={0.4}>
             <div className="flex gap-8 mt-10 pt-8" style={{ borderTop: "1px solid rgba(255,255,255,0.12)" }}>
               <div>
                 <div className="text-3xl font-bold text-white leading-none">13+</div>
@@ -204,10 +214,11 @@ export default function HomePage() {
                 <div className="text-[0.78rem] text-white/60 mt-1">Especialidades</div>
               </div>
             </div>
+            </AnimateIn>
           </div>
 
           {/* Right — placeholder image */}
-          <div className="flex justify-center">
+          <AnimateIn delay={0.2} direction="right" className="flex justify-center">
             <div className="relative">
               <div
                 className="w-[340px] h-[420px] lg:w-[380px] lg:h-[480px] rounded-[24px] overflow-hidden flex items-center justify-center"
@@ -248,14 +259,14 @@ export default function HomePage() {
                 </div>
               </div>
             </div>
-          </div>
+          </AnimateIn>
         </div>
       </section>
 
       {/* COMO PODEMOS AJUDAR */}
       <section className="py-20 px-8 bg-[#f8f9fb]">
         <div className="max-w-[1200px] mx-auto">
-          <div className="text-center mb-14">
+          <AnimateIn className="text-center mb-14">
             <span className="inline-block bg-[#e8f5f3] text-[#1f8c7b] px-3.5 py-1 rounded-full text-[0.78rem] font-semibold uppercase tracking-widest mb-4">
               Como podemos ajudar
             </span>
@@ -265,10 +276,10 @@ export default function HomePage() {
             <p className="text-[#5a6a7e] text-lg max-w-xl mx-auto leading-relaxed">
               Cada dificuldade tem um caminho. Nossa equipe está pronta para orientar você.
             </p>
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          </AnimateIn>
+          <Stagger className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {problems.map((card) => (
-              <div
+              <StaggerItem
                 key={card.title}
                 className="bg-white rounded-[20px] p-8 border border-[#e2e8f0] transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_20px_48px_rgba(20,58,98,0.12)] hover:border-transparent relative overflow-hidden group"
               >
@@ -278,29 +289,29 @@ export default function HomePage() {
                 </div>
                 <h3 className="text-[1.1rem] text-[#143a62] font-bold mb-2">{card.title}</h3>
                 <p className="text-[0.9rem] text-[#5a6a7e] leading-relaxed">{card.desc}</p>
-              </div>
+              </StaggerItem>
             ))}
-          </div>
+          </Stagger>
         </div>
       </section>
 
       {/* ESPECIALIDADES STRIP */}
       <section className="py-16 px-8 bg-[#143a62]">
         <div className="max-w-[1200px] mx-auto">
-          <div className="text-center mb-10">
+          <AnimateIn className="text-center mb-10">
             <span className="inline-block text-[#7dd8cc] text-[0.78rem] font-semibold uppercase tracking-widest mb-3">
               Nossas especialidades
             </span>
             <h2 className="text-2xl lg:text-3xl text-white font-bold">
               Atendimento especializado e integrado
             </h2>
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          </AnimateIn>
+          <Stagger className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {especialidades.map((esp) => (
+              <StaggerItem key={esp.title}>
               <Link
-                key={esp.title}
                 href="/especialidades"
-                className="no-underline rounded-[16px] p-6 transition-all duration-300 cursor-pointer hover:border-[#1f8c7b]"
+                className="no-underline rounded-[16px] p-6 transition-all duration-300 cursor-pointer hover:border-[#1f8c7b] block"
                 style={{
                   background: "rgba(255,255,255,0.07)",
                   border: "1px solid rgba(255,255,255,0.12)",
@@ -310,15 +321,16 @@ export default function HomePage() {
                 <h3 className="text-white font-bold text-base mb-1.5">{esp.title}</h3>
                 <p className="text-white/60 text-[0.82rem] leading-relaxed">{esp.desc}</p>
               </Link>
+              </StaggerItem>
             ))}
-          </div>
+          </Stagger>
         </div>
       </section>
 
       {/* BENEFÍCIOS */}
       <section className="py-20 px-8 bg-white">
         <div className="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
-          <div>
+          <AnimateIn direction="left">
             <span className="inline-block bg-[#e8f5f3] text-[#1f8c7b] px-3.5 py-1 rounded-full text-[0.78rem] font-semibold uppercase tracking-widest mb-4">
               Por que escolher a Ser Singular
             </span>
@@ -341,7 +353,8 @@ export default function HomePage() {
                 </li>
               ))}
             </ul>
-          </div>
+          </AnimateIn>
+          <AnimateIn direction="right">
           <div className="relative">
             <div className="rounded-[24px] overflow-hidden shadow-[0_24px_56px_rgba(20,58,98,0.15)] h-[420px] flex items-center justify-center" style={{ background: "linear-gradient(135deg, #e8f5f3, #eef2f7)" }}>
               <div className="text-center p-8">
@@ -362,6 +375,7 @@ export default function HomePage() {
               </span>
             </div>
           </div>
+          </AnimateIn>
         </div>
       </section>
 
@@ -396,17 +410,17 @@ export default function HomePage() {
       {/* DEPOIMENTOS */}
       <section className="py-20 px-8 bg-[#f8f9fb]">
         <div className="max-w-[1200px] mx-auto">
-          <div className="text-center mb-14">
+          <AnimateIn className="text-center mb-14">
             <span className="inline-block bg-[#e8f5f3] text-[#1f8c7b] px-3.5 py-1 rounded-full text-[0.78rem] font-semibold uppercase tracking-widest mb-4">
               Depoimentos
             </span>
             <h2 className="text-3xl lg:text-4xl text-[#143a62] leading-tight">
               Famílias que transformamos juntos
             </h2>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          </AnimateIn>
+          <Stagger className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {depoimentos.map((dep) => (
-              <div key={dep.author} className="bg-white rounded-[20px] p-8 border border-[#e2e8f0]">
+              <StaggerItem key={dep.author} className="bg-white rounded-[20px] p-8 border border-[#e2e8f0]">
                 <div className="text-5xl text-[#1f8c7b] leading-none mb-4 font-bold">"</div>
                 <div className="flex gap-1 text-amber-400 text-sm mb-3">{"★★★★★"}</div>
                 <p className="text-[0.9rem] text-[#5a6a7e] leading-relaxed mb-5 italic">
@@ -424,9 +438,9 @@ export default function HomePage() {
                     <span className="text-[0.78rem] text-[#5a6a7e]">{dep.specialty}</span>
                   </div>
                 </div>
-              </div>
+              </StaggerItem>
             ))}
-          </div>
+          </Stagger>
         </div>
       </section>
 
