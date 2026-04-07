@@ -229,7 +229,7 @@ export default function HomePage() {
                 }}
               >
                 <Image
-                  src="/daiana-hero.jpg"
+                  src="/daiana-hero.jpeg"
                   alt="Daiana Plauth — Psicóloga Ser Singular"
                   fill
                   className="object-cover object-top"
@@ -361,8 +361,8 @@ export default function HomePage() {
           <div className="relative">
             <div className="rounded-[24px] overflow-hidden shadow-[0_24px_56px_rgba(20,58,98,0.15)] h-[420px] relative">
               <Image
-                src="/daiana-hero.jpg"
-                alt="Daiana Plauth — Psicóloga Ser Singular"
+                src="/clinica-beneficios.jpg"
+                alt="Clínica Ser Singular"
                 fill
                 className="object-cover object-center"
                 sizes="(max-width: 1024px) 100vw, 50vw"
