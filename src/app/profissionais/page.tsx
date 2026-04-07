@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -11,6 +12,7 @@ const profissionais = [
     name: "Daiana Plauth",
     badge: "Fundadora & Psicóloga",
     featured: true,
+    photo: "/Daiana.jpeg",
     desc: "Com 13 anos de experiência em desenvolvimento infantil, Daiana fundou a Ser Singular com a missão de transformar vidas através de um atendimento singular, acolhedor e baseado em evidências. Especialista em avaliação neuropsicológica e orientação de famílias.",
     especialidades: ["Psicologia Infantil", "ABA", "Denver", "Avaliação Neuropsicológica", "Orientação de Pais"],
     wa: "https://wa.me/554599771331?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20com%20a%20Daiana.",
@@ -19,6 +21,7 @@ const profissionais = [
     name: "Thainá Samara Rigo",
     badge: "Fonoaudióloga",
     featured: false,
+    photo: "/Thaina.jpeg",
     desc: "Fonoaudióloga especializada em linguagem infantil, fala e motricidade orofacial. Utiliza abordagens baseadas em evidências como PROMPT e DTTC para crianças com dificuldades de comunicação, TEA e outros perfis de desenvolvimento.",
     especialidades: ["Linguagem Infantil", "PROMPT", "DTTC", "Motricidade Orofacial", "TEA"],
     wa: "https://wa.me/554599771331?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20com%20a%20Tha%C3%ADn%C3%A1.",
@@ -27,6 +30,7 @@ const profissionais = [
     name: "Vanessa Marciano",
     badge: "Psicopedagoga",
     featured: false,
+    photo: "/Vanessa.jpeg",
     desc: "Psicopedagoga especializada em avaliação e intervenção das dificuldades de aprendizagem. Atua com dislexia, discalculia, TDAH e outros perfis cognitivos, traçando planos individualizados e orientando pais e educadores.",
     especialidades: ["Avaliação Psicopedagógica", "Dislexia", "TDAH", "Funções Executivas", "Alfabetização"],
     wa: "https://wa.me/554599771331?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20com%20a%20Vanessa.",
@@ -35,6 +39,7 @@ const profissionais = [
     name: "Romelli Savane Ferreira Leite",
     badge: "Terapeuta Ocupacional",
     featured: false,
+    photo: "/Romelli.jpeg",
     desc: "Terapeuta Ocupacional especializada em integração sensorial, praxia e autonomia infantil. Trabalha com crianças que apresentam hipersensibilidade, dificuldades motoras e desafios de participação social e nas atividades do dia a dia.",
     especialidades: ["Integração Sensorial", "Praxia", "Autonomia", "Participação Social"],
     wa: "https://wa.me/554599771331?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20com%20a%20Romelli.",
@@ -69,16 +74,15 @@ export default function ProfissionaisPage() {
               }`}
               style={{ boxShadow: "0 4px 16px rgba(20,58,98,0.06)" }}
             >
-              {/* Image placeholder */}
-              <div
-                className="w-full h-[220px] flex items-center justify-center text-5xl"
-                style={{
-                  background: prof.featured
-                    ? "linear-gradient(135deg, #e8f5f3, #eef2f7)"
-                    : "linear-gradient(135deg, #f8f9fb, #e8f5f3)",
-                }}
-              >
-                👩‍⚕️
+              {/* Photo */}
+              <div className="w-full h-[260px] relative overflow-hidden">
+                <Image
+                  src={prof.photo}
+                  alt={prof.name}
+                  fill
+                  className="object-cover object-top"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                />
               </div>
               <div className="p-6">
                 <span
