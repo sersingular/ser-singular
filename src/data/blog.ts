@@ -15,6 +15,130 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "ecolalia-autismo-fonoaudiologia",
+    title: "Ecolalia no autismo: o que é, o que significa e como a fonoaudiologia transforma repetição em comunicação",
+    excerpt: "A ecolalia é comum no autismo, mas tem função e pode ser transformada em comunicação real. Entenda o que a fonoaudiologia faz por crianças com TEA.",
+    category: "Fonoaudiologia",
+    categoryColor: "#1f8c7b",
+    categoryBg: "#e8f5f3",
+    emoji: "🗣️",
+    image: "/ecolalia-autismo.jpg",
+    date: "Abr 2025",
+    dateISO: "2025-04-08",
+    author: "Thainá Samara Rigo · Fonoaudióloga",
+    content: `
+"Ela fica repetindo a mesma frase do desenho o dia todo." "Quando pergunto se quer água, ele repete: quer água." "Ela não responde o que eu pergunto, só ecoa o que eu disse."
+
+Se você reconhece alguma dessas situações, provavelmente já se deparou com a ecolalia, um dos comportamentos de linguagem mais comuns e mais mal compreendidos no autismo.
+
+A boa notícia é que a ecolalia não é um beco sem saída. Ela tem função, tem significado e com a intervenção fonoaudiológica certa, pode se transformar em comunicação real e funcional.
+
+## O que é a ecolalia
+
+Ecolalia é a repetição de palavras, frases ou sons ouvidos anteriormente. O nome vem do grego echo (eco) + lalia (fala), literalmente, o eco da fala.
+
+É importante saber que a ecolalia faz parte do desenvolvimento típico da linguagem. Crianças pequenas, em torno de 1 a 2 anos, usam a repetição naturalmente como estratégia de aprendizado da fala. Por volta dos 3 anos, essa repetição vai sendo substituída por formas mais espontâneas e independentes de comunicação.
+
+No autismo, a ecolalia pode persistir após essa fase, especialmente quando há atraso no desenvolvimento da linguagem. Mas isso não significa que ela seja apenas um ruído sem propósito. Estudos em fonoaudiologia mostram que, em muitos casos, a ecolalia funciona como uma estratégia de comunicação, enquanto a criança ainda não domina a linguagem espontânea.
+
+## Ecolalia imediata e ecolalia tardia: qual a diferença
+
+Existem dois tipos principais de ecolalia, e entender a diferença ajuda muito os pais a identificarem o que está acontecendo com o filho:
+
+**Ecolalia imediata**
+
+Ocorre quando a criança repete algo que acabou de ouvir, logo em seguida. Exemplo: o adulto pergunta "Você quer suco?" e a criança responde "Quer suco?" sem necessariamente comunicar que quer ou não quer.
+
+**Ecolalia tardia**
+
+Ocorre quando a criança repete frases que ouviu horas, dias ou até semanas atrás, geralmente trechos de desenhos, músicas, falas de adultos ou diálogos memorizados. Ela pode aparecer fora de contexto aparente, mas frequentemente carrega uma função comunicativa ou regulatória que o fonoaudiólogo é treinado para identificar.
+
+Ambas as formas são comuns no TEA e podem coexistir na mesma criança.
+
+## A ecolalia tem uma função e isso muda tudo
+
+Uma das mudanças mais importantes na compreensão da ecolalia nos últimos anos foi reconhecer que ela raramente é uma repetição sem sentido. Na maioria dos casos, a criança usa a ecolalia com uma intenção, mesmo que essa intenção não seja imediatamente óbvia para quem está ao redor.
+
+A ecolalia pode servir para:
+
+**Fazer pedidos**
+
+A criança repete "quer biscoito?" porque essa é a forma que ela conhece de comunicar que quer biscoito.
+
+**Expressar emoções**
+
+Uma frase de um personagem favorito pode ser usada para comunicar frustração, alegria ou ansiedade: a criança associou aquela frase àquele estado emocional.
+
+**Autorregulação**
+
+A repetição rítmica de frases ou sons pode funcionar como uma forma de se acalmar em momentos de sobrecarga sensorial ou emocional.
+
+**Interação social**
+
+A criança repete algo como tentativa de iniciar ou manter contato com outra pessoa, usando o repertório que ela domina.
+
+**Processar informação**
+
+Em alguns casos, repetir o que ouviu é a forma que a criança encontra de processar e compreender o que foi dito antes de responder.
+
+Quando o fonoaudiólogo e a família aprendem a identificar a função da ecolalia, o trabalho terapêutico se torna muito mais eficaz, porque parte do que a criança já está tentando comunicar, e não tenta apagar esse comportamento pela força.
+
+## O que o fonoaudiólogo faz com a ecolalia
+
+A atuação fonoaudiológica na ecolalia não é simplesmente ensinar a criança a parar de repetir. O objetivo é muito mais sofisticado: identificar a função da repetição e construir, a partir daí, formas mais funcionais e espontâneas de comunicação.
+
+Na prática, as intervenções incluem:
+
+**Identificação da função comunicativa**
+
+O fonoaudiólogo observa quando, como e em que contextos a ecolalia aparece e o que a criança está tentando comunicar com ela.
+
+**Modelagem da fala funcional**
+
+Quando a criança usa uma ecolalia com função de pedido, o fonoaudiólogo oferece um modelo mais completo e funcional. Se ela diz "quer suco?", o terapeuta responde "eu quero suco, por favor", fornecendo o modelo correto sem punir a tentativa de comunicação.
+
+**Ampliação do repertório**
+
+Por meio de jogos, leitura, brincadeiras e atividades lúdicas, o fonoaudiólogo cria oportunidades para que a criança experimente formas novas e espontâneas de se expressar, reduzindo gradualmente a dependência da ecolalia.
+
+**Comunicação Aumentativa e Alternativa (CAA)**
+
+Em casos onde a linguagem verbal ainda é muito limitada, recursos como pranchas de figuras e aplicativos podem ser introduzidos como suporte, sem substituir a fala, mas ampliando as possibilidades de comunicação.
+
+**Orientação familiar**
+
+Os pais são parte fundamental do processo. O fonoaudiólogo orienta como responder à ecolalia em casa de forma que apoie o desenvolvimento da linguagem funcional, e não reforce involuntariamente padrões que dificultam a comunicação.
+
+## Quando a ecolalia precisa de atenção profissional
+
+A ecolalia sozinha não é um diagnóstico de autismo, mas é um sinal que merece atenção, especialmente quando:
+
+- A criança tem mais de 3 anos e a ecolalia ainda é a forma predominante de comunicação
+- A repetição interfere na comunicação funcional (a criança não consegue expressar necessidades básicas)
+- A ecolalia gera frustração na criança ou na família por dificultar a interação
+- Há regressão na linguagem após um período de desenvolvimento
+- A criança não usa fala espontânea em nenhum contexto
+
+Nesses casos, uma avaliação fonoaudiológica é o próximo passo. Quanto mais cedo, melhor, porque as janelas de desenvolvimento da linguagem na primeira infância são únicas, e a intervenção precoce faz diferença real nos resultados.
+
+## O que esperar do acompanhamento fonoaudiológico na Ser Singular
+
+Na Ser Singular, o trabalho fonoaudiológico começa por uma avaliação completa da linguagem e da comunicação da criança, verbal, não verbal, funcional e social. Cada plano de intervenção é construído a partir do perfil real da criança, com metas claras e mensuráveis que os pais acompanham ao longo do tratamento.
+
+Nada é feito no achismo. A evolução é registrada, medida e compartilhada com a família de forma transparente.
+
+Com a identificação e intervenção precoce, pesquisas mostram que a maioria das crianças com autismo melhora significativamente suas habilidades de comunicação. E esse caminho começa com um fonoaudiólogo que entende a ecolalia não como um problema a ser eliminado, mas como um ponto de partida para construir linguagem.
+
+## Conclusão
+
+A ecolalia não é o fim da comunicação. Em muitos casos, ela é o começo: uma tentativa real, ainda que imperfeita, de se conectar com o mundo.
+
+Quando a fonoaudiologia reconhece essa tentativa, a respeita e a transforma, algo poderoso acontece: a criança descobre que sua voz tem valor. E a partir daí, tudo pode mudar.
+
+Se o seu filho apresenta ecolalia ou atrasos na linguagem, entre em contato com a Ser Singular. Nossa equipe de fonoaudiologia está pronta para avaliá-lo e construir um caminho de comunicação feito especificamente para ele.
+    `.trim(),
+  },
+  {
     slug: "terapia-ocupacional-autismo-atividades-vida-diaria",
     title: "Como a Terapia Ocupacional mede a evolução da criança autista nas atividades do dia a dia",
     excerpt: "A Terapia Ocupacional ajuda crianças autistas a ganhar autonomia nas tarefas do dia a dia e mensura cada avanço com dados reais. Entenda como esse trabalho funciona.",
