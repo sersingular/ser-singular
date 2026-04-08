@@ -15,6 +15,139 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "pecs-comunicacao-alternativa-autismo",
+    title: "PECS e comunicação alternativa no autismo: como a fonoaudiologia usa métodos baseados em evidências",
+    excerpt: "Quando a criança autista não fala ou tem comunicação limitada, PECS e CAA abrem novos caminhos. Entenda como a fonoaudiologia usa esses métodos com base em ciência.",
+    category: "Fonoaudiologia",
+    categoryColor: "#1f8c7b",
+    categoryBg: "#e8f5f3",
+    emoji: "💬",
+    image: "/pecs-comunicacao-alternativa-autismo.jpg",
+    date: "Abr 2025",
+    dateISO: "2025-04-08",
+    author: "Thainá Samara Rigo · Fonoaudióloga",
+    content: `
+Imagine não conseguir dizer que está com fome. Não conseguir pedir para ir ao banheiro. Não conseguir contar que está com dor. Não conseguir dizer "eu te amo".
+
+Essa é a realidade de uma parcela significativa de crianças com autismo: aquelas com fala limitada ou ausente. E por muito tempo, muitas famílias acreditaram que não havia muito o que fazer além de esperar.
+
+A fonoaudiologia mudou essa história.
+
+Hoje, ferramentas como o PECS (Sistema de Comunicação por Troca de Figuras) e a Comunicação Aumentativa e Alternativa (CAA) oferecem caminhos concretos, baseados em centenas de estudos científicos, para que crianças não verbais ou com comunicação limitada possam se expressar. E em muitos casos, esse caminho abre as portas para o desenvolvimento da própria fala.
+
+## Por que algumas crianças com autismo não desenvolvem a fala verbal
+
+A dificuldade de comunicação no autismo vai muito além de falar pouco. Ela envolve desafios em múltiplas dimensões:
+
+- Dificuldade em usar a linguagem com intenção comunicativa: a criança pode emitir sons, mas não os direciona para interagir
+- Dificuldade em compreender o que os outros estão dizendo, especialmente fora de contextos familiares
+- Dependência da ecolalia como forma predominante de comunicação
+- Ausência completa de fala funcional em alguns casos
+
+Crianças não verbais não são crianças sem linguagem. Elas têm pensamentos, desejos, emoções: o que falta é um canal funcional para expressá-los. E é exatamente esse canal que a fonoaudiologia se propõe a construir.
+
+## O que é a Comunicação Aumentativa e Alternativa (CAA)
+
+A Comunicação Aumentativa e Alternativa é um conjunto de recursos, estratégias e sistemas que complementam ou substituem a fala quando ela ainda não é funcional ou é insuficiente para as necessidades comunicativas da pessoa.
+
+O objetivo é sempre o mesmo: garantir que a criança consiga se comunicar de forma eficaz, independentemente de quantas palavras ela consegue falar.
+
+A CAA se divide em dois grandes grupos:
+
+**Recursos de baixa tecnologia**
+
+Pranchas de comunicação com figuras ou símbolos impressos, livros de comunicação, cartões temáticos para situações específicas como refeições, banho e escola. São simples, acessíveis e altamente eficazes quando bem implementados.
+
+**Recursos de alta tecnologia**
+
+Aplicativos de comunicação em tablets e smartphones, dispositivos com saída de voz que permitem que a criança toque em uma figura e o aparelho fale por ela. Existem opções em português desenvolvidas especificamente para o contexto brasileiro.
+
+A Comunicação Aumentativa e Alternativa é uma das práticas baseadas em evidências reconhecidas pela ANS (Resolução Normativa nº 539/2022), com cobertura obrigatória por planos de saúde quando indicada por profissional médico.
+
+## O que é o PECS e como ele funciona
+
+O PECS, sigla para Picture Exchange Communication System ou Sistema de Comunicação por Troca de Figuras, é um dos sistemas de CAA mais estudados e utilizados no mundo. Foi desenvolvido nos Estados Unidos em 1994 por Andy Bondy e Lori Frost, e desde então acumula mais de 240 estudos científicos com resultados consistentes.
+
+A lógica do PECS é simples e poderosa: a criança aprende que entregar uma figura para uma pessoa gera um resultado real no mundo e ela recebe o que a figura representa.
+
+O sistema é dividido em 6 fases progressivas:
+
+**Fase 1: Como se comunicar**
+
+A criança aprende a pegar uma figura e entregá-la a um parceiro de comunicação para obter o item desejado. O foco é ensinar que a comunicação tem poder.
+
+**Fase 2: Distância e persistência**
+
+A criança generaliza o comportamento, comunicando-se com diferentes parceiros em diferentes locais.
+
+**Fase 3: Discriminação de figuras**
+
+A criança aprende a distinguir entre diferentes figuras para pedir itens específicos, construindo um vocabulário inicial.
+
+**Fase 4: Estrutura de frases**
+
+A criança aprende a montar frases simples com cartões, como "eu quero + [figura do item]".
+
+**Fase 5: Resposta a perguntas**
+
+A criança aprende a responder "O que você quer?" usando o sistema.
+
+**Fase 6: Comentários**
+
+A criança começa a fazer comentários espontâneos sobre o ambiente, indo além dos pedidos e iniciando uma comunicação mais social e complexa.
+
+Cada fase é ensinada com protocolos claros, e o progresso é monitorado com dados em cada sessão. O PECS pode ser utilizado também em casa, e isso é uma de suas grandes vantagens: os pais podem participar ativamente do processo, ampliando as oportunidades de prática para muito além do consultório.
+
+## "Mas usar figuras não vai atrasar a fala do meu filho?"
+
+Essa é a dúvida mais comum das famílias e a resposta da ciência é clara: não.
+
+As evidências científicas são consistentes ao demonstrar que a CAA não inibe nem atrasa o desenvolvimento da linguagem oral. Pelo contrário: estudos mostram que o uso de comunicação alternativa funcional pode, em muitos casos, apoiar e acelerar o surgimento da fala, porque a criança descobre que comunicar gera efeitos reais no ambiente, o que aumenta a motivação para se expressar.
+
+O que atrasa e prejudica o desenvolvimento da linguagem é a ausência de comunicação funcional: quando a criança não tem nenhum canal eficaz de se expressar e acumula frustração, comportamentos desafiadores e isolamento. A CAA quebra esse ciclo.
+
+## Como o fonoaudiólogo define o melhor sistema para cada criança
+
+A escolha do sistema de CAA mais adequado exige avaliação individualizada conduzida pelo fonoaudiólogo, que considera:
+
+- O nível de compreensão da linguagem da criança
+- O repertório de comunicação que ela já possui (verbal e não verbal)
+- Os contextos de vida da criança (escola, casa, terapia)
+- As preferências e habilidades motoras da criança
+- A capacidade e disponibilidade da família para implementar o sistema no dia a dia
+
+A decisão é técnica e personalizada. Um sistema que funciona muito bem para uma criança pode não ser o ideal para outra, mesmo que as duas tenham TEA e idades parecidas.
+
+Além do PECS, o fonoaudiólogo pode indicar outros sistemas como pranchas temáticas, o Makaton (sistema de gestos e símbolos), aplicativos de comunicação ou uma combinação de recursos de alta e baixa tecnologia, dependendo do perfil da criança.
+
+## O que muda na vida da criança e da família com a CAA
+
+Quando uma criança que não conseguia se expressar começa a comunicar, mesmo que pela primeira vez através de uma figura, algo muda profundamente.
+
+A criança descobre que tem voz. Que pode pedir o que quer. Que pode recusar o que não quer. Que pode chamar atenção, compartilhar alegria, expressar desconforto.
+
+Para as famílias, essa mudança é igualmente transformadora. Diminuem as crises, porque muitas delas têm raiz na frustração comunicativa. Melhora a relação entre pais e filho. A rotina fica mais previsível e menos exaustiva.
+
+E em muitos casos, a fala verbal começa a emergir. Não para todos, mas para um número significativo de crianças, a comunicação alternativa foi o trampolim que faltava.
+
+## Como a fonoaudiologia trabalha na Ser Singular
+
+Na Ser Singular, o acompanhamento fonoaudiológico começa por uma avaliação completa da comunicação da criança: linguagem receptiva, expressiva, pragmática e funcional. A partir dos dados dessa avaliação, o fonoaudiólogo define o plano de intervenção com metas claras e prazos realistas.
+
+O progresso é registrado em cada sessão. Os pais recebem orientações práticas e materiais para usar em casa. A família não é apenas informada: ela é capacitada para ser uma parceira ativa no desenvolvimento comunicativo do filho.
+
+Porque comunicação não acontece só no consultório. Ela acontece em cada troca do dia a dia e quanto mais parceiros de comunicação a criança tiver, maior é o seu avanço.
+
+## Conclusão
+
+Nenhuma criança deveria ficar sem voz porque a fala verbal ainda não chegou. A fonoaudiologia dispõe hoje de ferramentas baseadas em ciência, validadas por centenas de estudos, para garantir que toda criança, verbal ou não verbal, possa se comunicar de forma funcional e significativa.
+
+O PECS e a CAA não são muletas. São pontes. E na maioria das vezes, é por essas pontes que a linguagem começa a florescer.
+
+Se o seu filho tem fala limitada ou ausente, não espere. Entre em contato com a Ser Singular e agende uma avaliação fonoaudiológica. Cada dia de comunicação funcional conta.
+    `.trim(),
+  },
+  {
     slug: "ecolalia-autismo-fonoaudiologia",
     title: "Ecolalia no autismo: o que é, o que significa e como a fonoaudiologia transforma repetição em comunicação",
     excerpt: "A ecolalia é comum no autismo, mas tem função e pode ser transformada em comunicação real. Entenda o que a fonoaudiologia faz por crianças com TEA.",
