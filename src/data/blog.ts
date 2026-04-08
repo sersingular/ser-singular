@@ -15,6 +15,130 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "terapia-ocupacional-autismo-atividades-vida-diaria",
+    title: "Como a Terapia Ocupacional mede a evolução da criança autista nas atividades do dia a dia",
+    excerpt: "A Terapia Ocupacional ajuda crianças autistas a ganhar autonomia nas tarefas do dia a dia e mensura cada avanço com dados reais. Entenda como esse trabalho funciona.",
+    category: "Terapia Ocupacional",
+    categoryColor: "#1f8c7b",
+    categoryBg: "#e8f5f3",
+    emoji: "🙌",
+    image: "/to-evolucao-crianca.jpg",
+    date: "Abr 2025",
+    dateISO: "2025-04-08",
+    author: "Romelli Savane · Terapeuta Ocupacional",
+    content: `
+Vestir uma camiseta. Escovar os dentes. Comer com o garfo. Amarrar o tênis. Para a maioria das crianças, essas tarefas acontecem quase que naturalmente ao longo do desenvolvimento. Para crianças com autismo, cada uma delas pode representar um desafio real e conquistá-las, uma vitória enorme.
+
+É exatamente esse território que a Terapia Ocupacional habita. E o que diferencia esse trabalho de uma simples sequência de exercícios é o que poucos pais sabem: tudo é medido, tudo é registrado e tudo é ajustado com base em dados reais.
+
+Sem achismo. Com ciência.
+
+## O que é a Terapia Ocupacional e qual o seu foco no autismo
+
+A Terapia Ocupacional (TO) é uma área da saúde que tem como objetivo promover a autonomia e a independência das pessoas nas suas atividades cotidianas. No contexto do autismo, esse trabalho é especialmente relevante porque crianças com TEA frequentemente apresentam desafios em múltiplas áreas que impactam o dia a dia: coordenação motora, regulação sensorial, planejamento de sequências e habilidades de autocuidado.
+
+O terapeuta ocupacional avalia as habilidades funcionais, comportamentais e sensoriais da criança, identificando dificuldades específicas em áreas como coordenação motora, interação social, comunicação e autorregulação emocional. A partir dessa análise, desenvolve intervenções personalizadas para ajudar a criança a adquirir independência nas atividades diárias.
+
+O foco não é apenas o que a criança ainda não consegue fazer. É identificar o que ela já faz, como ela faz e qual é o próximo passo possível para ampliar a sua participação no mundo.
+
+## O que são as Atividades de Vida Diária (AVDs)
+
+As Atividades de Vida Diária, conhecidas pela sigla AVD, são todas as tarefas que uma pessoa realiza no cotidiano para cuidar de si mesma e funcionar com autonomia. Elas se dividem em duas categorias principais:
+
+**AVDs Básicas**
+
+Relacionadas ao autocuidado e à sobrevivência:
+
+- Alimentação (comer sozinho, usar talheres, aceitar variedade de alimentos)
+- Higiene pessoal (escovar os dentes, lavar as mãos, tomar banho)
+- Vestuário (escolher, colocar e tirar roupas e calçados)
+- Uso do banheiro com independência
+- Sono e regulação do descanso
+
+**AVDs Instrumentais**
+
+Tarefas mais complexas do cotidiano:
+
+- Organização de materiais escolares
+- Participação nas refeições em família
+- Deslocamento dentro de casa e em ambientes conhecidos
+- Uso de recursos de comunicação e tecnologia
+
+Para crianças com TEA, dificuldades nessas áreas costumam ter raízes sensoriais, motoras e cognitivas, e é por isso que o trabalho da terapia ocupacional vai muito além de simplesmente treinar a tarefa.
+
+## Por que crianças autistas têm dificuldades nas AVDs
+
+Antes de intervir, o terapeuta ocupacional investiga o que está por trás da dificuldade. E as causas são sempre múltiplas e individuais.
+
+Uma criança que se recusa a usar determinadas roupas pode estar respondendo a uma hipersensibilidade tátil: o toque do tecido é genuinamente desconfortável para ela. Uma criança que não consegue usar o garfo pode ter dificuldades de coordenação motora fina ou de planejamento motor. Uma criança que não aceita variedade de alimentos pode estar respondendo a alterações sensoriais gustativas e olfativas, não a frescura.
+
+Quando os aspectos motores, sensoriais, emocionais e cognitivos das atividades são entendidos em profundidade, a intervenção se torna muito mais precisa e os resultados aparecem muito mais rápido.
+
+## Como a TO mensura a evolução: sem achismo, com dados
+
+Um dos pilares do trabalho de terapia ocupacional com crianças autistas é a mensuração contínua do progresso.
+
+Cada meta estabelecida no plano de tratamento é específica, observável e mensurável. Em vez de "melhorar a alimentação", o objetivo pode ser "aceitar dois novos alimentos sólidos com textura macia nas próximas quatro semanas". Em vez de "ficar mais independente no banho", o objetivo pode ser "realizar as etapas de lavar o cabelo com suporte verbal apenas, sem apoio físico, por três sessões consecutivas".
+
+Essa precisão não é burocracia. É o que permite saber, com honestidade, se o tratamento está funcionando e onde precisa ser ajustado.
+
+A integração do método ABA com a terapia ocupacional garante que os progressos sejam mensuráveis e que cada intervenção seja ajustada com base no desempenho real do paciente. O registro sistemático de dados em cada sessão cria um histórico concreto de evolução que pode ser compartilhado com a família, a escola e os outros profissionais que acompanham a criança.
+
+## O papel das brincadeiras no trabalho terapêutico
+
+Uma das características mais marcantes da terapia ocupacional com crianças é que o principal instrumento terapêutico é a brincadeira, mas uma brincadeira com intenção muito clara.
+
+Atividades lúdicas são escolhidas e estruturadas para trabalhar, ao mesmo tempo, a coordenação motora, o planejamento de sequências, a regulação sensorial e a tolerância à frustração. A criança não percebe que está treinando, ela está brincando. Mas o terapeuta está observando, registrando e ajustando cada detalhe para garantir que o desafio seja adequado ao momento de desenvolvimento daquela criança específica.
+
+Isso torna a terapia motivadora para a criança e eficaz para os objetivos clínicos.
+
+## O que as famílias podem fazer em casa
+
+A terapia ocupacional não vive só dentro do consultório. Uma parte essencial do trabalho é orientar os pais sobre como incorporar as estratégias terapêuticas na rotina doméstica.
+
+**Na hora de se vestir**
+
+Oferecer escolha entre duas opções de roupa, antecipar visualmente o que vai acontecer, usar roupas sem costura interna para crianças com hipersensibilidade tátil.
+
+**Na hora do banho**
+
+Criar uma sequência visual das etapas, usar esponjas ou luvas com texturas que a criança tolera, regular a temperatura da água antes de qualquer contato.
+
+**Na hora das refeições**
+
+Apresentar novos alimentos sem pressão, ao lado de alimentos já aceitos, respeitando o tempo de adaptação sensorial da criança.
+
+**Na hora de organizar materiais**
+
+Usar caixas com cores e pictogramas para cada categoria, criar uma rotina previsível de organização antes e depois das atividades.
+
+Essas adaptações não mimam a criança: elas criam as condições para que ela avance com mais segurança e menos ansiedade.
+
+## Quando procurar a Terapia Ocupacional para o seu filho
+
+Alguns sinais que indicam que uma avaliação de terapia ocupacional pode ser útil:
+
+- Dificuldade persistente para aceitar variedade de alimentos
+- Resistência intensa a atividades de higiene (banho, escovar dentes, cortar unhas)
+- Dificuldade para se vestir ou despir de forma independente
+- Coordenação motora fina ou grossa visivelmente abaixo do esperado para a idade
+- Comportamentos repetitivos de busca sensorial que interferem na rotina
+- Dificuldade para seguir sequências simples de tarefas
+
+A avaliação de terapia ocupacional pode acontecer antes, durante ou após o diagnóstico de TEA. Quanto antes, melhor, porque as janelas de plasticidade neurológica na primeira infância são uma oportunidade única para construir as bases da autonomia.
+
+## Conclusão
+
+A Terapia Ocupacional no autismo não é sobre fazer a criança se comportar ou se encaixar nos padrões do mundo. É sobre dar a ela as ferramentas para participar do mundo de forma mais confortável, autônoma e significativa, do jeito dela.
+
+E tudo isso é feito com rigor, com dados e com respeito profundo pela singularidade de cada criança.
+
+Na Ser Singular, o trabalho de terapia ocupacional é construído sobre avaliação individualizada, metas mensuráveis e acompanhamento contínuo. Porque evolução real não se sente: ela se mede.
+
+Entre em contato com a nossa equipe e saiba como podemos apoiar o desenvolvimento do seu filho nas atividades do dia a dia.
+    `.trim(),
+  },
+  {
     slug: "integracao-sensorial-autismo",
     title: "Integração sensorial no autismo: por que seu filho reage assim a sons, texturas e luzes",
     excerpt: "Entenda por que crianças autistas reagem de forma intensa a sons, texturas e luzes e como a Terapia Ocupacional atua sobre o processamento sensorial do TEA.",
