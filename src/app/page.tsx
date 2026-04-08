@@ -399,6 +399,112 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* POR QUE SER SINGULAR */}
+      <section id="por-que-ser-singular" className="py-20 px-6 bg-white">
+        <div className="max-w-[900px] mx-auto">
+          <AnimateIn className="text-center mb-12">
+            <span className="inline-block text-[0.75rem] font-semibold uppercase tracking-widest px-3.5 py-1 rounded-full mb-4" style={{ background: "#E1F5EE", color: "#085041", border: "0.5px solid #9FE1CB" }}>
+              Por que a Ser Singular
+            </span>
+            <h2 className="text-3xl lg:text-4xl font-bold text-[#143a62] leading-tight mb-3">
+              Nem toda clínica cuida do mesmo jeito
+            </h2>
+            <p className="text-[#5a6a7e] text-lg max-w-[600px] mx-auto leading-relaxed">
+              Seu filho merece mais do que um atendimento genérico. Veja o que nos diferencia das clínicas convencionais da região.
+            </p>
+          </AnimateIn>
+
+          <AnimateIn>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+
+            {/* Ser Singular — aparece primeiro no mobile via order */}
+            <div className="order-first sm:order-last">
+              {/* Header */}
+              <div className="flex items-center gap-2.5 px-4 py-3 rounded-[8px] mb-4" style={{ background: "#E1F5EE", border: "0.5px solid #9FE1CB" }}>
+                <div className="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0" style={{ background: "#5DCAA5" }}>
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7.5l3.5 3.5 6.5-7" stroke="white" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/></svg>
+                </div>
+                <span className="font-bold text-[#085041] text-sm">Ser Singular</span>
+              </div>
+              {/* Card */}
+              <div className="rounded-[12px] overflow-hidden bg-white" style={{ border: "0.5px solid #9FE1CB" }}>
+                {[
+                  { title: "Evolução medida com dados reais", desc: "Cada sessão é registrada. Metas são definidas, acompanhadas e ajustadas com base em evidências, sem achismo.", badge: "baseado em evidências" },
+                  { title: "Equipe multidisciplinar integrada", desc: "Psicologia, psicopedagogia, terapia ocupacional e fonoaudiologia trabalhando juntas, com comunicação contínua entre os profissionais.", badge: "equipe alinhada" },
+                  { title: "Plano Individual de Tratamento (PIT)", desc: "Cada criança tem o seu próprio plano, construído a partir da avaliação real do seu perfil, potencialidades e necessidades.", badge: "100% individualizado" },
+                  { title: "Família como parceira ativa", desc: "Os pais participam do planejamento, recebem orientações práticas e entendem o que acontece em cada etapa do tratamento.", badge: "família no centro" },
+                  { title: "Relatórios periódicos de evolução", desc: "Devolutivas estruturadas com dados concretos sobre o desenvolvimento da criança, para a família e para a escola.", badge: "transparência total" },
+                ].map((item, i, arr) => (
+                  <div key={item.title} className="flex items-start gap-2.5 px-4 py-3.5" style={{ borderBottom: i < arr.length - 1 ? "0.5px solid #f0f0f0" : "none" }}>
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" style={{ flexShrink: 0, marginTop: 4 }}><path d="M2 7.5l3.5 3.5 6.5-7" stroke="#1D9E75" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
+                    <div>
+                      <p className="text-[0.88rem] font-bold text-[#085041] mb-0.5">{item.title}</p>
+                      <p className="text-[0.8rem] leading-relaxed mb-1.5" style={{ color: "#5F5E5A" }}>{item.desc}</p>
+                      <span className="inline-block text-[11px] px-2 py-0.5 rounded-full" style={{ background: "#E1F5EE", color: "#085041", border: "0.5px solid #5DCAA5" }}>{item.badge}</span>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Outras clínicas */}
+            <div className="order-last sm:order-first">
+              {/* Header */}
+              <div className="flex items-center gap-2.5 px-4 py-3 rounded-[8px] mb-4" style={{ background: "#F1EFE8", border: "0.5px solid #D3D1C7" }}>
+                <div className="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0" style={{ background: "#D3D1C7" }}>
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 3l8 8M11 3l-8 8" stroke="white" strokeWidth="1.4" strokeLinecap="round"/></svg>
+                </div>
+                <span className="font-bold text-[0.88rem]" style={{ color: "#5F5E5A" }}>Outras clínicas</span>
+              </div>
+              {/* Card */}
+              <div className="rounded-[12px] overflow-hidden bg-white" style={{ border: "0.5px solid #e5e5e5" }}>
+                {[
+                  { title: "Atendimento por percepção", desc: "Evolução avaliada de forma subjetiva, sem dados registrados ou metas mensuráveis.", badge: "sem dados concretos" },
+                  { title: "Profissionais isolados", desc: "Cada especialidade trabalha de forma independente, sem alinhamento entre os profissionais.", badge: "sem integração" },
+                  { title: "Protocolo genérico", desc: "Mesmo plano para diferentes crianças, sem considerar o perfil único de cada uma.", badge: "sem personalização" },
+                  { title: "Família de fora do processo", desc: "Pais recebem poucas informações e não participam ativamente do planejamento terapêutico.", badge: "família excluída" },
+                  { title: "Sem devolutivas estruturadas", desc: "Atualizações informais e esporádicas, sem relatórios periódicos de evolução.", badge: "sem transparência" },
+                ].map((item, i, arr) => (
+                  <div key={item.title} className="flex items-start gap-2.5 px-4 py-3.5" style={{ borderBottom: i < arr.length - 1 ? "0.5px solid #f0f0f0" : "none" }}>
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" style={{ flexShrink: 0, marginTop: 4 }}><path d="M3 3l8 8M11 3l-8 8" stroke="#B4B2A9" strokeWidth="1.4" strokeLinecap="round"/></svg>
+                    <div>
+                      <p className="text-[0.88rem] font-bold mb-0.5" style={{ color: "#5F5E5A" }}>{item.title}</p>
+                      <p className="text-[0.8rem] leading-relaxed mb-1.5" style={{ color: "#888780" }}>{item.desc}</p>
+                      <span className="inline-block text-[11px] px-2 py-0.5 rounded-full" style={{ background: "#F1EFE8", color: "#5F5E5A", border: "0.5px solid #D3D1C7" }}>{item.badge}</span>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+          </div>
+          </AnimateIn>
+
+          {/* CTA */}
+          <AnimateIn delay={0.15}>
+          <div className="mt-8 rounded-[12px] px-8 py-7 text-center" style={{ background: "#E1F5EE", border: "0.5px solid #9FE1CB" }}>
+            <p className="text-[1.05rem] font-bold text-[#085041] mb-1.5">
+              Cada criança é singular. O tratamento dela também deveria ser.
+            </p>
+            <p className="text-[0.88rem] mb-5" style={{ color: "#5F5E5A" }}>
+              Agende uma avaliação e descubra como um plano construído com dados pode fazer diferença real no desenvolvimento do seu filho.
+            </p>
+            <a
+              id="cta-agendamento"
+              href="https://wa.me/554599771331?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20na%20Ser%20Singular."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-[10px] font-semibold text-white text-sm no-underline transition-all duration-200 hover:-translate-y-0.5"
+              style={{ background: "#1D9E75", boxShadow: "0 4px 14px rgba(29,158,117,0.3)" }}
+            >
+              Agendar avaliação
+              <svg viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4"><path fillRule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clipRule="evenodd"/></svg>
+            </a>
+          </div>
+          </AnimateIn>
+        </div>
+      </section>
+
       {/* SEÇÃO EMOCIONAL */}
       <section
         className="py-20 px-8"
