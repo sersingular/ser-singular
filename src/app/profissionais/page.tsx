@@ -13,6 +13,7 @@ const profissionais = [
     badge: "Fundadora & Psicóloga",
     featured: true,
     photo: "/Daiana.jpeg",
+    photoPosition: "center 10%",
     desc: "Com 13 anos de experiência em desenvolvimento infantil, Daiana fundou a Ser Singular com a missão de transformar vidas através de um atendimento singular, acolhedor e baseado em evidências. Especialista em avaliação neuropsicológica e orientação de famílias.",
     especialidades: ["Psicologia Infantil", "ABA", "Denver", "Avaliação Neuropsicológica", "Orientação de Pais"],
     wa: "https://wa.me/554599771331?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20com%20a%20Daiana.",
@@ -22,6 +23,7 @@ const profissionais = [
     badge: "Fonoaudióloga",
     featured: false,
     photo: "/Thaina.jpeg",
+    photoPosition: "center 15%",
     desc: "Fonoaudióloga especializada em linguagem infantil, fala e motricidade orofacial. Utiliza abordagens baseadas em evidências como PROMPT e DTTC para crianças com dificuldades de comunicação, TEA e outros perfis de desenvolvimento.",
     especialidades: ["Linguagem Infantil", "PROMPT", "DTTC", "Motricidade Orofacial", "TEA"],
     wa: "https://wa.me/554599771331?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20com%20a%20Tha%C3%ADn%C3%A1.",
@@ -31,6 +33,7 @@ const profissionais = [
     badge: "Psicopedagoga",
     featured: false,
     photo: "/Vanessa.jpeg",
+    photoPosition: "center 10%",
     desc: "Psicopedagoga especializada em avaliação e intervenção das dificuldades de aprendizagem. Atua com dislexia, discalculia, TDAH e outros perfis cognitivos, traçando planos individualizados e orientando pais e educadores.",
     especialidades: ["Avaliação Psicopedagógica", "Dislexia", "TDAH", "Funções Executivas", "Alfabetização"],
     wa: "https://wa.me/554599771331?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20com%20a%20Vanessa.",
@@ -40,6 +43,7 @@ const profissionais = [
     badge: "Terapeuta Ocupacional",
     featured: false,
     photo: "/Romelli.jpeg",
+    photoPosition: "center 10%",
     desc: "Terapeuta Ocupacional especializada em integração sensorial, praxia e autonomia infantil. Trabalha com crianças que apresentam hipersensibilidade, dificuldades motoras e desafios de participação social e nas atividades do dia a dia.",
     especialidades: ["Integração Sensorial", "Praxia", "Autonomia", "Participação Social"],
     wa: "https://wa.me/554599771331?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20com%20a%20Romelli.",
@@ -75,12 +79,13 @@ export default function ProfissionaisPage() {
               style={{ boxShadow: "0 4px 16px rgba(20,58,98,0.06)" }}
             >
               {/* Photo */}
-              <div className="w-full h-[260px] relative overflow-hidden">
+              <div className="w-full h-[300px] relative overflow-hidden">
                 <Image
                   src={prof.photo}
                   alt={prof.name}
                   fill
-                  className="object-cover object-top"
+                  className="object-cover"
+                  style={{ objectPosition: prof.photoPosition }}
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                 />
               </div>
