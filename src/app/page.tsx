@@ -115,7 +115,7 @@ const depoimentos = [
     author: "Aline Engel",
     specialty: "Família do Bê",
     quote:
-      "Desde o primeiro momento percebemos que não se tratava apenas de um atendimento — havia brilho nos olhos, ética e um diferencial: acolhimento. A Tia Daia nos deu recursos, conhecimentos e apoio para seguir essa jornada com mais leveza e segurança, comemorando conosco cada pequena conquista. Ela não apenas acolheu o Bê com amor, mas transformou nossa família.",
+      "Desde o primeiro momento percebemos que não se tratava apenas de um atendimento... havia brilho nos olhos, ética e um diferencial: acolhimento. A Tia Daia nos deu recursos, conhecimentos e apoio para seguir essa jornada com mais leveza e segurança, comemorando conosco cada pequena conquista. Ela não apenas acolheu o Bê com amor, mas transformou nossa família.",
   },
   {
     initial: "G",
