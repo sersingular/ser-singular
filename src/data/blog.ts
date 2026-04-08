@@ -15,6 +15,111 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "integracao-sensorial-autismo",
+    title: "Integração sensorial no autismo: por que seu filho reage assim a sons, texturas e luzes",
+    excerpt: "Entenda por que crianças autistas reagem de forma intensa a sons, texturas e luzes e como a Terapia Ocupacional atua sobre o processamento sensorial do TEA.",
+    category: "Terapia Ocupacional",
+    categoryColor: "#1f8c7b",
+    categoryBg: "#e8f5f3",
+    emoji: "🤲",
+    image: "/integracao-sensorial-autismo.jpg",
+    date: "Abr 2025",
+    dateISO: "2025-04-08",
+    author: "Romelli Savane · Terapeuta Ocupacional",
+    content: `
+Você já se perguntou por que seu filho entra em crise quando ouve o liquidificador? Por que ele não suporta determinadas texturas de roupa? Por que ele faz birra na hora do banho, evita locais movimentados ou, ao contrário, parece precisar de estímulos físicos intensos o tempo todo?
+
+Essas reações não são teimosia. Não são falta de limites. E não são "só coisa de autismo" sem explicação.
+
+Existe uma razão neurológica muito concreta para isso: disfunção do processamento sensorial.
+
+Entender o que está acontecendo no sistema nervoso do seu filho é o primeiro passo para ajudá-lo a navegar o mundo com mais conforto e autonomia.
+
+## O que é o processamento sensorial e por que ele é diferente no autismo
+
+O processamento sensorial é o processo neurológico pelo qual o cérebro recebe, organiza e interpreta as informações sensoriais vindas do ambiente: sons, texturas, cheiros, luzes, movimentos, pressão, temperatura.
+
+Em crianças com desenvolvimento típico, esse processo acontece de forma relativamente automática. O cérebro filtra o que é relevante, ignora o que é ruído de fundo e responde de forma proporcional ao estímulo.
+
+No TEA, esse filtro funciona de forma diferente. O cérebro pode amplificar estímulos que para outros seriam neutros, ou ao contrário, pode precisar de estímulos muito mais intensos para registrá-los. A consequência prática aparece em comportamentos que muitos pais vivenciam no dia a dia e que muitas vezes não conseguem explicar.
+
+O DSM-5 já reconhece oficialmente as alterações sensoriais como parte do quadro do TEA. Estudos indicam que a presença de dificuldades sensoriais em crianças autistas pode variar entre 70% e 90% dos casos, o que significa que, para a grande maioria das crianças no espectro, o mundo sensorial é literalmente percebido de forma diferente.
+
+## Hipersensibilidade e hipossensibilidade: entenda as duas faces
+
+O processamento sensorial atípico se manifesta principalmente de duas formas:
+
+**Hipersensibilidade**
+
+Quando a criança sente demais os estímulos. Sons parecem mais altos, luzes mais fortes, toques mais intensos, mesmo quando são completamente normais para quem está ao lado. Crianças com hipersensibilidade podem:
+
+- Recusar alimentos por causa de textura ou cheiro
+- Entrar em crise em ambientes barulhentos ou com muita gente
+- Reagir com choro ou fuga a toques inesperados
+- Ter dificuldade para usar determinadas roupas ou calçados
+- Se incomodar com sons do cotidiano como secador, aspirador ou fogos de artifício
+
+**Hipossensibilidade**
+
+O oposto: a criança precisa de estímulos muito mais intensos para registrar sensações. Ela pode parecer não sentir dor quando se machuca, buscar constantemente movimentos giratórios ou de impacto, morder objetos ou pessoas, precisar de abraços fortes para se regular ou estar sempre em movimento como forma de estimulação.
+
+Uma mesma criança pode apresentar hipersensibilidade em alguns sistemas sensoriais e hipossensibilidade em outros, o que torna o perfil sensorial de cada criança único e exige avaliação individualizada.
+
+## Os sete sentidos que a terapia ocupacional trabalha
+
+Quando falamos em processamento sensorial, a maioria das pessoas pensa nos cinco sentidos clássicos. Mas a terapia ocupacional trabalha com sete sistemas sensoriais, dois deles menos conhecidos e igualmente fundamentais:
+
+**Visual, auditivo, olfativo, gustativo e tátil** são os cinco sentidos tradicionais, que podem estar alterados em crianças com TEA de formas muito específicas.
+
+**Proprioceptivo** é o sentido que nos diz onde o nosso corpo está no espaço. Crianças com alteração proprioceptiva podem ter dificuldade de controlar a força dos movimentos, tropeçar com frequência ou buscar pressão intensa no corpo como forma de autorregulação.
+
+**Vestibular** é o sentido do equilíbrio e do movimento. Alterações nesse sistema podem fazer a criança evitar balanços, ou ao contrário, buscar movimentos rotatórios de forma compulsiva.
+
+A avaliação precisa de como cada um desses sistemas está funcionando na criança é o ponto de partida para qualquer intervenção de integração sensorial.
+
+## Como funciona a Terapia de Integração Sensorial de Ayres
+
+A Integração Sensorial (IS) é uma abordagem desenvolvida pela terapeuta ocupacional e neurocientista americana Jean Ayres nas décadas de 1950 e 1960. Reconhecida pelo Conselho Federal de Fisioterapia e Terapia Ocupacional, é considerada uma prática baseada em evidências científicas para o tratamento do autismo.
+
+O objetivo não é eliminar a sensibilidade da criança. É ajudar o sistema nervoso a processar os estímulos de forma mais organizada, de modo que a criança consiga responder ao ambiente sem ser avassalada por ele.
+
+Na prática, as sessões acontecem em um espaço lúdico equipado com balanços, redes, colchões, piscinas de bolinhas e materiais de diferentes texturas e pesos. As atividades parecem brincadeiras, e de certa forma são. Mas cada uma é escolhida estrategicamente pelo terapeuta para desafiar o sistema sensorial da criança de forma gradual e dentro da sua janela de tolerância.
+
+A abordagem é realizada por terapeutas ocupacionais com certificação específica em IS de Ayres, que utilizam avaliações padronizadas para identificar o perfil sensorial da criança antes de iniciar qualquer intervenção. Nada é feito no achismo: cada estratégia é baseada em dados reais sobre como aquela criança processa o mundo.
+
+## O que muda na vida da criança com o tratamento
+
+Quando a integração sensorial começa a funcionar, as mudanças aparecem primeiro nas situações do dia a dia:
+
+- A criança passa a tolerar mais alimentos no prato
+- Consegue permanecer em ambientes movimentados por mais tempo sem entrar em crise
+- Aceita toque com mais tranquilidade, inclusive abraços e carinho
+- Reduz comportamentos de busca sensorial intensa (morder, bater cabeça, girar)
+- Fica mais regulada emocionalmente ao longo do dia
+- Consegue se concentrar melhor em atividades de aprendizagem
+
+Esses ganhos impactam diretamente na participação social, na escola e na rotina familiar. Uma criança mais regulada sensorialmente é uma criança mais disponível para aprender, interagir e crescer.
+
+## Como a Ser Singular avalia e trata o processamento sensorial
+
+Na Ser Singular, o trabalho de terapia ocupacional começa por uma avaliação sensorial individualizada, que mapeia com precisão como o sistema nervoso da criança está respondendo a cada tipo de estímulo.
+
+A partir dessa avaliação, o terapeuta elabora um plano de intervenção com metas claras e mensuráveis. O progresso é monitorado continuamente e o plano ajustado sempre que os dados indicam que alguma estratégia precisa ser revista.
+
+Os pais recebem orientações práticas sobre como adaptar o ambiente doméstico e como responder às reações sensoriais da criança de forma a apoiar a regulação, não ampliar a desregulação.
+
+Porque entender o sistema sensorial do seu filho não é só uma questão clínica. É uma forma de olhar para ele com mais compreensão, paciência e estratégia.
+
+## Conclusão
+
+Se o seu filho reage de forma intensa a estímulos que parecem comuns para os outros, ele não está exagerando. Ele está processando o mundo de uma forma diferente e isso merece ser avaliado com cuidado, não ignorado ou minimizado.
+
+A terapia de integração sensorial oferece um caminho baseado em ciência para ajudar seu filho a se sentir mais confortável no próprio corpo e no mundo ao redor.
+
+Quer saber se o seu filho tem alterações no processamento sensorial? Entre em contato com a Ser Singular. Nossa equipe de terapia ocupacional está pronta para avaliar e construir um plano individualizado para ele.
+    `.trim(),
+  },
+  {
     slug: "autismo-inclusao-escolar",
     title: "Autismo e inclusão escolar: o que os pais precisam saber para apoiar o filho na escola",
     excerpt: "A inclusão escolar de crianças autistas é um direito, mas exige preparo. Saiba o que a ciência diz e como os pais podem apoiar esse processo na prática.",
