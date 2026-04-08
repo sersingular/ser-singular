@@ -29,7 +29,7 @@ export default function ContatoPage() {
                 {
                   icon: "📍",
                   title: "Endereço",
-                  desc: "Av. José Callegari, 1820, Centro — Medianeira, PR",
+                  desc: "Av. José Callegari, 1820, Centro, Medianeira, PR",
                 },
                 {
                   icon: "📱",

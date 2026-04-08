@@ -61,7 +61,7 @@ const especialidades = [
     tag: "Terapia Ocupacional",
     title: "Terapia Ocupacional",
     desc1: "A Terapia Ocupacional na Ser Singular trabalha com a integração sensorial, desenvolvimento motor e autonomia da criança. Atuamos com crianças que apresentam hipersensibilidade sensorial, dificuldades motoras e desafios na rotina diária.",
-    desc2: "Nosso objetivo é que a criança participe plenamente das atividades do dia a dia — brincar, se alimentar, se vestir e aprender — com confiança e independência.",
+    desc2: "Nosso objetivo é que a criança participe plenamente das atividades do dia a dia: brincar, se alimentar, se vestir e aprender com confiança e independência.",
     problems: [
       "Hipersensibilidade ao toque, barulho ou textura",
       "Dificuldades motoras finas ou grossas",

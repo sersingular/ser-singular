@@ -10,7 +10,7 @@ const problems = [
       </svg>
     ),
     title: "Dificuldades na Fala",
-    desc: "Atrasos na linguagem, gagueira, pronúncia e comunicação — nossa fonoaudióloga atua com métodos baseados em evidências como PROMPT e DTTC.",
+    desc: "Atrasos na linguagem, gagueira, pronúncia e comunicação: nossa fonoaudióloga atua com métodos baseados em evidências como PROMPT e DTTC.",
   },
   {
     icon: (
@@ -19,7 +19,7 @@ const problems = [
       </svg>
     ),
     title: "Comportamento e Emoções",
-    desc: "Crises, birras intensas, dificuldade de regulação emocional — a psicologia infantil oferece suporte especializado para a criança e orientação para os pais.",
+    desc: "Crises, birras intensas, dificuldade de regulação emocional: a psicologia infantil oferece suporte especializado para a criança e orientação para os pais.",
   },
   {
     icon: (
@@ -29,7 +29,7 @@ const problems = [
       </svg>
     ),
     title: "Aprendizagem e Escola",
-    desc: "Dificuldades de leitura, escrita, atenção e funções executivas — a psicopedagogia identifica o perfil cognitivo e traça um plano individualizado.",
+    desc: "Dificuldades de leitura, escrita, atenção e funções executivas: a psicopedagogia identifica o perfil cognitivo e traça um plano individualizado.",
   },
   {
     icon: (
@@ -39,7 +39,7 @@ const problems = [
       </svg>
     ),
     title: "Sensorialidade e Autonomia",
-    desc: "Hipersensibilidade, dificuldades motoras, baixa participação social — a Terapia Ocupacional trabalha integração sensorial e independência na rotina.",
+    desc: "Hipersensibilidade, dificuldades motoras, baixa participação social: a Terapia Ocupacional trabalha integração sensorial e independência na rotina.",
   },
 ];
 
@@ -415,7 +415,7 @@ export default function HomePage() {
             Sabemos que ver seu filho enfrentar dificuldades é angustiante. Cada criança tem um ritmo, e a maioria das dificuldades tem solução com o suporte certo.
           </p>
           <p className="text-[#5a6a7e] text-lg leading-relaxed mb-8">
-            Na Ser Singular, você encontra uma equipe que ouve, orienta e trabalha com você — não apenas com a criança.
+            Na Ser Singular, você encontra uma equipe que ouve, orienta e trabalha com você. Não apenas com a criança.
           </p>
           <Link
             href="/contato"
