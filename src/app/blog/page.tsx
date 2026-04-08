@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { blogPosts } from "@/data/blog";
 
 export const metadata: Metadata = {
@@ -45,12 +46,24 @@ export default function BlogPage() {
                 className="no-underline bg-white rounded-[20px] overflow-hidden border border-[#e2e8f0] transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_16px_40px_rgba(20,58,98,0.1)] group"
               >
                 {/* Thumb */}
-                <div
-                  className="h-[160px] flex items-center justify-center text-5xl"
-                  style={{ background: post.categoryBg }}
-                >
-                  {post.emoji}
-                </div>
+                {post.image ? (
+                  <div className="h-[200px] relative overflow-hidden">
+                    <Image
+                      src={post.image}
+                      alt={post.title}
+                      fill
+                      className="object-cover transition-transform duration-500 group-hover:scale-105"
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    />
+                  </div>
+                ) : (
+                  <div
+                    className="h-[160px] flex items-center justify-center text-5xl"
+                    style={{ background: post.categoryBg }}
+                  >
+                    {post.emoji}
+                  </div>
+                )}
                 {/* Body */}
                 <div className="p-6">
                   <span

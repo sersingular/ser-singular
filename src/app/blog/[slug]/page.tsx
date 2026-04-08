@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import { blogPosts, getPostBySlug, getAllSlugs } from "@/data/blog";
 
@@ -121,12 +122,25 @@ export default async function BlogPostPage({ params }: Props) {
       {/* Content */}
       <section className="py-12 px-8 bg-[#f8f9fb]">
         <div className="max-w-[760px] mx-auto">
-          <div
-            className="text-6xl mb-8 p-8 rounded-[20px] flex items-center justify-center"
-            style={{ background: post.categoryBg }}
-          >
-            {post.emoji}
-          </div>
+          {post.image ? (
+            <div className="rounded-[20px] overflow-hidden mb-8 h-[400px] relative">
+              <Image
+                src={post.image}
+                alt={post.title}
+                fill
+                className="object-cover"
+                priority
+                sizes="(max-width: 760px) 100vw, 760px"
+              />
+            </div>
+          ) : (
+            <div
+              className="text-6xl mb-8 p-8 rounded-[20px] flex items-center justify-center"
+              style={{ background: post.categoryBg }}
+            >
+              {post.emoji}
+            </div>
+          )}
 
           <article className="bg-white rounded-[24px] p-8 lg:p-10 border border-[#e2e8f0] mb-10">
             <p className="text-lg text-[#5a6a7e] leading-relaxed mb-6 font-light italic border-l-4 border-[#1f8c7b] pl-4">

@@ -6,6 +6,7 @@ export interface BlogPost {
   categoryColor: string;
   categoryBg: string;
   emoji: string;
+  image?: string;
   date: string;
   dateISO: string;
   author: string;
@@ -21,6 +22,7 @@ export const blogPosts: BlogPost[] = [
     categoryColor: "#143a62",
     categoryBg: "#eef2f7",
     emoji: "🧠",
+    image: "/blog-tcc-autismo.jpg",
     date: "Abr 2025",
     dateISO: "2025-04-08",
     author: "Daiana Plauth · Psicóloga",
