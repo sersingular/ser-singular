@@ -168,7 +168,7 @@ export default function HomePage() {
             </AnimateIn>
             <AnimateIn delay={0.2}>
             <p className="text-white/75 text-lg leading-relaxed mb-6 font-light">
-              Dificuldades na fala, comportamento, aprendizagem ou desenvolvimento? Na Ser Singular, cada criança é única e o tratamento também é.
+              Cada criança carrega uma história única. Na Ser Singular, respeitamos essa singularidade com atendimento individualizado e evolução medida por dados reais, sem achismo mas com resultado.
             </p>
             <div
               className="inline-flex items-center gap-3 px-4 py-3 rounded-[12px] mb-8"
