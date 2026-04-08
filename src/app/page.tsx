@@ -120,7 +120,7 @@ const depoimentos = [
   {
     initial: "G",
     author: "Gabi Peron",
-    specialty: "Mãe — acompanhamento há 3 anos",
+    specialty: "Mãe, acompanhamento há 3 anos",
     quote:
       "A Dai foi indicação de uma amiga, e desde então estamos trabalhando juntas no desenvolvimento da minha filha. É notável a dedicação, o carinho e a empatia que ela tem com as crianças! A Dai foi um divisor de águas nessa nossa missão. Indico de olhos fechados e somos gratos por tê-la em nossas vidas.",
   },
