@@ -22,7 +22,7 @@ export const blogPosts: BlogPost[] = [
     categoryColor: "#143a62",
     categoryBg: "#eef2f7",
     emoji: "🧠",
-    image: "/blog-tcc-autismo.png",
+    image: "/blog-tcc-autismo.jpg",
     date: "Abr 2025",
     dateISO: "2025-04-08",
     author: "Daiana Plauth · Psicóloga",
