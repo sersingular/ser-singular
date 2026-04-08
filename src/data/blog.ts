@@ -15,6 +15,109 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "autismo-inclusao-escolar",
+    title: "Autismo e inclusão escolar: o que os pais precisam saber para apoiar o filho na escola",
+    excerpt: "A inclusão escolar de crianças autistas é um direito, mas exige preparo. Saiba o que a ciência diz e como os pais podem apoiar esse processo na prática.",
+    category: "Escola",
+    categoryColor: "#143a62",
+    categoryBg: "#eef2f7",
+    emoji: "🏫",
+    image: "/autismo-inclusao-escolar.jpg",
+    date: "Abr 2025",
+    dateISO: "2025-04-08",
+    author: "Equipe Ser Singular",
+    content: `
+"A escola disse que não sabe como lidar com ele." "A professora reclama que ele não participa." "Ele chora toda manhã antes de entrar na sala."
+
+Se você já ouviu ou viveu alguma dessas situações, sabe o quanto a inclusão escolar pode ser difícil para famílias de crianças com autismo. Mas também sabe, no fundo, o quanto essa experiência pode ser transformadora quando funciona bem.
+
+A ciência é clara: a escola é um dos ambientes mais importantes para o desenvolvimento de uma criança com TEA. E com as estratégias certas, da família, da clínica e da escola, a inclusão deixa de ser um ideal distante e se torna realidade.
+
+## Inclusão escolar é um direito, não um favor
+
+Antes de falar sobre estratégias, é preciso afirmar o óbvio que muitas famílias ainda precisam ouvir: seu filho tem direito à escola.
+
+A Lei Berenice Piana (Lei 12.764/2012) garante às pessoas com TEA acesso à educação em escolas regulares. Além disso, a Constituição Federal estabelece que a educação é um direito de todos, sem exceções. A escola não pode recusar uma matrícula por causa do diagnóstico. O aluno com autismo pode e deve estar em sala de aula regular, com os suportes necessários para aprender.
+
+Isso inclui o direito a mediador escolar, adaptações curriculares, recursos visuais e toda a rede de apoio que a criança precisar para ter acesso real ao aprendizado: não apenas físico, mas efetivo.
+
+## Por que a escola é tão desafiadora para crianças com TEA
+
+Para entender como ajudar, é preciso primeiro entender o que torna a escola tão difícil.
+
+A sala de aula convencional é um ambiente com muitos estímulos simultâneos: sons, movimentos, exigências sociais, mudanças de atividade, regras implícitas que a maioria das crianças aprende por observação. Para uma criança com TEA, processar tudo isso ao mesmo tempo pode ser exaustivo e às vezes avassalador.
+
+A falta de flexibilidade, a resistência às mudanças de rotina e as dificuldades de comunicação fazem do ingresso escolar um grande desafio. Além disso, a dificuldade em compreender normas sociais e interpretar expressões faciais pode limitar a capacidade dessas crianças de formar relacionamentos significativos na escola.
+
+Isso não significa que a escola não é o lugar da criança autista. Significa que ela precisa ser preparada para recebê-la.
+
+## O que uma boa inclusão escolar precisa ter
+
+A pesquisa científica aponta com clareza os elementos que fazem a diferença em um processo de inclusão bem-sucedido:
+
+**Adaptação curricular individualizada**
+
+O currículo precisa ser construído a partir das necessidades e potencialidades da criança. Cada aluno tem o seu processo de desenvolvimento e precisa de uma intervenção específica. A aprendizagem é singular, tendo deficiência ou não.
+
+**Comunicação alternativa e aumentativa**
+
+Para crianças com pouca ou nenhuma fala funcional, recursos como pranchas de comunicação, aplicativos e figuras são essenciais para garantir a participação nas atividades.
+
+**Organização do ambiente**
+
+Ambientes previsíveis, com rotinas visuais e baixa sobrecarga sensorial, reduzem a ansiedade da criança e criam condições para que ela aprenda com mais tranquilidade.
+
+**Formação dos professores**
+
+Um dos maiores entraves identificados pela pesquisa é a falta de preparo docente. Professores bem formados fazem toda a diferença e os pais podem e devem cobrar isso das instituições.
+
+**Mediador escolar**
+
+O mediador é o profissional que apoia a criança diretamente em sala de aula, ajudando-a a participar das atividades, manejar momentos de dificuldade e se relacionar com os colegas.
+
+## O papel dos pais no processo de inclusão
+
+Os pais não são apenas observadores da inclusão escolar do filho. São participantes ativos e muitas vezes os maiores defensores dos direitos dele.
+
+Algumas formas práticas de se envolver:
+
+- Manter diálogo contínuo com a escola: reuniões regulares com professores e coordenação ajudam a identificar dificuldades cedo e ajustar estratégias antes que pequenos problemas virem grandes obstáculos
+- Compartilhar informações da clínica com a escola: relatórios dos profissionais que acompanham a criança são ferramentas valiosas para orientar os professores
+- Preparar a criança para as transições: mudanças de turma, de escola, de professor precisam ser antecipadas e trabalhadas com a criança por meio de histórias sociais e cronogramas visuais
+- Conhecer os direitos: pais informados são pais mais seguros para negociar com as escolas
+
+## Quando a clínica e a escola trabalham juntas
+
+Um dos maiores avanços que uma família pode conquistar é quando a clínica e a escola param de funcionar em paralelo e passam a trabalhar em rede.
+
+Estudos apontam que a inclusão efetiva requer suporte especializado e a parceria entre escola e família na promoção do desenvolvimento dos alunos com TEA. Isso significa que os profissionais da clínica precisam conhecer o que acontece na escola, e os profissionais da escola precisam conhecer o que acontece na clínica.
+
+Na Ser Singular, essa articulação faz parte do trabalho. Nossos profissionais produzem relatórios voltados para o contexto escolar, orientam famílias sobre como comunicar as necessidades do filho e podem, quando necessário, participar de reuniões com a equipe pedagógica para alinhar estratégias.
+
+A criança não vive em compartimentos separados. A clínica e a escola são parte do mesmo ambiente de desenvolvimento e precisam conversar.
+
+## Sinais de que a inclusão escolar não está funcionando
+
+Alguns comportamentos podem indicar que algo precisa ser revisto no processo de inclusão:
+
+- Aumento de crises antes ou depois da escola
+- Regressão em habilidades que já estavam consolidadas
+- Recusa intensa e persistente em ir à escola
+- Queixas frequentes da escola sobre comportamentos que não aparecem em outros contextos
+- Sensação de que a criança está sobrevivendo na escola, mas não aprendendo
+
+Se você reconheceu algum desses sinais, isso não significa que a escola errou nem que seu filho não consegue ser incluído. Significa que alguma peça do processo precisa ser ajustada, e que uma avaliação especializada pode ajudar a identificar qual.
+
+## Conclusão
+
+A inclusão escolar de uma criança autista não acontece por decreto. Ela é construída com informação, com estratégias, com parceria entre família, escola e clínica, e com o reconhecimento de que cada criança tem um jeito próprio de aprender e de estar no mundo.
+
+Na Ser Singular, acreditamos que toda criança com TEA tem potencial para aprender e se desenvolver. E que o nosso papel é garantir que esse potencial seja enxergado, respeitado e impulsionado, dentro e fora do consultório.
+
+Se você tem dúvidas sobre a inclusão escolar do seu filho ou quer entender como a clínica pode apoiar esse processo, entre em contato. Estamos aqui.
+    `.trim(),
+  },
+  {
     slug: "psicopedagogia-autismo-aprendizagem",
     title: "Psicopedagogia no autismo: como ela avalia, entende e acompanha a aprendizagem do seu filho",
     excerpt: "A psicopedagogia avalia como a criança autista aprende e cria estratégias individualizadas para o seu desenvolvimento. Entenda como esse trabalho funciona na prática.",
