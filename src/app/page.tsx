@@ -98,24 +98,31 @@ const beneficios = [
 const depoimentos = [
   {
     initial: "M",
-    author: "Mãe da Mariana, 5 anos",
-    specialty: "Fonoaudiologia",
+    author: "Monique Borges",
+    specialty: "Mãe do Pietro e do Otávio",
     quote:
-      "Em poucos meses de acompanhamento, minha filha passou a falar de forma muito mais clara. A Thainá é incrível, muito dedicada e paciente. A família toda notou a diferença.",
+      "Antes de iniciar os atendimentos eu era muito insegura e com muitos medos. Com os atendimentos me sinto mais segura e tranquila para lidar com as dificuldades do dia a dia. Com certeza você foi a base para que o Pietro e o Otávio se desenvolvessem tão bem. Minha experiência se resume em acolhimento e sabedoria para levar tudo de um jeito mais leve.",
+  },
+  {
+    initial: "K",
+    author: "Kezia",
+    specialty: "Mãe do Oliver",
+    quote:
+      "Você é uma profissional maravilhosa e ajudou muito no desenvolvimento do Oliver em habilidades que ele não tinha. O tanto que ele evoluiu foi incrível, e o processo do desfralde foi muito mais leve com seu apoio. Sempre que passamos na frente da clínica ele fala da 'Tia Daia'. Obrigada pela paciência e por nos mostrar o caminho!",
   },
   {
     initial: "A",
-    author: "Mãe do Arthur, 7 anos",
-    specialty: "Psicologia · ABA",
+    author: "Aline Engel",
+    specialty: "Família do Bê",
     quote:
-      "Meu filho tem TEA e a abordagem da clínica foi transformadora. A orientação de pais me ajudou a entender como posso apoiá-lo em casa. Finalmente me sinto segura.",
+      "Desde o primeiro momento percebemos que não se tratava apenas de um atendimento — havia brilho nos olhos, ética e um diferencial: acolhimento. A Tia Daia nos deu recursos, conhecimentos e apoio para seguir essa jornada com mais leveza e segurança, comemorando conosco cada pequena conquista. Ela não apenas acolheu o Bê com amor, mas transformou nossa família.",
   },
   {
-    initial: "C",
-    author: "Mãe do Caio, 9 anos",
-    specialty: "Psicopedagogia",
+    initial: "G",
+    author: "Gabi Peron",
+    specialty: "Mãe — acompanhamento há 3 anos",
     quote:
-      "A Daiana identificou em uma avaliação o que ninguém tinha visto antes. Meu filho tem dislexia e hoje está se alfabetizando com muito mais confiança e alegria.",
+      "A Dai foi indicação de uma amiga, e desde então estamos trabalhando juntas no desenvolvimento da minha filha. É notável a dedicação, o carinho e a empatia que ela tem com as crianças! A Dai foi um divisor de águas nessa nossa missão. Indico de olhos fechados e somos gratos por tê-la em nossas vidas.",
   },
 ];
 
@@ -421,7 +428,7 @@ export default function HomePage() {
               Famílias que transformamos juntos
             </h2>
           </AnimateIn>
-          <Stagger className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <Stagger className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             {depoimentos.map((dep) => (
               <StaggerItem key={dep.author} className="bg-white rounded-[20px] p-8 border border-[#e2e8f0]">
                 <div className="text-5xl text-[#1f8c7b] leading-none mb-4 font-bold">"</div>
