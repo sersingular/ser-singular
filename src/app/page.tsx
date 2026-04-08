@@ -326,16 +326,13 @@ export default function HomePage() {
               Atendimento especializado e integrado
             </h2>
           </AnimateIn>
-          <Stagger className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <Stagger className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 items-stretch">
             {especialidades.map((esp) => (
-              <StaggerItem key={esp.title}>
+              <StaggerItem key={esp.title} className="h-full">
               <Link
                 href="/especialidades"
-                className="no-underline rounded-[16px] p-6 transition-all duration-300 cursor-pointer hover:border-[#1f8c7b] block"
-                style={{
-                  background: "rgba(255,255,255,0.07)",
-                  border: "1px solid rgba(255,255,255,0.12)",
-                }}
+                className="no-underline rounded-[16px] p-6 transition-all duration-300 cursor-pointer block h-full flex flex-col border border-white/10 hover:border-[#1f8c7b] hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(0,0,0,0.3)]"
+                style={{ background: "rgba(255,255,255,0.07)" }}
               >
                 <div className="text-[1.8rem] mb-3">{esp.emoji}</div>
                 <h3 className="text-white font-bold text-base mb-1.5">{esp.title}</h3>
