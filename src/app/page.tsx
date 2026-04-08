@@ -167,9 +167,22 @@ export default function HomePage() {
             </h1>
             </AnimateIn>
             <AnimateIn delay={0.2}>
-            <p className="text-white/75 text-lg leading-relaxed mb-8 font-light">
-              Dificuldades na fala, comportamento, aprendizagem ou desenvolvimento? Na Ser Singular, cada criança é única — e o tratamento também é.
+            <p className="text-white/75 text-lg leading-relaxed mb-6 font-light">
+              Dificuldades na fala, comportamento, aprendizagem ou desenvolvimento? Na Ser Singular, cada criança é única e o tratamento também é.
             </p>
+            <div
+              className="inline-flex items-center gap-3 px-4 py-3 rounded-[12px] mb-8"
+              style={{
+                background: "rgba(125,216,204,0.12)",
+                border: "1px solid rgba(125,216,204,0.3)",
+              }}
+            >
+              <span className="text-[#7dd8cc] text-lg leading-none">"</span>
+              <span className="text-[#7dd8cc] text-[0.92rem] font-medium italic">
+                Criar lares onde a infância seja respeitada
+              </span>
+              <span className="text-[#7dd8cc] text-lg leading-none">"</span>
+            </div>
             </AnimateIn>
             <AnimateIn delay={0.3}>
             <div className="flex gap-4 flex-wrap">
