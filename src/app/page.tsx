@@ -254,7 +254,8 @@ export default function HomePage() {
                   fill
                   className="object-cover object-top"
                   priority
-                  sizes="(max-width: 1024px) 340px, 380px"
+                  quality={90}
+                  sizes="(max-width: 1024px) 680px, 760px"
                 />
               </div>
               {/* Card */}
