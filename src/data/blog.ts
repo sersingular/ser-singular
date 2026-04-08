@@ -15,6 +15,107 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "psicopedagogia-autismo-aprendizagem",
+    title: "Psicopedagogia no autismo: como ela avalia, entende e acompanha a aprendizagem do seu filho",
+    excerpt: "A psicopedagogia avalia como a criança autista aprende e cria estratégias individualizadas para o seu desenvolvimento. Entenda como esse trabalho funciona na prática.",
+    category: "Psicopedagogia",
+    categoryColor: "#c9a84c",
+    categoryBg: "#fdf8ec",
+    emoji: "📖",
+    image: "/psicopedagogia-autismo.jpg",
+    date: "Abr 2025",
+    dateISO: "2025-04-08",
+    author: "Vanessa Marciano · Psicopedagoga",
+    content: `
+Você já percebeu que o seu filho aprende de um jeito diferente dos outros? Que ele entende melhor quando a informação vem por imagens? Que ele memoriza músicas inteiras mas tem dificuldade para copiar do quadro? Que ele sabe coisas que surpreendem qualquer adulto, mas trava em atividades que parecem simples?
+
+Isso não é falta de capacidade. É uma forma singular de aprender e é exatamente aí que a psicopedagogia entra.
+
+Para crianças com Transtorno do Espectro Autista, a aprendizagem é um território rico, complexo e muito individual. Entender esse território é o trabalho do psicopedagogo.
+
+## O que é a psicopedagogia e o que ela faz no autismo
+
+A psicopedagogia é uma área que investiga a relação da criança com a aprendizagem. Isso inclui aspectos psicológicos, pedagógicos, cognitivos e afetivos, quatro dimensões que estão diretamente envolvidas no desenvolvimento de uma criança com TEA.
+
+O que diferencia o psicopedagogo dos demais profissionais que acompanham a criança autista é o foco específico na aprendizagem. É nele que são depositadas as expectativas de avaliação e intervenção individualizada nos espaços clínicos.
+
+Dito de forma simples: enquanto o psicólogo trabalha comportamento e emoção, o fonoaudiólogo trabalha comunicação e o terapeuta ocupacional trabalha o corpo e os sentidos, o psicopedagogo olha diretamente para como essa criança aprende, quais são suas rotas de acesso ao conhecimento, onde estão os bloqueios e como transformar o aprendizado em algo acessível e significativo.
+
+## Como é feita a avaliação psicopedagógica de uma criança autista
+
+Antes de qualquer intervenção, existe um processo de avaliação cuidadoso. E esse processo começa muito antes de a criança entrar na sala.
+
+A partir da anamnese com a família é possível compreender a queixa, o diagnóstico existente e as expectativas, resgatando a história de vida do sujeito com informações do presente e do passado, trazendo detalhes sobre o desenvolvimento, as aprendizagens, as dificuldades e as interações desde o nascimento.
+
+Depois da anamnese, o psicopedagogo observa a criança diretamente, aplica instrumentos padronizados de avaliação do desenvolvimento e analisa como ela se relaciona com atividades de aprendizagem. Instrumentos como o Inventário Portage e o IDADI ajudam a mapear com precisão em quais áreas do desenvolvimento a criança está e em quais precisa de suporte mais intenso.
+
+Esse processo gera dados reais. Não suposições: dados. E são esses dados que guiam todo o plano de intervenção.
+
+## O Plano Individual de Tratamento: por que cada criança tem o seu
+
+Uma das marcas mais importantes do trabalho psicopedagógico com crianças autistas é a individualização. Não existe um protocolo único que funcione para todos.
+
+O Plano Individual de Tratamento (PIT) é elaborado de acordo com as necessidades e habilidades da criança e com as possibilidades do ambiente. Esse plano define os objetivos terapêuticos, as estratégias que serão usadas e os indicadores de progresso.
+
+Entre os métodos mais utilizados na intervenção psicopedagógica com TEA estão:
+
+**TEACCH**
+
+Tratamento e Educação de Autistas e Crianças com Limitações: uma abordagem estruturada que organiza o ambiente de aprendizagem de forma visual e previsível, respeitando o estilo cognitivo da criança autista.
+
+**PECS**
+
+Sistema de comunicação por troca de figuras que ajuda crianças com pouca ou nenhuma fala a se expressar e se engajar nas atividades de aprendizagem.
+
+**Método Fônico**
+
+Abordagem de alfabetização baseada na relação entre sons e letras, especialmente eficaz para crianças autistas que têm facilidade com padrões e regularidades.
+
+**Intervenções baseadas em ABA**
+
+Estratégias comportamentais que ajudam a ensinar habilidades específicas de forma sistemática, com registro e análise contínua dos resultados.
+
+A escolha do método não é aleatória. Ela é feita a partir do perfil real da criança, avaliado com instrumentos precisos.
+
+## Como a psicopedagogia apoia a inclusão escolar
+
+A escola é um dos maiores desafios para famílias de crianças com TEA. E também uma das maiores oportunidades de desenvolvimento.
+
+Os desafios enfrentados por alunos autistas vão além da falta de recursos materiais: a rigidez dos currículos tradicionais e a fragilidade da parceria entre escola e família são entraves para uma inclusão real. O sucesso da aprendizagem depende de um currículo funcional, construído a partir de avaliações individualizadas, que leve em conta os interesses, necessidades e potencialidades da criança.
+
+O psicopedagogo não trabalha apenas no consultório. Ele também atua como ponte entre a clínica e a escola, orientando professores, sugerindo adaptações curriculares e ajudando a equipe pedagógica a entender como aquela criança específica aprende melhor.
+
+Quando a escola e a clínica falam a mesma língua, a criança progride com muito mais consistência.
+
+## Quando buscar a psicopedagogia para o seu filho
+
+A psicopedagogia pode ser indicada em diferentes momentos da vida da criança com TEA. Alguns sinais que sugerem a necessidade de avaliação:
+
+- Dificuldade para se concentrar em atividades de aprendizagem
+- Atraso na aquisição da leitura ou escrita
+- Resistência intensa a atividades escolares
+- Dificuldade para seguir sequências e rotinas de aprendizagem
+- Baixo desempenho escolar que não é explicado apenas pelo diagnóstico
+- Dificuldade para generalizar o que aprendeu em um contexto para outros contextos
+
+A avaliação psicopedagógica pode ser feita antes, durante ou após o diagnóstico de TEA. Ela não substitui o diagnóstico médico, mas complementa e enriquece a compreensão sobre como aquela criança aprende.
+
+## O que esperar do acompanhamento psicopedagógico na Ser Singular
+
+Na Ser Singular, o acompanhamento psicopedagógico é construído a partir de dados reais sobre o desenvolvimento de cada criança. Nada de achismo: cada etapa é planejada, executada e avaliada com base em instrumentos validados e em observação clínica cuidadosa.
+
+Os pais recebem devolutivas periódicas com informações claras sobre o que está sendo trabalhado, como a criança está evoluindo e o que pode ser praticado em casa para reforçar os avanços. A família não fica de fora do processo, ela faz parte dele.
+
+Porque aprender não é um evento que acontece só no consultório. É um processo que se constrói em cada interação, em cada rotina, em cada desafio superado no dia a dia.
+
+## Conclusão
+
+A psicopedagogia não enxerga a criança autista pelo que ela não consegue fazer. Ela parte do que a criança já sabe, do jeito como ela aprende, das rotas que fazem sentido para ela e constrói a partir daí.
+
+Se o seu filho tem dificuldades de aprendizagem ou você quer entender melhor como ele aprende, entre em contato com a Ser Singular. Nossa equipe está pronta para fazer uma avaliação individualizada e mostrar, com dados reais, os caminhos para o desenvolvimento do seu filho.
+    `.trim(),
+  },
+  {
     slug: "familia-tratamento-autismo",
     title: "O papel da família no tratamento do autismo: por que o seu envolvimento faz toda a diferença",
     excerpt: "A família é parte essencial do tratamento de crianças autistas. Entenda como o seu envolvimento impacta diretamente o desenvolvimento do seu filho.",
