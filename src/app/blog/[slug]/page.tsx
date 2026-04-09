@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { notFound } from "next/navigation";
+import ArticleActions from "@/components/ArticleActions";
 import { blogPosts, getPostBySlug, getAllSlugs } from "@/data/blog";
 
 interface Props {
@@ -142,12 +143,17 @@ export default async function BlogPostPage({ params }: Props) {
             </div>
           )}
 
-          <article className="bg-white rounded-[24px] p-8 lg:p-10 border border-[#e2e8f0] mb-10">
+          <article className="bg-white rounded-[24px] p-8 lg:p-10 border border-[#e2e8f0] mb-6">
             <p className="text-lg text-[#5a6a7e] leading-relaxed mb-6 font-light italic border-l-4 border-[#1f8c7b] pl-4">
               {post.excerpt}
             </p>
             <div>{renderContent(post.content)}</div>
           </article>
+
+          {/* Curtir & Compartilhar */}
+          <div className="bg-white rounded-[24px] px-8 py-6 border border-[#e2e8f0] mb-6">
+            <ArticleActions slug={post.slug} title={post.title} />
+          </div>
 
           {/* CTA */}
           <div
