@@ -15,10 +15,12 @@ export default function ArticleActions({ slug, title }: ArticleActionsProps) {
   const [count, setCount] = useState(0);
   const [animating, setAnimating] = useState(false);
   const [copied, setCopied] = useState(false);
+  const [pageUrl, setPageUrl] = useState("");
 
   useEffect(() => {
     setLiked(localStorage.getItem(storageKey) === "1");
     setCount(parseInt(localStorage.getItem(countKey) || "0", 10));
+    setPageUrl(window.location.href);
   }, [storageKey, countKey]);
 
   function handleLike() {
@@ -32,21 +34,20 @@ export default function ArticleActions({ slug, title }: ArticleActionsProps) {
     setTimeout(() => setAnimating(false), 300);
   }
 
-  const pageUrl = typeof window !== "undefined" ? window.location.href : "";
-  const encodedUrl = encodeURIComponent(pageUrl);
-  const encodedTitle = encodeURIComponent(title);
-
   function handleInstagram() {
     navigator.clipboard.writeText(pageUrl).then(() => {
       setCopied(true);
-      setTimeout(() => setCopied(false), 2000);
+      setTimeout(() => setCopied(false), 2500);
     });
   }
+
+  const encodedUrl = encodeURIComponent(pageUrl);
+  const encodedText = encodeURIComponent(`${title} - `);
 
   const shareButtons = [
     {
       label: "WhatsApp",
-      href: `https://wa.me/?text=${encodedTitle}%20${encodedUrl}`,
+      href: `https://api.whatsapp.com/send?text=${encodedText}${encodedUrl}`,
       color: "#25D366",
       icon: (
         <svg viewBox="0 0 24 24" className="w-4 h-4 fill-current">
@@ -56,7 +57,7 @@ export default function ArticleActions({ slug, title }: ArticleActionsProps) {
     },
     {
       label: "Facebook",
-      href: `https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}`,
+      href: `https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}&quote=${encodeURIComponent(title)}`,
       color: "#1877F2",
       icon: (
         <svg viewBox="0 0 24 24" className="w-4 h-4 fill-current">
@@ -66,7 +67,7 @@ export default function ArticleActions({ slug, title }: ArticleActionsProps) {
     },
     {
       label: "LinkedIn",
-      href: `https://www.linkedin.com/sharing/share-offsite/?url=${encodedUrl}`,
+      href: `https://www.linkedin.com/sharing/share-offsite/?url=${encodedUrl}&title=${encodeURIComponent(title)}`,
       color: "#0A66C2",
       icon: (
         <svg viewBox="0 0 24 24" className="w-4 h-4 fill-current">
@@ -141,9 +142,8 @@ export default function ArticleActions({ slug, title }: ArticleActionsProps) {
               className="flex items-center justify-center w-9 h-9 rounded-[10px] transition-all duration-200 hover:-translate-y-0.5"
               style={{
                 color: btn.color,
-                background: `${btn.color}12`,
-                border: `1px solid ${btn.color}30`,
-                backdropFilter: "blur(8px)",
+                background: `${btn.color}18`,
+                border: `1px solid ${btn.color}35`,
               }}
             >
               {btn.icon}
@@ -158,9 +158,8 @@ export default function ArticleActions({ slug, title }: ArticleActionsProps) {
               className="flex items-center justify-center w-9 h-9 rounded-[10px] transition-all duration-200 hover:-translate-y-0.5"
               style={{
                 color: "#E1306C",
-                background: "#E1306C12",
-                border: "1px solid #E1306C30",
-                backdropFilter: "blur(8px)",
+                background: "#E1306C18",
+                border: "1px solid #E1306C35",
               }}
             >
               <svg viewBox="0 0 24 24" className="w-4 h-4 fill-current">
@@ -169,7 +168,7 @@ export default function ArticleActions({ slug, title }: ArticleActionsProps) {
             </button>
             {copied && (
               <span
-                className="absolute -top-8 left-1/2 -translate-x-1/2 text-xs px-2 py-1 rounded-[6px] whitespace-nowrap text-white font-medium shadow-md"
+                className="absolute -top-9 left-1/2 -translate-x-1/2 text-xs px-2.5 py-1.5 rounded-[8px] whitespace-nowrap text-white font-medium shadow-lg z-10"
                 style={{ background: "#143a62" }}
               >
                 Link copiado!
