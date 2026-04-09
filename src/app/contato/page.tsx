@@ -40,7 +40,7 @@ export default function ContatoPage() {
                 {
                   icon: "🕐",
                   title: "Horário de atendimento",
-                  desc: "Segunda a Sexta · 8h às 18h",
+                  desc: "Seg a Sex · 07:15 às 11:45 e 13:30 às 17:45",
                 },
               ].map((item) => (
                 <div key={item.title} className="flex gap-4 items-start p-5 bg-white rounded-[16px] border border-[#e2e8f0]">
