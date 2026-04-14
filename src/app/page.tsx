@@ -281,15 +281,9 @@ export default function HomePage() {
                   boxShadow: "0 8px 32px rgba(20,58,98,0.18), inset 0 1px 0 rgba(255,255,255,0.9)",
                 }}
               >
-                <div
-                  className="w-11 h-11 rounded-full flex items-center justify-center text-white font-bold flex-shrink-0 text-lg"
-                  style={{ background: "linear-gradient(135deg, #143a62, #1f8c7b)" }}
-                >
-                  D
-                </div>
                 <div>
                   <strong className="block text-[0.88rem] text-[#143a62] font-bold">Daiana Plauth</strong>
-                  <span className="text-[0.72rem] text-[#5a6a7e]">Psicóloga Infantil</span>
+                  <span className="text-[0.72rem] text-[#5a6a7e]">Especialista em TEA e TDAH</span>
                 </div>
               </div>
             </div>
