@@ -79,7 +79,7 @@ export default function Footer() {
                 />
               </div>
               <p className="text-white/55 text-sm leading-relaxed">
-                Clínica especializada em desenvolvimento infantil em Medianeira, Paraná.
+                Clínica especializada em desenvolvimento infantil, autismo (TEA) e TDAH em Medianeira, Paraná.
               </p>
             </div>
 
