@@ -273,8 +273,8 @@ Se o seu filho apresenta ecolalia ou atrasos na linguagem, entre em contato com 
   },
   {
     slug: "terapia-ocupacional-autismo-atividades-vida-diaria",
-    title: "Como a Terapia Ocupacional mede a evolução da criança autista nas atividades do dia a dia",
-    excerpt: "A Terapia Ocupacional ajuda crianças autistas a ganhar autonomia nas tarefas do dia a dia e mensura cada avanço com dados reais. Entenda como esse trabalho funciona.",
+    title: "Como a Terapia Ocupacional mede a evolução da criança",
+    excerpt: "A Terapia Ocupacional ajuda crianças autistas a desenvolver autonomia e independência nas atividades do dia a dia e acompanha cada avanço por meio de dados concretos. Entenda como esse processo acontece.",
     category: "Terapia Ocupacional",
     categoryColor: "#1f8c7b",
     categoryBg: "#e8f5f3",
@@ -284,23 +284,23 @@ Se o seu filho apresenta ecolalia ou atrasos na linguagem, entre em contato com 
     dateISO: "2025-04-08",
     author: "Romelli Savane · Terapeuta Ocupacional",
     content: `
-Vestir uma camiseta. Escovar os dentes. Comer com o garfo. Amarrar o tênis. Para a maioria das crianças, essas tarefas acontecem quase que naturalmente ao longo do desenvolvimento. Para crianças com autismo, cada uma delas pode representar um desafio real e conquistá-las, uma vitória enorme.
+Vestir uma camiseta. Escovar os dentes. Comer com o garfo e faca. Amarrar o tênis. Para a maioria das crianças, essas habilidades se desenvolvem de forma natural ao longo do tempo. Para crianças com autismo, cada uma dessas tarefas pode representar um desafio significativo, e conquistá-las é uma grande vitória.
 
-É exatamente esse território que a Terapia Ocupacional habita. E o que diferencia esse trabalho de uma simples sequência de exercícios é o que poucos pais sabem: tudo é medido, tudo é registrado e tudo é ajustado com base em dados reais.
+É exatamente nesse contexto que a Terapia Ocupacional atua. E o que diferencia esse trabalho de uma simples sequência de atividades é algo que muitos pais ainda não conhecem: cada intervenção é baseada em uma avaliação cuidadosa, que integra a observação clínica, a aplicação de instrumentos padronizados e a escuta atenta das principais queixas e demandas da família. A partir dessa avaliação, é possível compreender as reais necessidades da criança e acompanhar sua evolução de forma precisa e individualizada.
 
 Sem achismo. Com ciência.
 
 ## O que é a Terapia Ocupacional e qual o seu foco no autismo
 
-A Terapia Ocupacional (TO) é uma área da saúde que tem como objetivo promover a autonomia e a independência das pessoas nas suas atividades cotidianas. No contexto do autismo, esse trabalho é especialmente relevante porque crianças com TEA frequentemente apresentam desafios em múltiplas áreas que impactam o dia a dia: coordenação motora, regulação sensorial, planejamento de sequências e habilidades de autocuidado.
+A Terapia Ocupacional (TO) é uma área da saúde que tem como objetivo promover a autonomia e a independência das pessoas nas suas atividades cotidianas. No contexto do autismo, esse trabalho é especialmente relevante porque crianças com TEA frequentemente apresentam desafios em múltiplas áreas que impactam o dia a dia: coordenação motora, processamento e regulação sensorial, planejamento de sequências e habilidades de autocuidado.
 
-O terapeuta ocupacional avalia as habilidades funcionais, comportamentais e sensoriais da criança, identificando dificuldades específicas em áreas como coordenação motora, interação social, comunicação e autorregulação emocional. A partir dessa análise, desenvolve intervenções personalizadas para ajudar a criança a adquirir independência nas atividades diárias.
+O terapeuta ocupacional avalia as habilidades funcionais, comportamentais e sensoriais da criança, incluindo a identificação do seu perfil sensorial, compreendendo como ela percebe, processa e responde aos estímulos do ambiente, o que permite identificar dificuldades específicas em áreas como coordenação motora, interação social, comunicação e autorregulação emocional. A partir dessa análise, desenvolve intervenções personalizadas, favorecendo a aquisição de independência e maior participação nas atividades diárias.
 
-O foco não é apenas o que a criança ainda não consegue fazer. É identificar o que ela já faz, como ela faz e qual é o próximo passo possível para ampliar a sua participação no mundo.
+O foco não é apenas o que a criança ainda não consegue fazer, mas identificar o que ela já faz, como ela faz e qual é o próximo passo possível para ampliar a sua participação no mundo.
 
 ## O que são as Atividades de Vida Diária (AVDs)
 
-As Atividades de Vida Diária, conhecidas pela sigla AVD, são todas as tarefas que uma pessoa realiza no cotidiano para cuidar de si mesma e funcionar com autonomia. Elas se dividem em duas categorias principais:
+As Atividades de Vida Diária, conhecidas pela sigla AVDs, são as tarefas que uma pessoa realiza no cotidiano para cuidar de si mesma e funcionar com autonomia. Elas se dividem em duas categorias principais:
 
 **AVDs Básicas**
 
@@ -321,33 +321,33 @@ Tarefas mais complexas do cotidiano:
 - Deslocamento dentro de casa e em ambientes conhecidos
 - Uso de recursos de comunicação e tecnologia
 
-Para crianças com TEA, dificuldades nessas áreas costumam ter raízes sensoriais, motoras e cognitivas, e é por isso que o trabalho da terapia ocupacional vai muito além de simplesmente treinar a tarefa.
+Para crianças com TEA, dificuldades nessas áreas costumam ter raízes sensoriais, motoras e cognitivas. Por isso, o trabalho da Terapia Ocupacional vai muito além de simplesmente treinar a tarefa, buscando favorecer a autonomia e ampliar a participação da criança no seu dia a dia.
 
 ## Por que crianças autistas têm dificuldades nas AVDs
 
-Antes de intervir, o terapeuta ocupacional investiga o que está por trás da dificuldade. E as causas são sempre múltiplas e individuais.
+Antes de intervir, o terapeuta ocupacional investiga o que está por trás das dificuldades, considerando que as causas são múltiplas e individuais.
 
-Uma criança que se recusa a usar determinadas roupas pode estar respondendo a uma hipersensibilidade tátil: o toque do tecido é genuinamente desconfortável para ela. Uma criança que não consegue usar o garfo pode ter dificuldades de coordenação motora fina ou de planejamento motor. Uma criança que não aceita variedade de alimentos pode estar respondendo a alterações sensoriais gustativas e olfativas, não a frescura.
+A recusa em usar determinadas roupas pode estar relacionada à hipersensibilidade tátil: o toque do tecido pode ser genuinamente desconfortável. Dificuldade para usar talheres podem envolver alterações de coordenação motora fina ou de planejamento motor. Já a seletividade alimentar pode estar associada a questões sensoriais gustativas e olfativas, e não à frescura.
 
-Quando os aspectos motores, sensoriais, emocionais e cognitivos das atividades são entendidos em profundidade, a intervenção se torna muito mais precisa e os resultados aparecem muito mais rápido.
+Quando os aspectos motores, sensoriais, emocionais e cognitivos das atividades são entendidos em profundidade, a intervenção se torna mais precisa e os resultados tendem a ser mais consistentes e significativos.
 
-## Como a TO mensura a evolução: sem achismo, com dados
+## Como a TO mensura a evolução: com dados, sem achismos
 
-Um dos pilares do trabalho de terapia ocupacional com crianças autistas é a mensuração contínua do progresso.
+Um dos pilares do trabalho de terapia ocupacional com crianças autistas é o acompanhamento contínuo do progresso.
 
-Cada meta estabelecida no plano de tratamento é específica, observável e mensurável. Em vez de "melhorar a alimentação", o objetivo pode ser "aceitar dois novos alimentos sólidos com textura macia nas próximas quatro semanas". Em vez de "ficar mais independente no banho", o objetivo pode ser "realizar as etapas de lavar o cabelo com suporte verbal apenas, sem apoio físico, por três sessões consecutivas".
+As metas estabelecidas no plano de tratamento são específicas, observáveis e mensuráveis. Em vez de "melhorar a alimentação", o objetivo pode ser "aceitar dois novos alimentos sólidos com textura macia nas próximas quatro semanas". Em vez de "ficar mais independente no banho", o objetivo pode ser "realizar as etapas de lavar o cabelo com suporte verbal apenas, sem apoio físico, por três sessões consecutivas".
 
 Essa precisão não é burocracia. É o que permite saber, com honestidade, se o tratamento está funcionando e onde precisa ser ajustado.
 
-A integração do método ABA com a terapia ocupacional garante que os progressos sejam mensuráveis e que cada intervenção seja ajustada com base no desempenho real do paciente. O registro sistemático de dados em cada sessão cria um histórico concreto de evolução que pode ser compartilhado com a família, a escola e os outros profissionais que acompanham a criança.
+A integração do método ABA com a terapia ocupacional garante progressos mensuráveis e intervenções ajustadas com base no desempenho real do paciente. O registro sistemático de dados em cada sessão cria um histórico concreto de evolução que pode ser compartilhado com a família, a escola e os outros profissionais que acompanham a criança.
 
 ## O papel das brincadeiras no trabalho terapêutico
 
-Uma das características mais marcantes da terapia ocupacional com crianças é que o principal instrumento terapêutico é a brincadeira, mas uma brincadeira com intenção muito clara.
+Uma das características mais marcantes da terapia ocupacional com crianças é que o principal instrumento terapêutico é o brincar, uma das ocupações mais importantes da infância, sendo utilizado de forma significativa e com intencionalidade terapêutica clara.
 
-Atividades lúdicas são escolhidas e estruturadas para trabalhar, ao mesmo tempo, a coordenação motora, o planejamento de sequências, a regulação sensorial e a tolerância à frustração. A criança não percebe que está treinando, ela está brincando. Mas o terapeuta está observando, registrando e ajustando cada detalhe para garantir que o desafio seja adequado ao momento de desenvolvimento daquela criança específica.
+Atividades lúdicas são escolhidas e estruturadas para trabalhar, ao mesmo tempo, a coordenação motora, o planejamento de sequências, a regulação sensorial e a tolerância à frustração. Para a criança é apenas uma brincadeira, mas por trás, há treino e desenvolvimento acontecendo. O terapeuta está observando, registrando e ajustando cada detalhe para garantir que o desafio seja adequado ao momento de desenvolvimento de cada criança.
 
-Isso torna a terapia motivadora para a criança e eficaz para os objetivos clínicos.
+Isso torna a terapia mais motivadora para a criança e potencializa os resultados terapêuticos.
 
 ## O que as famílias podem fazer em casa
 
@@ -376,6 +376,7 @@ Essas adaptações não mimam a criança: elas criam as condições para que ela
 Alguns sinais que indicam que uma avaliação de terapia ocupacional pode ser útil:
 
 - Dificuldade persistente para aceitar variedade de alimentos
+- Irritabilidade ou choro frequente diante de atividades simples ou em situações do dia a dia, mesmo sem causa aparente
 - Resistência intensa a atividades de higiene (banho, escovar dentes, cortar unhas)
 - Dificuldade para se vestir ou despir de forma independente
 - Coordenação motora fina ou grossa visivelmente abaixo do esperado para a idade
@@ -386,19 +387,19 @@ A avaliação de terapia ocupacional pode acontecer antes, durante ou após o di
 
 ## Conclusão
 
-A Terapia Ocupacional no autismo não é sobre fazer a criança se comportar ou se encaixar nos padrões do mundo. É sobre dar a ela as ferramentas para participar do mundo de forma mais confortável, autônoma e significativa, do jeito dela.
+A Terapia Ocupacional no autismo não é sobre fazer a criança se comportar ou se encaixar nos padrões do mundo. É sobre oferecer à criança ferramentas para participar do mundo de forma mais confortável, autônoma e significativa, do jeito dela.
 
-E tudo isso é feito com rigor, com dados e com respeito profundo pela singularidade de cada criança.
+E tudo isso é feito com rigor, dados e respeito profundo pela singularidade de cada criança.
 
-Na Ser Singular, o trabalho de terapia ocupacional é construído sobre avaliação individualizada, metas mensuráveis e acompanhamento contínuo. Porque evolução real não se sente: ela se mede.
+Na Ser Singular, o trabalho em Terapia Ocupacional é construído sobre avaliação individualizada, metas mensuráveis e acompanhamento contínuo. Porque a evolução real não se sente: ela se mede.
 
-Entre em contato com a nossa equipe e saiba como podemos apoiar o desenvolvimento do seu filho nas atividades do dia a dia.
+Entre em contato com nossa equipe e saiba como podemos apoiar o desenvolvimento do seu filho nas atividades do dia a dia.
     `.trim(),
   },
   {
     slug: "integracao-sensorial-autismo",
     title: "Integração sensorial no autismo: por que seu filho reage assim a sons, texturas e luzes",
-    excerpt: "Entenda por que crianças autistas reagem de forma intensa a sons, texturas e luzes e como a Terapia Ocupacional atua sobre o processamento sensorial do TEA.",
+    excerpt: "Entenda por que crianças autistas reagem de forma intensa a sons, texturas e luzes e como a Terapia Ocupacional atua no processamento sensorial no TEA.",
     category: "Terapia Ocupacional",
     categoryColor: "#1f8c7b",
     categoryBg: "#e8f5f3",
@@ -408,13 +409,13 @@ Entre em contato com a nossa equipe e saiba como podemos apoiar o desenvolviment
     dateISO: "2025-04-08",
     author: "Romelli Savane · Terapeuta Ocupacional",
     content: `
-Você já se perguntou por que seu filho entra em crise quando ouve o liquidificador? Por que ele não suporta determinadas texturas de roupa? Por que ele faz birra na hora do banho, evita locais movimentados ou, ao contrário, parece precisar de estímulos físicos intensos o tempo todo?
+Você já se perguntou por que seu filho entra em crise quando ouve o liquidificador? Por que ele não suporta determinadas texturas de roupa? Por que faz birra na hora do banho, evita locais movimentados ou, ao contrário, parece precisar de estímulos físicos intensos o tempo todo?
 
 Essas reações não são teimosia. Não são falta de limites. E não são "só coisa de autismo" sem explicação.
 
-Existe uma razão neurológica muito concreta para isso: disfunção do processamento sensorial.
+Existe uma razão neurológica muito concreta para isso: alterações do processamento sensorial.
 
-Entender o que está acontecendo no sistema nervoso do seu filho é o primeiro passo para ajudá-lo a navegar o mundo com mais conforto e autonomia.
+Entender o que está acontecendo no sistema nervoso do seu filho é o primeiro passo para ajudá-lo a compreender e lidar melhor com o mundo ao seu redor, com mais conforto e autonomia.
 
 ## O que é o processamento sensorial e por que ele é diferente no autismo
 
@@ -422,17 +423,27 @@ O processamento sensorial é o processo neurológico pelo qual o cérebro recebe
 
 Em crianças com desenvolvimento típico, esse processo acontece de forma relativamente automática. O cérebro filtra o que é relevante, ignora o que é ruído de fundo e responde de forma proporcional ao estímulo.
 
-No TEA, esse filtro funciona de forma diferente. O cérebro pode amplificar estímulos que para outros seriam neutros, ou ao contrário, pode precisar de estímulos muito mais intensos para registrá-los. A consequência prática aparece em comportamentos que muitos pais vivenciam no dia a dia e que muitas vezes não conseguem explicar.
+No TEA, esse filtro funciona de forma diferente. O cérebro pode amplificar estímulos que para outros seriam neutros, ou ao contrário, pode precisar de estímulos muito mais intensos para registrá-los. Esse funcionamento está relacionado ao limiar neurológico, que corresponde ao nível de sensibilidade da criança aos estímulos sensoriais.
+
+Além disso, muitas crianças com TEA apresentam dificuldades de autorregulação, ou seja, na capacidade de organizar e modular suas respostas diante de estímulos. Isso pode resultar em reações como irritabilidade, evitação, busca constante por estímulos ou dificuldade em manter-se engajado nas atividades.
+
+A consequência prática aparece em comportamentos que muitos pais vivenciam no dia a dia e que, muitas vezes, não conseguem explicar.
 
 O DSM-5 já reconhece oficialmente as alterações sensoriais como parte do quadro do TEA. Estudos indicam que a presença de dificuldades sensoriais em crianças autistas pode variar entre 70% e 90% dos casos, o que significa que, para a grande maioria das crianças no espectro, o mundo sensorial é literalmente percebido de forma diferente.
 
 ## Hipersensibilidade e hipossensibilidade: entenda as duas faces
 
-O processamento sensorial atípico se manifesta principalmente de duas formas:
+O processamento sensorial atípico se manifesta principalmente de duas formas, relacionadas ao limiar neurológico da criança.
 
-**Hipersensibilidade**
+O limiar neurológico refere-se à quantidade de estímulo necessária para que o sistema nervoso perceba e responda a uma informação sensorial. Algumas crianças apresentam limiar baixo (percebem os estímulos com muita facilidade), enquanto outras apresentam limiar alto (precisam de estímulos mais intensos para perceber).
 
-Quando a criança sente demais os estímulos. Sons parecem mais altos, luzes mais fortes, toques mais intensos, mesmo quando são completamente normais para quem está ao lado. Crianças com hipersensibilidade podem:
+**Hipersensibilidade (limiar neurológico baixo)**
+
+Na hipersensibilidade, a criança percebe os estímulos de forma mais intensa e rápida. Sons podem parecer mais altos, luzes mais fortes e toques desconfortáveis, mesmo quando são considerados normais para outras pessoas.
+
+Nesses casos, é comum observar respostas de esquiva ou defesa sensorial, como forma de proteção.
+
+Crianças com hipersensibilidade podem:
 
 - Recusar alimentos por causa de textura ou cheiro
 - Entrar em crise em ambientes barulhentos ou com muita gente
@@ -440,64 +451,69 @@ Quando a criança sente demais os estímulos. Sons parecem mais altos, luzes mai
 - Ter dificuldade para usar determinadas roupas ou calçados
 - Se incomodar com sons do cotidiano como secador, aspirador ou fogos de artifício
 
-**Hipossensibilidade**
+**Hipossensibilidade (limiar neurológico alto)**
 
-O oposto: a criança precisa de estímulos muito mais intensos para registrar sensações. Ela pode parecer não sentir dor quando se machuca, buscar constantemente movimentos giratórios ou de impacto, morder objetos ou pessoas, precisar de abraços fortes para se regular ou estar sempre em movimento como forma de estimulação.
+Na hipossensibilidade, a criança precisa de estímulos mais intensos para perceber e responder ao ambiente. Pode parecer não sentir dor quando se machuca ou não perceber estímulos que outras crianças notariam facilmente. Nesse caso, é comum observar comportamentos de busca sensorial, como forma de aumentar a entrada de estímulos e favorecer a organização do sistema nervoso.
 
-Uma mesma criança pode apresentar hipersensibilidade em alguns sistemas sensoriais e hipossensibilidade em outros, o que torna o perfil sensorial de cada criança único e exige avaliação individualizada.
+Crianças com hipossensibilidade podem:
+
+- Buscar movimentos intensos (girar, pular, correr constantemente)
+- Morder objetos ou pessoas
+- Estar frequentemente em movimento
+- Ter dificuldade em manter atenção sem estímulos mais intensos
+
+Essa busca por estímulos está diretamente relacionada à necessidade de autorregulação, ou seja, à tentativa do corpo de se organizar internamente.
+
+**Integração dos dois padrões**
+
+Uma mesma criança pode apresentar hipersensibilidade em alguns sistemas sensoriais e hipossensibilidade em outros, o que torna o perfil sensorial único e reforça a importância de avaliação individualizada.
+
+Além disso, esses padrões podem se manifestar de diferentes formas: busca sensorial, esquiva sensorial, sensibilidade e exploração (baixo registro).
 
 ## Os sete sentidos que a terapia ocupacional trabalha
 
-Quando falamos em processamento sensorial, a maioria das pessoas pensa nos cinco sentidos clássicos. Mas a terapia ocupacional trabalha com sete sistemas sensoriais, dois deles menos conhecidos e igualmente fundamentais:
+Quando falamos em processamento sensorial, a maioria das pessoas pensa nos cinco sentidos clássicos. No entanto, a terapia ocupacional considera sete sistemas sensoriais, sendo dois deles menos conhecidos e igualmente fundamentais para o desenvolvimento infantil.
 
-**Visual, auditivo, olfativo, gustativo e tátil** são os cinco sentidos tradicionais, que podem estar alterados em crianças com TEA de formas muito específicas.
+**Visual, auditivo, olfativo, gustativo e tátil** são os cinco sentidos tradicionais, que podem estar alterados em crianças com TEA, impactando diretamente comportamentos do dia a dia, como alimentação, tolerância a sons e interação com o ambiente.
 
-**Proprioceptivo** é o sentido que nos diz onde o nosso corpo está no espaço. Crianças com alteração proprioceptiva podem ter dificuldade de controlar a força dos movimentos, tropeçar com frequência ou buscar pressão intensa no corpo como forma de autorregulação.
+**Proprioceptivo** integra o sistema de base, informa o cérebro onde o corpo está no espaço e como ele se movimenta. Alterações nesse sistema podem levar a dificuldades no controle da força, movimentos desajeitados, tropeços frequentes ou busca por pressão intensa (como apertar, empurrar ou se jogar) muitas vezes como estratégia de autorregulação.
 
-**Vestibular** é o sentido do equilíbrio e do movimento. Alterações nesse sistema podem fazer a criança evitar balanços, ou ao contrário, buscar movimentos rotatórios de forma compulsiva.
+**Vestibular** é o sistema responsável pelo equilíbrio e pela percepção do movimento. Alterações podem fazer com que a criança evite balanços e movimentos ou, ao contrário, busque giros e movimentos intensos de forma repetitiva.
 
-A avaliação precisa de como cada um desses sistemas está funcionando na criança é o ponto de partida para qualquer intervenção de integração sensorial.
-
-## Como funciona a Terapia de Integração Sensorial de Ayres
-
-A Integração Sensorial (IS) é uma abordagem desenvolvida pela terapeuta ocupacional e neurocientista americana Jean Ayres nas décadas de 1950 e 1960. Reconhecida pelo Conselho Federal de Fisioterapia e Terapia Ocupacional, é considerada uma prática baseada em evidências científicas para o tratamento do autismo.
-
-O objetivo não é eliminar a sensibilidade da criança. É ajudar o sistema nervoso a processar os estímulos de forma mais organizada, de modo que a criança consiga responder ao ambiente sem ser avassalada por ele.
-
-Na prática, as sessões acontecem em um espaço lúdico equipado com balanços, redes, colchões, piscinas de bolinhas e materiais de diferentes texturas e pesos. As atividades parecem brincadeiras, e de certa forma são. Mas cada uma é escolhida estrategicamente pelo terapeuta para desafiar o sistema sensorial da criança de forma gradual e dentro da sua janela de tolerância.
-
-A abordagem é realizada por terapeutas ocupacionais com certificação específica em IS de Ayres, que utilizam avaliações padronizadas para identificar o perfil sensorial da criança antes de iniciar qualquer intervenção. Nada é feito no achismo: cada estratégia é baseada em dados reais sobre como aquela criança processa o mundo.
+Compreender como cada um desses sistemas funciona na criança é essencial para identificar seu perfil sensorial e direcionar intervenções mais eficazes, o que só é possível a partir de uma avaliação cuidadosa e individualizada.
 
 ## O que muda na vida da criança com o tratamento
 
-Quando a integração sensorial começa a funcionar, as mudanças aparecem primeiro nas situações do dia a dia:
+Quando a integração sensorial começa a funcionar de forma mais organizada, o cérebro da criança passa a perceber, modular e responder melhor aos estímulos do ambiente. Isso se reflete diretamente em comportamentos mais regulados e maior participação nas atividades do dia a dia:
 
-- A criança passa a tolerar mais alimentos no prato
-- Consegue permanecer em ambientes movimentados por mais tempo sem entrar em crise
-- Aceita toque com mais tranquilidade, inclusive abraços e carinho
-- Reduz comportamentos de busca sensorial intensa (morder, bater cabeça, girar)
-- Fica mais regulada emocionalmente ao longo do dia
-- Consegue se concentrar melhor em atividades de aprendizagem
+- A criança passa a tolerar melhor diferentes alimentos e texturas
+- Consegue permanecer em ambientes com mais estímulos sem entrar em sobrecarga
+- Aceita o toque com mais tranquilidade, incluindo abraços e contato físico
+- Reduz comportamentos de busca ou defesa sensorial intensa (morder, bater cabeça, girar)
+- Apresenta maior regulação emocional ao longo do dia
+- Consegue manter atenção por mais tempo em atividades de aprendizagem
 
-Esses ganhos impactam diretamente na participação social, na escola e na rotina familiar. Uma criança mais regulada sensorialmente é uma criança mais disponível para aprender, interagir e crescer.
+Esses ganhos estão diretamente ligados à melhora na modulação e organização sensorial, impactando a participação social, o desempenho escolar e a rotina familiar. Uma criança mais regulada sensorialmente é uma criança mais disponível para aprender, interagir e se desenvolver.
 
 ## Como a Ser Singular avalia e trata o processamento sensorial
 
-Na Ser Singular, o trabalho de terapia ocupacional começa por uma avaliação sensorial individualizada, que mapeia com precisão como o sistema nervoso da criança está respondendo a cada tipo de estímulo.
+Na Ser Singular, o trabalho de terapia ocupacional começa por uma avaliação sensorial individualizada, que identifica com precisão o perfil sensorial da criança, compreendendo como o seu sistema nervoso percebe, organiza e responde aos diferentes estímulos do ambiente.
 
-A partir dessa avaliação, o terapeuta elabora um plano de intervenção com metas claras e mensuráveis. O progresso é monitorado continuamente e o plano ajustado sempre que os dados indicam que alguma estratégia precisa ser revista.
+Além do perfil sensorial, são utilizados instrumentos padronizados e observações clínicas para avaliar outras áreas fundamentais do desenvolvimento, como a práxis (planejamento, ideação e execução), equilíbrio, coordenação motora ampla e fina e o desempenho funcional em atividades cotidianas.
 
-Os pais recebem orientações práticas sobre como adaptar o ambiente doméstico e como responder às reações sensoriais da criança de forma a apoiar a regulação, não ampliar a desregulação.
+A partir dessa avaliação, o terapeuta elabora um plano de intervenção com metas claras, funcionais e mensuráveis, direcionadas à melhora da modulação sensorial, autorregulação e da participação nas atividades do dia a dia. O progresso é monitorado continuamente e o plano ajustado sempre que necessário, com base em dados e na evolução da criança.
 
-Porque entender o sistema sensorial do seu filho não é só uma questão clínica. É uma forma de olhar para ele com mais compreensão, paciência e estratégia.
+Os pais recebem orientações práticas sobre como adaptar o ambiente e compreender melhor as respostas sensoriais da criança, favorecendo a regulação e evitando situações que possam intensificar a desregulação.
+
+Porque entender o sistema sensorial do seu filho não é só uma questão clínica, mas uma forma de olhar para ele com mais compreensão, paciência e estratégia.
 
 ## Conclusão
 
-Se o seu filho reage de forma intensa a estímulos que parecem comuns para os outros, ele não está exagerando. Ele está processando o mundo de uma forma diferente e isso merece ser avaliado com cuidado, não ignorado ou minimizado.
+Se o seu filho reage de forma intensa a estímulos que parecem comuns para os outros, ele não está exagerando, ele está respondendo da forma que o seu sistema nervoso consegue.
 
-A terapia de integração sensorial oferece um caminho baseado em ciência para ajudar seu filho a se sentir mais confortável no próprio corpo e no mundo ao redor.
+A terapia ocupacional com abordagem em integração sensorial oferece um caminho baseado em ciência para ajudar seu filho a se sentir mais confortável no próprio corpo e no mundo ao seu redor.
 
-Quer saber se o seu filho tem alterações no processamento sensorial? Entre em contato com a Ser Singular. Nossa equipe de terapia ocupacional está pronta para avaliar e construir um plano individualizado para ele.
+Quer entender melhor o processamento sensorial do seu filho? Entre em contato com a Ser Singular. Nossa equipe de terapia ocupacional está preparada para realizar uma avaliação completa e construir um plano de intervenção individualizado.
     `.trim(),
   },
   {
