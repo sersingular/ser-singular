@@ -48,8 +48,7 @@ const especialidades = [
     ],
     benefits: [
       "Avaliação completa da linguagem e fala",
-      "Método PROMPT para articulação",
-      "DTTC para apraxia de fala",
+      "PROMPT e DTTC para transtornos motores de fala",
       "Estimulação da linguagem oral e escrita",
       "Orientação para pais e cuidadores",
       "Integração com a equipe multidisciplinar",
