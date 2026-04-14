@@ -23,6 +23,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
+function renderInline(text: string): React.ReactNode[] {
+  const parts = text.split(/(\*\*[^*]+\*\*)/g);
+  return parts.map((part, idx) => {
+    if (part.startsWith("**") && part.endsWith("**")) {
+      return <strong key={idx} className="font-semibold text-[#143a62]">{part.slice(2, -2)}</strong>;
+    }
+    return part;
+  });
+}
+
 function renderContent(content: string) {
   const lines = content.split("\n");
   const elements: React.ReactNode[] = [];
@@ -42,7 +52,7 @@ function renderContent(content: string) {
           {line.slice(4)}
         </h3>
       );
-    } else if (line.startsWith("**") && line.endsWith("**")) {
+    } else if (line.startsWith("**") && line.endsWith("**") && line.indexOf("**", 2) === line.length - 2) {
       elements.push(
         <p key={i} className="font-semibold text-[#143a62] mt-4 mb-1">
           {line.slice(2, -2)}
@@ -59,13 +69,13 @@ function renderContent(content: string) {
       elements.push(
         <li key={i} className="flex gap-2 items-start text-[#5a6a7e] text-sm leading-relaxed mb-1">
           <span className="text-[#1f8c7b] font-bold flex-shrink-0">•</span>
-          {line.slice(2)}
+          {renderInline(line.slice(2))}
         </li>
       );
     } else if (line.match(/^\d+\./)) {
       elements.push(
         <li key={i} className="text-[#5a6a7e] text-sm leading-relaxed mb-1 ml-4">
-          {line}
+          {renderInline(line)}
         </li>
       );
     } else if (line.trim() === "") {
@@ -73,7 +83,7 @@ function renderContent(content: string) {
     } else {
       elements.push(
         <p key={i} className="text-[#5a6a7e] leading-relaxed mb-3">
-          {line}
+          {renderInline(line)}
         </p>
       );
     }
