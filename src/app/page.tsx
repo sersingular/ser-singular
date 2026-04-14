@@ -81,7 +81,7 @@ const beneficios = [
       </svg>
     ),
     title: "13 Anos de Experiência",
-    desc: "Fundada por Daiana, com mais de uma década dedicada ao desenvolvimento infantil.",
+    desc: "Fundada por Daiana Plauth, com mais de uma década dedicada ao desenvolvimento infantil.",
   },
   {
     icon: (
