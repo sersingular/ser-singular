@@ -668,7 +668,7 @@ Abordagem de alfabetização baseada na relação entre sons e letras, especialm
 
 **Equivalência de Estímulo**
 
-Abordagem derivada da Análise do Comportamento que ensina a criança a relacionar diferentes estímulos com um mesmo significado, por exemplo, associar a palavra escrita "gato", a imagem de um gato e a palavra falada "gato" como equivalentes. Para crianças autistas, essa técnica é especialmente poderosa porque respeita o estilo visual de aprendizagem e facilita a generalização do conhecimento para contextos diferentes.
+Abordagem derivada da Análise do Comportamento que ensina a criança a relacionar diferentes estímulos com um mesmo significado. Por exemplo, associar a palavra escrita "gato", a imagem de um gato e a palavra falada "gato" como equivalentes. Para crianças autistas, essa técnica é especialmente poderosa porque respeita o estilo visual de aprendizagem e facilita a generalização do conhecimento para contextos diferentes.
 
 **Intervenções baseadas em ABA**
 
