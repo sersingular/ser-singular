@@ -66,7 +66,7 @@ export default function Footer() {
       {/* Footer */}
       <footer className="bg-[#0f2440] text-white py-12 px-8">
         <div className="max-w-[1200px] mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mb-10">
             {/* Brand */}
             <div>
               <div className="mb-5">
@@ -107,51 +107,10 @@ export default function Footer() {
                 ))}
               </ul>
             </div>
-
-            {/* Contact */}
-            <div>
-              <h4 className="text-sm font-semibold uppercase tracking-widest text-white/40 mb-4">
-                Contato
-              </h4>
-              <ul className="space-y-2 text-sm text-white/55">
-                <li>Av. José Callegari, 1820, Centro</li>
-                <li>Medianeira, Paraná</li>
-                <li>
-                  <a
-                    href="https://wa.me/554599771331"
-                    className="hover:text-white transition-colors"
-                  >
-                    (45) 99977-1331
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://instagram.com/ser.singular.cdt"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="hover:text-white transition-colors"
-                  >
-                    @ser.singular.cdt
-                  </a>
-                </li>
-                <li>Seg a Sex · 07:15 às 11:45 e 13:30 às 17:45</li>
-              </ul>
-            </div>
           </div>
 
           <div className="border-t border-white/10 pt-6 flex flex-col sm:flex-row justify-between items-center gap-2 text-xs text-white/35">
-            <div className="flex flex-col sm:flex-row items-center gap-1 sm:gap-0 text-center sm:text-left">
-              <span className="font-semibold text-white/50">Ser Singular · Centro de Desenvolvimento e Treinamento</span>
-              <span className="hidden sm:inline mx-2">·</span>
-              <a
-                href={MAPS_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-white/60 transition-colors"
-              >
-                Av. José Callegari, 1820, Centro · Medianeira, Paraná · (45) 99977-1331
-              </a>
-            </div>
+            <span className="font-semibold text-white/50">Ser Singular · Centro de Desenvolvimento e Treinamento</span>
             <span className="whitespace-nowrap">© 2025 Ser Singular. Todos os direitos reservados.</span>
           </div>
         </div>
