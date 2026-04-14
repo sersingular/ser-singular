@@ -167,9 +167,22 @@ export default function HomePage() {
             </h1>
             </AnimateIn>
             <AnimateIn delay={0.2}>
-            <p className="text-white/75 text-lg leading-relaxed mb-6 font-light">
+            <p className="text-white/75 text-lg leading-relaxed mb-5 font-light">
               Cada criança carrega uma história única. Na Ser Singular, respeitamos essa singularidade com atendimento individualizado e evolução medida por dados reais, sem achismo mas com resultado.
             </p>
+            <div
+              className="rounded-[14px] px-5 py-4 mb-6"
+              style={{
+                background: "rgba(31,140,123,0.15)",
+                border: "1px solid rgba(31,140,123,0.35)",
+              }}
+            >
+              <p className="text-white/90 text-[0.92rem] leading-relaxed">
+                Se o neuropediatra indicou uma avaliação para seu filho, você está no lugar certo.
+                Somos especializados em <strong className="text-[#7dd8cc] font-semibold">avaliação diagnóstica de autismo (TEA) e TDAH</strong>,
+                com equipe multidisciplinar que entrega laudos completos e orienta a família em cada etapa.
+              </p>
+            </div>
             <div
               className="inline-flex items-center gap-3 px-4 py-3 rounded-[12px] mb-8"
               style={{
@@ -342,6 +355,97 @@ export default function HomePage() {
               </StaggerItem>
             ))}
           </Stagger>
+        </div>
+      </section>
+
+      {/* COMO FUNCIONA A AVALIAÇÃO DIAGNÓSTICA */}
+      <section className="py-20 px-8 bg-[#f8f9fb]">
+        <div className="max-w-[860px] mx-auto">
+          <AnimateIn className="text-center mb-14">
+            <span className="inline-block bg-[#e8f5f3] text-[#1f8c7b] px-3.5 py-1 rounded-full text-[0.78rem] font-semibold uppercase tracking-widest mb-4">
+              Avaliação Diagnóstica
+            </span>
+            <h2 className="text-3xl lg:text-4xl text-[#143a62] leading-tight mb-4">
+              Como funciona a avaliação diagnóstica
+            </h2>
+            <p className="text-[#5a6a7e] text-lg max-w-xl mx-auto leading-relaxed">
+              Do encaminhamento ao laudo: um processo claro, humano e baseado em evidências.
+            </p>
+          </AnimateIn>
+
+          {/* Timeline */}
+          <div className="relative">
+            {/* Linha vertical */}
+            <div className="absolute left-[27px] top-0 bottom-0 w-[2px] bg-gradient-to-b from-[#1f8c7b] to-[#143a62] opacity-20 hidden sm:block" />
+
+            <Stagger className="space-y-6">
+              {[
+                {
+                  step: "01",
+                  title: "Recebemos o encaminhamento",
+                  desc: "Você chega com a solicitação do neuropediatra, pediatra ou outro especialista. Se ainda não tem encaminhamento mas tem dúvidas sobre o desenvolvimento do seu filho, nossa equipe também pode orientar os primeiros passos.",
+                },
+                {
+                  step: "02",
+                  title: "Entrevista inicial com os responsáveis",
+                  desc: "Antes de qualquer sessão com a criança, conversamos com os pais ou responsáveis para entender a história do desenvolvimento, as principais queixas e o contexto familiar e escolar.",
+                },
+                {
+                  step: "03",
+                  title: "Sessões de avaliação",
+                  desc: "Realizamos sessões individuais com a criança, utilizando instrumentos padronizados e validados para avaliação de TEA, TDAH e outros perfis do neurodesenvolvimento. A equipe envolvida varia conforme a hipótese diagnóstica, podendo incluir psicóloga, fonoaudióloga, psicopedagoga e terapeuta ocupacional.",
+                },
+                {
+                  step: "04",
+                  title: "Relatório integrado",
+                  desc: "Após as sessões, nossa equipe elabora um relatório técnico completo com os resultados, hipótese diagnóstica e orientações práticas para a família, a escola e o médico solicitante.",
+                },
+                {
+                  step: "05",
+                  title: "Devolutiva com a família",
+                  desc: "Marcamos uma reunião para apresentar os resultados com calma, tirar dúvidas e orientar os próximos passos: seja o início de terapias, ajustes na escola ou o retorno ao médico com o laudo em mãos.",
+                },
+              ].map((item) => (
+                <StaggerItem key={item.step} className="flex gap-5 items-start">
+                  {/* Número */}
+                  <div
+                    className="w-14 h-14 rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0 relative z-10"
+                    style={{ background: "linear-gradient(135deg, #143a62, #1f8c7b)" }}
+                  >
+                    {item.step}
+                  </div>
+                  {/* Conteúdo */}
+                  <div className="bg-white rounded-[20px] border border-[#e2e8f0] p-6 flex-1 hover:shadow-[0_8px_32px_rgba(20,58,98,0.08)] transition-shadow duration-300">
+                    <h3 className="text-[#143a62] font-bold text-base mb-2">{item.title}</h3>
+                    <p className="text-[#5a6a7e] text-[0.9rem] leading-relaxed">{item.desc}</p>
+                  </div>
+                </StaggerItem>
+              ))}
+            </Stagger>
+          </div>
+
+          {/* CTAs */}
+          <AnimateIn className="mt-12 flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href="https://wa.me/554599771331?text=Ol%C3%A1!%20Recebi%20um%20encaminhamento%20para%20avalia%C3%A7%C3%A3o%20do%20meu%20filho%20e%20gostaria%20de%20saber%20mais."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2.5 px-7 py-3.5 rounded-[14px] font-semibold text-[0.95rem] text-white no-underline transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg"
+              style={{ background: "linear-gradient(135deg, #143a62, #1f8c7b)" }}
+            >
+              <svg viewBox="0 0 24 24" className="w-5 h-5 fill-white flex-shrink-0">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
+                <path d="M12 0C5.373 0 0 5.373 0 12c0 2.122.553 4.112 1.523 5.842L.057 23.886a.5.5 0 0 0 .622.607l6.148-1.61A11.945 11.945 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.907 0-3.697-.504-5.248-1.387l-.351-.206-3.652.957.924-3.565-.225-.36A9.975 9.975 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z" />
+              </svg>
+              Recebeu encaminhamento? Fale com a nossa equipe
+            </a>
+            <Link
+              href="/contato"
+              className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-[14px] font-medium text-[0.95rem] text-[#143a62] no-underline border border-[#143a62]/20 bg-white transition-all duration-300 hover:-translate-y-0.5 hover:border-[#143a62]/40 hover:shadow-md"
+            >
+              Ainda tem dúvidas? Entre em contato
+            </Link>
+          </AnimateIn>
         </div>
       </section>
 
