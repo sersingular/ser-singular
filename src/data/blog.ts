@@ -15,6 +15,201 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "metodo-aba-autismo-criancas",
+    title: "O que é o método ABA e como ele ajuda crianças com autismo?",
+    excerpt: "O ABA é uma das abordagens mais estudadas para o tratamento de autismo. Entenda como funciona, o que a ciência diz e por que ele é recomendado para crianças com TEA.",
+    category: "Método ABA",
+    categoryColor: "#1f8c7b",
+    categoryBg: "#e8f5f3",
+    emoji: "📊",
+    date: "Abr 2025",
+    dateISO: "2025-04-14",
+    author: "Daiana Plauth · Psicóloga",
+    content: `
+Se você começou a pesquisar sobre tratamentos para autismo, certamente já encontrou a sigla ABA. Ela aparece em relatórios médicos, recomendações de neuropediatras e descrições de clínicas especializadas. Mas o que é exatamente o ABA e por que ele é tão utilizado no trabalho com crianças no espectro autista?
+
+## ABA: o que significa e de onde vem
+
+ABA é a sigla para Applied Behavior Analysis, ou Análise do Comportamento Aplicada em português. É uma ciência fundamentada no estudo do comportamento humano que investiga como o ambiente influencia o que as pessoas fazem e aprendem. Suas raízes estão na pesquisa científica do século XX e, nas últimas décadas, tornou-se uma das abordagens com maior base de evidências para o tratamento de TEA.
+
+## Como o ABA funciona na prática?
+
+O ABA parte de um princípio central: comportamentos que são seguidos de consequências positivas tendem a ser repetidos. Com base nisso, o terapeuta identifica quais habilidades a criança precisa desenvolver e cria condições estruturadas para que ela aprenda essas habilidades de forma gradual e sistemática.
+
+Na clínica, isso pode incluir o ensino de habilidades de comunicação, interação social, autonomia no dia a dia e regulação emocional. O trabalho é sempre baseado em metas individuais definidas a partir da avaliação do perfil específico da criança, nunca em protocolos genéricos.
+
+## ABA e autismo: o que a ciência diz
+
+O ABA é reconhecido por organizações de saúde de todo o mundo como uma das intervenções com maior respaldo científico para crianças com TEA. Dezenas de estudos publicados em periódicos revisados por pares demonstraram que intervenções baseadas em ABA produzem melhoras significativas em comunicação, habilidades sociais, comportamento adaptativo e redução de comportamentos que interferem na aprendizagem.
+
+Os resultados são mais expressivos quando a intervenção começa cedo, mas crianças de diferentes idades e perfis podem se beneficiar do trabalho baseado em ABA.
+
+## O ABA moderno é diferente do que muita gente imagina
+
+Uma preocupação comum entre pais é que o ABA seja uma abordagem rígida ou mecânica. O ABA contemporâneo, no entanto, é muito mais flexível, naturalista e baseado no relacionamento do que a versão do passado. A brincadeira, a motivação natural da criança e a parceria com a família são partes centrais do processo.
+
+Na Ser Singular, o trabalho com ABA é integrado ao Modelo Denver, outra abordagem com forte base científica que enfatiza o aprendizado por meio de interações positivas e atividades que fazem sentido para a criança. O resultado é uma intervenção mais completa, mais humana e mais efetiva.
+
+Quer saber se o ABA é indicado para o seu filho? Na Ser Singular, começamos pela avaliação do perfil individual da criança para definir o plano mais adequado. Fale com nossa equipe pelo WhatsApp.
+    `.trim(),
+  },
+  {
+    slug: "tea-ou-tdah-como-diferenciar",
+    title: "TEA ou TDAH? Como distinguir os sinais na infância",
+    excerpt: "TEA e TDAH compartilham alguns comportamentos, mas são condições distintas. Entenda as principais diferenças e por que a avaliação especializada é essencial para não confundir os dois.",
+    category: "TEA e TDAH",
+    categoryColor: "#143a62",
+    categoryBg: "#eef2f7",
+    emoji: "🧠",
+    date: "Abr 2025",
+    dateISO: "2025-04-14",
+    author: "Equipe Ser Singular",
+    content: `
+Uma das situações mais comuns no consultório de neuropediatras e psicólogos infantis é a dúvida entre TEA e TDAH. As duas condições compartilham alguns comportamentos observáveis, o que pode gerar confusão tanto para as famílias quanto para profissionais menos especializados.
+
+## O que TEA e TDAH têm em comum
+
+Tanto o Transtorno do Espectro Autista quanto o Transtorno do Déficit de Atenção e Hiperatividade podem apresentar dificuldade de manter a atenção em atividades estruturadas, agitação motora, impulsividade, dificuldades de organização e comportamentos que desafiam o ambiente escolar. Por isso, crianças com TEA são às vezes identificadas inicialmente como TDAH, e vice-versa.
+
+Além disso, as duas condições podem ocorrer juntas. Pesquisas indicam que uma parcela significativa das pessoas com TEA também tem TDAH, o que torna a avaliação especializada ainda mais importante.
+
+## Onde as diferenças ficam mais claras
+
+A principal diferença entre as duas condições está na dimensão social e comunicativa. O TEA envolve dificuldades específicas na comunicação social: contato visual reduzido, dificuldade em compreender expressões faciais, pouca interação espontânea com outras crianças, linguagem com padrões incomuns ou atraso significativo e interesses muito restritos e intensos.
+
+O TDAH, por sua vez, tem como núcleo a desregulação da atenção e do controle inibitório. A criança com TDAH geralmente tem interesse em interagir socialmente, mas tem dificuldade de regular o comportamento nessas interações. A fala é frequentemente abundante e desorganizada, e não há o padrão de interesses restritos característico do TEA.
+
+## Por que a avaliação especializada é indispensável?
+
+Distinguir TEA de TDAH à olho nu é um desafio mesmo para profissionais experientes. A avaliação com instrumentos padronizados é o único caminho seguro para um diagnóstico preciso. Isso importa muito na prática: o tratamento adequado para cada condição é diferente, e um diagnóstico incorreto pode significar anos de intervenções que não estão alinhadas com as reais necessidades da criança.
+
+Uma avaliação multidisciplinar bem conduzida consegue identificar com clareza o perfil da criança, apontar se existe uma ou as duas condições e estabelecer as bases para um plano terapêutico individualizado.
+
+Na Ser Singular, realizamos avaliações diagnósticas de TEA e TDAH com instrumentos validados e equipe multidisciplinar. Agende uma avaliação e descubra o perfil real do seu filho.
+    `.trim(),
+  },
+  {
+    slug: "diagnostico-medico-avaliacao-psicologica-autismo",
+    title: "Diagnóstico médico ou avaliação psicológica? Entenda a diferença no autismo",
+    excerpt: "Qual a diferença entre o diagnóstico dado pelo neuropediatra e a avaliação psicológica no processo de identificação do TEA? Entenda o papel de cada profissional.",
+    category: "Diagnóstico",
+    categoryColor: "#143a62",
+    categoryBg: "#eef2f7",
+    emoji: "🧩",
+    date: "Abr 2025",
+    dateISO: "2025-04-14",
+    author: "Equipe Ser Singular",
+    content: `
+Uma dúvida muito comum entre famílias que estão começando esse processo é: se o neuropediatra já disse que meu filho tem autismo, por que ainda preciso fazer uma avaliação psicológica? A resposta envolve entender como o diagnóstico de TEA é construído na prática.
+
+## O papel do neuropediatra
+
+O neuropediatra é o médico especializado no sistema nervoso de crianças. Ele tem um papel fundamental no processo: identificar os primeiros sinais, descartar causas neurológicas ou genéticas associadas e coordenar o cuidado clínico da criança.
+
+No contexto do TEA, o neuropediatra realiza a consulta clínica, observa o comportamento da criança, conversa com a família e, na maioria dos casos, solicita a avaliação multidisciplinar justamente porque o diagnóstico de autismo requer informações que vão além de uma consulta médica.
+
+## O papel da avaliação psicológica e multidisciplinar
+
+A avaliação psicológica acrescenta ao processo uma investigação profunda e padronizada do perfil comportamental, cognitivo e de desenvolvimento da criança. Por meio de instrumentos específicos como o ADOS-2 e o ADI-R, o psicólogo consegue mapear com precisão as áreas de comprometimento e as potencialidades da criança.
+
+Quando a avaliação inclui também a fonoaudióloga e a terapeuta ocupacional, o retrato fica ainda mais completo: entende-se como a criança se comunica, como processa informações sensoriais, quais são suas habilidades adaptativas e onde estão os principais pontos de atenção para o plano terapêutico.
+
+## Os dois caminhos se complementam
+
+Na prática, o processo ideal funciona assim: o neuropediatra observa os sinais e encaminha para a avaliação. A equipe clínica especializada realiza a avaliação com instrumentos padronizados e entrega um relatório detalhado. O neuropediatra utiliza esse relatório para fechar o diagnóstico clínico e definir o plano de cuidados.
+
+Não se trata de um processo duplicado. É uma construção colaborativa em que cada profissional contribui com o que faz de melhor. O resultado é um diagnóstico mais sólido, uma compreensão mais completa da criança e um ponto de partida muito mais claro para as intervenções.
+
+## E quando o médico ainda não deu a suspeita?
+
+Algumas famílias chegam à clínica antes mesmo de passar pelo neuropediatra, percebendo sozinhas alguns sinais no desenvolvimento do filho. Nesses casos, a avaliação psicológica pode ser o primeiro passo, e o relatório gerado serve como base para a consulta médica subsequente.
+
+A Ser Singular realiza avaliações diagnósticas completas, com devolutiva para a família e relatório para o médico solicitante. Tire suas dúvidas com nossa equipe pelo WhatsApp.
+    `.trim(),
+  },
+  {
+    slug: "como-funciona-avaliacao-psicologica-tea",
+    title: "Como funciona a avaliação psicológica para diagnóstico de TEA?",
+    excerpt: "Entenda como é o processo de avaliação psicológica para diagnóstico de autismo (TEA): etapas, instrumentos utilizados e o que esperar em cada fase.",
+    category: "Avaliação",
+    categoryColor: "#143a62",
+    categoryBg: "#eef2f7",
+    emoji: "📋",
+    date: "Abr 2025",
+    dateISO: "2025-04-14",
+    author: "Daiana Plauth · Psicóloga",
+    content: `
+Uma das dúvidas mais comuns entre as famílias que recebem o encaminhamento para avaliação de TEA é simples: o que vai acontecer? Quantas sessões são? O que o psicólogo faz com minha criança? Entender o processo de ponta a ponta ajuda a chegar na clínica com menos ansiedade e mais preparo.
+
+## Por que a avaliação psicológica é necessária?
+
+O diagnóstico de TEA é essencialmente comportamental. Não existe exame de sangue nem neuroimagem que confirme o autismo. O diagnóstico é feito por meio da observação direta do comportamento da criança e da análise detalhada do seu histórico de desenvolvimento.
+
+É por isso que o papel do psicólogo especializado em neurodesenvolvimento é fundamental. Ele conduz a avaliação usando instrumentos padronizados que foram desenvolvidos e validados especificamente para identificar o perfil de TEA.
+
+## Como é organizado o processo na prática?
+
+O processo começa antes de qualquer contato com a criança. A primeira etapa é sempre uma entrevista aprofundada com os pais ou responsáveis, onde o psicólogo investiga o histórico de desenvolvimento desde a gestação: marcos do desenvolvimento motor e de linguagem, padrões de comportamento, rotinas, interações sociais e qualquer preocupação que a família tenha observado ao longo do tempo.
+
+Depois dessa entrevista, começam as sessões de avaliação direta com a criança. Essas sessões são estruturadas para parecer uma brincadeira ou uma atividade lúdica, mas dentro delas o profissional está observando aspectos muito específicos: como a criança se comunica, como responde à interação social, como brinca, como regula suas emoções e como processa as informações do ambiente.
+
+## Quais instrumentos são utilizados?
+
+Entre os instrumentos mais reconhecidos internacionalmente para avaliação de TEA estão o ADOS-2 (Autism Diagnostic Observation Schedule) e o ADI-R (Autism Diagnostic Interview Revised). Esses protocolos são considerados o padrão-ouro no campo do diagnóstico de autismo e são utilizados em pesquisas e clínicas especializadas no mundo todo.
+
+Além desses, podem ser utilizadas outras escalas de desenvolvimento, avaliações cognitivas e instrumentos específicos para comportamento adaptativo, dependendo do perfil e da faixa etária da criança.
+
+## O que é entregue ao final?
+
+Ao término do processo, a família recebe um relatório técnico completo com os resultados de cada instrumento, a hipótese diagnóstica e orientações práticas. Esse relatório é encaminhado também ao médico solicitante, que utiliza as informações para fechar o diagnóstico clínico.
+
+A devolutiva com a família é parte essencial do processo: é o momento em que o psicólogo explica os resultados com calma, responde dúvidas e orienta os próximos passos, sejam eles o início de terapias, adaptações escolares ou outros encaminhamentos necessários.
+
+Na Ser Singular, a avaliação diagnóstica de TEA é conduzida por equipe especializada, com instrumentos validados e devolutiva completa para a família e para o médico. Fale com a nossa equipe pelo WhatsApp.
+    `.trim(),
+  },
+  {
+    slug: "suspeita-de-autismo-o-que-fazer",
+    title: "Meu filho recebeu suspeita de autismo: o que fazer agora?",
+    excerpt: "Recebeu a suspeita de autismo do pediatra ou neuropediatra? Entenda o que é a avaliação diagnóstica, como funciona e quais são os próximos passos.",
+    category: "Diagnóstico",
+    categoryColor: "#143a62",
+    categoryBg: "#eef2f7",
+    emoji: "🔍",
+    date: "Abr 2025",
+    dateISO: "2025-04-14",
+    author: "Daiana Plauth · Psicóloga",
+    content: `
+Receber a informação de que seu filho pode estar no espectro autista é um momento que mistura sentimentos muito diferentes: preocupação, dúvidas, e às vezes até um certo alívio por finalmente ter um caminho. Se você está nesse ponto, a primeira coisa que precisamos dizer é: você não está sozinho, e existem próximos passos claros.
+
+## O que significa "suspeita de autismo"?
+
+Quando um pediatra ou neuropediatra menciona suspeita de TEA (Transtorno do Espectro Autista), ele está dizendo que observou sinais que precisam ser investigados com mais profundidade. Essa suspeita não é um diagnóstico: é um ponto de partida.
+
+O diagnóstico de TEA é clínico e multidisciplinar. Ele é construído a partir de avaliações detalhadas realizadas por profissionais especializados como psicólogos, fonoaudiólogos e terapeutas ocupacionais, que usam instrumentos padronizados e validados pela ciência.
+
+## Qual é o próximo passo depois da suspeita?
+
+O médico geralmente emite um encaminhamento para avaliação psicológica e fonoaudiológica. É com esse documento que você procura uma clínica especializada para iniciar o processo de avaliação diagnóstica.
+
+Se o médico ainda não emitiu o encaminhamento, você pode perguntar diretamente: "O senhor pode me encaminhar para uma avaliação diagnóstica de TEA?" Essa é uma solicitação legítima e o profissional saberá orientar o caminho.
+
+## Como funciona a avaliação diagnóstica?
+
+A avaliação diagnóstica não é uma consulta única. É um processo que envolve etapas bem definidas: uma entrevista detalhada com os pais sobre o histórico de desenvolvimento da criança, sessões de avaliação com a criança usando instrumentos padronizados, integração dos resultados por equipe multidisciplinar, elaboração de um relatório técnico com hipótese diagnóstica e uma devolutiva com a família explicando os resultados e orientando os próximos passos.
+
+Na Ser Singular, esse processo é realizado por uma equipe integrada de psicóloga, fonoaudióloga, terapeuta ocupacional e psicopedagoga. Cada profissional contribui com sua especialidade para um diagnóstico mais completo e preciso.
+
+## E se o diagnóstico confirmar o TEA?
+
+O diagnóstico não muda quem seu filho é. Ele abre portas: para terapias adequadas, adaptações na escola, acesso a benefícios e, principalmente, para que toda a família entenda melhor como apoiar esse desenvolvimento único.
+
+Quanto mais cedo a avaliação for feita, mais cedo as intervenções certas podem começar. A literatura científica é clara: os resultados são significativamente melhores quando o suporte adequado começa na primeira infância.
+
+Recebeu encaminhamento ou tem dúvidas sobre o desenvolvimento do seu filho? A equipe da Ser Singular está pronta para orientar você. Entre em contato pelo WhatsApp.
+    `.trim(),
+  },
+  {
     slug: "pecs-comunicacao-alternativa-autismo",
     title: "PECS e comunicação alternativa no autismo: como a fonoaudiologia usa métodos baseados em evidências",
     excerpt: "Quando a criança autista não fala ou tem comunicação limitada, PECS e CAA abrem novos caminhos. Entenda como a fonoaudiologia usa esses métodos com base em ciência.",
