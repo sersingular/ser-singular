@@ -10,7 +10,7 @@ const problems = [
       </svg>
     ),
     title: "Dificuldades na Fala",
-    desc: "Atrasos na linguagem, gagueira, pronúncia e comunicação: nossa fonoaudióloga atua com métodos baseados em evidências como PROMPT e DTTC.",
+    desc: "Atrasos na linguagem, gagueira, pronúncia e comunicação. Presente em muitas crianças com TEA, nossa fonoaudióloga atua com PROMPT e DTTC — métodos especializados em comunicação no espectro autista.",
   },
   {
     icon: (
@@ -19,7 +19,7 @@ const problems = [
       </svg>
     ),
     title: "Comportamento e Emoções",
-    desc: "Crises, birras intensas, dificuldade de regulação emocional: a psicologia infantil oferece suporte especializado para a criança e orientação para os pais.",
+    desc: "Crises, birras intensas, dificuldade de regulação emocional. Sinais frequentes em crianças com TEA e TDAH: a psicologia infantil oferece suporte especializado e orientação para os pais.",
   },
   {
     icon: (
@@ -29,7 +29,7 @@ const problems = [
       </svg>
     ),
     title: "Aprendizagem e Escola",
-    desc: "Dificuldades de leitura, escrita, atenção e funções executivas: a psicopedagogia identifica o perfil cognitivo e traça um plano individualizado.",
+    desc: "Dificuldades de leitura, escrita, atenção e funções executivas. Comuns em crianças com TDAH e TEA: a psicopedagogia identifica o perfil cognitivo e traça um plano individualizado.",
   },
   {
     icon: (
@@ -39,7 +39,7 @@ const problems = [
       </svg>
     ),
     title: "Sensorialidade e Autonomia",
-    desc: "Hipersensibilidade, dificuldades motoras, baixa participação social: a Terapia Ocupacional trabalha integração sensorial e independência na rotina.",
+    desc: "Hipersensibilidade, dificuldades motoras, baixa participação social. Características centrais do TEA: a Terapia Ocupacional trabalha integração sensorial e independência na rotina.",
   },
 ];
 
@@ -305,6 +305,38 @@ export default function HomePage() {
               Cada dificuldade tem um caminho. Nossa equipe está pronta para orientar você.
             </p>
           </AnimateIn>
+          {/* Card destaque TEA / TDAH */}
+          <AnimateIn className="mb-6">
+            <div
+              className="rounded-[20px] p-7 flex flex-col sm:flex-row gap-6 items-start sm:items-center"
+              style={{ background: "linear-gradient(135deg, #0f2440, #143a62)", border: "1.5px solid rgba(31,140,123,0.4)" }}
+            >
+              <div className="w-14 h-14 rounded-[16px] flex items-center justify-center text-2xl flex-shrink-0" style={{ background: "rgba(31,140,123,0.25)", border: "1.5px solid rgba(31,140,123,0.4)" }}>
+                🧩
+              </div>
+              <div className="flex-1">
+                <div className="flex flex-wrap gap-2 mb-2">
+                  <span className="text-[0.72rem] font-semibold uppercase tracking-wider px-2.5 py-0.5 rounded-full text-[#7dd8cc]" style={{ background: "rgba(31,140,123,0.25)" }}>TEA · Autismo</span>
+                  <span className="text-[0.72rem] font-semibold uppercase tracking-wider px-2.5 py-0.5 rounded-full text-[#7dd8cc]" style={{ background: "rgba(31,140,123,0.25)" }}>TDAH</span>
+                  <span className="text-[0.72rem] font-semibold uppercase tracking-wider px-2.5 py-0.5 rounded-full text-[#7dd8cc]" style={{ background: "rgba(31,140,123,0.25)" }}>Avaliação Diagnóstica</span>
+                </div>
+                <h3 className="text-white font-bold text-lg mb-1">Suspeita de autismo ou TDAH?</h3>
+                <p className="text-white/70 text-[0.9rem] leading-relaxed">
+                  Se o neuropediatra ou pediatra indicou uma avaliação, ou se você percebe sinais como atraso na fala, dificuldade de interação social ou hiperatividade — nossa equipe realiza avaliação diagnóstica completa com laudo técnico e orientação em cada etapa.
+                </p>
+              </div>
+              <a
+                href="https://wa.me/554599771331?text=Ol%C3%A1!%20Recebi%20um%20encaminhamento%20para%20avalia%C3%A7%C3%A3o%20do%20meu%20filho%20e%20gostaria%20de%20saber%20mais."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-[12px] font-semibold text-sm text-[#143a62] no-underline whitespace-nowrap flex-shrink-0 hover:-translate-y-0.5 transition-transform"
+                style={{ background: "#7dd8cc" }}
+              >
+                Falar com a equipe
+              </a>
+            </div>
+          </AnimateIn>
+
           <Stagger className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {problems.map((card) => (
               <StaggerItem
