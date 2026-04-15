@@ -134,12 +134,12 @@ export default async function BlogPostPage({ params }: Props) {
       <section className="py-12 px-8 bg-[#f8f9fb]">
         <div className="max-w-[760px] mx-auto">
           {post.image ? (
-            <div className="rounded-[20px] overflow-hidden mb-8 h-[400px] relative" style={post.coverStyle === "contain" ? { background: "#0d1e36" } : {}}>
+            <div className="rounded-[20px] overflow-hidden mb-8 h-[400px] relative">
               <Image
                 src={post.image}
                 alt={post.title}
                 fill
-                className={post.coverStyle === "contain" ? "object-contain p-8" : "object-cover"}
+                className="object-cover"
                 priority
                 sizes="(max-width: 760px) 100vw, 760px"
               />

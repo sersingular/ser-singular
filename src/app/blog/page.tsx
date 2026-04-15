@@ -47,12 +47,12 @@ export default function BlogPage() {
               >
                 {/* Thumb */}
                 {post.image ? (
-                  <div className="h-[200px] relative overflow-hidden" style={post.coverStyle === "contain" ? { background: "#0d1e36" } : {}}>
+                  <div className="h-[200px] relative overflow-hidden">
                     <Image
                       src={post.image}
                       alt={post.title}
                       fill
-                      className={`transition-transform duration-500 group-hover:scale-105 ${post.coverStyle === "contain" ? "object-contain p-4" : "object-cover"}`}
+                      className="object-cover transition-transform duration-500 group-hover:scale-105"
                       sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     />
                   </div>
