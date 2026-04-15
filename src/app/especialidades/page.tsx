@@ -24,7 +24,7 @@ const especialidades = [
     ],
     benefits: [
       "Psicoterapia infantil baseada em evidências",
-      "Aplicação do método ABA e Denver",
+      "Aplicação da ciência ABA e Denver",
       "Avaliação neuropsicológica",
       "Treino de habilidades sociais",
       "Orientação e suporte aos pais",

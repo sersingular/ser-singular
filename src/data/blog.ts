@@ -18,7 +18,7 @@ export const blogPosts: BlogPost[] = [
     slug: "metodo-aba-autismo-criancas",
     title: "O que é a ciência ABA e como ele ajuda crianças com autismo?",
     excerpt: "O ABA é uma das abordagens mais estudadas para o tratamento de autismo. Entenda como funciona, o que a ciência diz e por que ele é recomendado para crianças com TEA.",
-    category: "Método ABA",
+    category: "Ciência ABA",
     categoryColor: "#1f8c7b",
     categoryBg: "#e8f5f3",
     emoji: "📊",
@@ -539,7 +539,7 @@ As metas estabelecidas no plano de tratamento são específicas, observáveis e 
 
 Essa precisão não é burocracia. É o que permite saber, com honestidade, se o tratamento está funcionando e onde precisa ser ajustado.
 
-A integração do método ABA com a terapia ocupacional garante progressos mensuráveis e intervenções ajustadas com base no desempenho real do paciente. O registro sistemático de dados em cada sessão cria um histórico concreto de evolução que pode ser compartilhado com a família, a escola e os outros profissionais que acompanham a criança.
+A integração da ciência ABA com a terapia ocupacional garante progressos mensuráveis e intervenções ajustadas com base no desempenho real do paciente. O registro sistemático de dados em cada sessão cria um histórico concreto de evolução que pode ser compartilhado com a família, a escola e os outros profissionais que acompanham a criança.
 
 ## O papel das brincadeiras no trabalho terapêutico
 
