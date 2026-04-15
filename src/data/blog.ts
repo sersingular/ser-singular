@@ -7,6 +7,7 @@ export interface BlogPost {
   categoryBg: string;
   emoji: string;
   image?: string;
+  coverStyle?: "cover" | "contain";
   date: string;
   dateISO: string;
   author: string;
@@ -23,6 +24,7 @@ export const blogPosts: BlogPost[] = [
     categoryBg: "#e8f5f3",
     emoji: "📊",
     image: "/blog-metodo-aba.png",
+    coverStyle: "contain",
     date: "Abr 2025",
     dateISO: "2025-04-14",
     author: "Daiana Plauth · Psicóloga",
@@ -63,6 +65,7 @@ Quer saber se o ABA é indicado para o seu filho? Na Ser Singular, começamos pe
     categoryBg: "#eef2f7",
     emoji: "🧠",
     image: "/blog-tea-ou-tdah.png",
+    coverStyle: "contain",
     date: "Abr 2025",
     dateISO: "2025-04-14",
     author: "Equipe Ser Singular",
@@ -99,6 +102,7 @@ Na Ser Singular, realizamos avaliações diagnósticas de TEA e TDAH com instrum
     categoryBg: "#eef2f7",
     emoji: "🧩",
     image: "/blog-diagnostico-medico-avaliacao.png",
+    coverStyle: "contain",
     date: "Abr 2025",
     dateISO: "2025-04-14",
     author: "Equipe Ser Singular",
@@ -139,6 +143,7 @@ A Ser Singular realiza avaliações diagnósticas completas, com devolutiva para
     categoryBg: "#eef2f7",
     emoji: "📋",
     image: "/blog-avaliacao-psicologica-tea.png",
+    coverStyle: "contain",
     date: "Abr 2025",
     dateISO: "2025-04-14",
     author: "Daiana Plauth · Psicóloga",
@@ -181,6 +186,7 @@ Na Ser Singular, a avaliação diagnóstica de TEA é conduzida por equipe espec
     categoryBg: "#eef2f7",
     emoji: "🔍",
     image: "/blog-suspeita-autismo.png",
+    coverStyle: "contain",
     date: "Abr 2025",
     dateISO: "2025-04-14",
     author: "Daiana Plauth · Psicóloga",
