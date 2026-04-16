@@ -322,7 +322,7 @@ export default function HomePage() {
                 </div>
                 <h3 className="text-white font-bold text-lg mb-1">Suspeita de autismo ou TDAH?</h3>
                 <p className="text-white/70 text-[0.9rem] leading-relaxed">
-                  Se o neuropediatra ou pediatra indicou uma avaliação, ou se você percebe sinais como atraso na fala, dificuldade de interação social ou hiperatividade — nossa equipe realiza avaliação diagnóstica completa com laudo técnico e orientação em cada etapa.
+                  Se o neuropediatra ou pediatra indicou uma avaliação, ou se você percebe sinais como atraso na fala, dificuldade de interação social ou hiperatividade, nossa equipe realiza avaliação diagnóstica completa com laudo técnico e orientação em cada etapa.
                 </p>
               </div>
               <a
