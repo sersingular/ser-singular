@@ -10,7 +10,7 @@ const problems = [
       </svg>
     ),
     title: "Dificuldades na Fala",
-    desc: "Atrasos na linguagem, gagueira, pronúncia e comunicação. Presente em muitas crianças com TEA, nossa fonoaudióloga atua com PROMPT e DTTC — métodos especializados em comunicação no espectro autista.",
+    desc: "Atrasos na linguagem, gagueira, pronúncia e comunicação. Presente em muitas crianças com TEA, nossa fonoaudióloga atua com PROMPT e DTTC, métodos especializados em comunicação no espectro autista.",
   },
   {
     icon: (
