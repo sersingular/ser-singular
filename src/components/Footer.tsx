@@ -13,7 +13,11 @@ export default function Footer() {
           {/* Info */}
           <div>
             <span className="inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-widest text-[#1f8c7b] border border-[#1f8c7b]/40 rounded-full px-3 py-1 mb-6">
-              📍 Nossa Localização
+              <svg viewBox="0 0 24 24" fill="none" stroke="#1f8c7b" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" className="w-3.5 h-3.5">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+              Nossa Localização
             </span>
             <h3 className="text-2xl font-bold text-white mb-1">Ser Singular</h3>
             <p className="text-white/60 text-sm mb-6">
@@ -23,11 +27,17 @@ export default function Footer() {
 
             <ul className="space-y-3 mb-8">
               <li className="flex items-center gap-3 text-sm text-white/70">
-                <span className="text-base">🕐</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4 flex-shrink-0">
+                  <circle cx="12" cy="12" r="10"/>
+                  <polyline points="12 6 12 12 16 14"/>
+                </svg>
                 Seg a Sex · 07:15 às 11:45 e 13:30 às 17:45
               </li>
               <li className="flex items-center gap-3 text-sm text-white/70">
-                <span className="text-base">📞</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4 flex-shrink-0">
+                  <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
+                  <line x1="12" y1="18" x2="12.01" y2="18"/>
+                </svg>
                 <a
                   href="https://wa.me/554599771331"
                   className="hover:text-white transition-colors"
@@ -43,7 +53,11 @@ export default function Footer() {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-5 py-2.5 rounded-[12px] border border-white/20 text-sm text-white/80 hover:text-white hover:border-white/40 transition-colors no-underline"
             >
-              <span>📍</span> Ver no Google Maps
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+              Ver no Google Maps
             </a>
           </div>
 

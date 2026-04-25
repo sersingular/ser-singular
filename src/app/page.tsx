@@ -44,10 +44,51 @@ const problems = [
 ];
 
 const especialidades = [
-  { emoji: "🧠", title: "Psicologia", desc: "ABA, Denver, psicoterapia infantil, avaliação neuropsicológica e treino de habilidades sociais." },
-  { emoji: "📖", title: "Psicopedagogia", desc: "Avaliação psicopedagógica, perfil cognitivo, alfabetização e funções executivas." },
-  { emoji: "🗣️", title: "Fonoaudiologia", desc: "Linguagem, fala, PROMPT, DTTC e motricidade orofacial." },
-  { emoji: "👶", title: "Terapia Ocupacional", desc: "Integração sensorial, praxia, autonomia e participação social." },
+  {
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" className="w-8 h-8" stroke="#7dd8cc">
+        <path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"/>
+        <path d="M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z"/>
+        <path d="M15 13a4.5 4.5 0 0 1-3-4 4.5 4.5 0 0 1-3 4"/>
+        <path d="M17.599 6.5a3 3 0 0 0 .399-1.375"/>
+        <path d="M6.003 5.125A3 3 0 0 0 6.401 6.5"/>
+        <path d="M3.477 10.896a4 4 0 0 1 .585-.396"/>
+        <path d="M19.938 10.5a4 4 0 0 1 .585.396"/>
+        <path d="M6 18a4 4 0 0 1-1.967-.516"/>
+        <path d="M19.967 17.484A4 4 0 0 1 18 18"/>
+      </svg>
+    ),
+    title: "Psicologia",
+    desc: "ABA, Denver, psicoterapia infantil, avaliação neuropsicológica e treino de habilidades sociais.",
+  },
+  {
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" className="w-8 h-8" stroke="#7dd8cc">
+        <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
+        <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+      </svg>
+    ),
+    title: "Psicopedagogia",
+    desc: "Avaliação psicopedagógica, perfil cognitivo, alfabetização e funções executivas.",
+  },
+  {
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" className="w-8 h-8" stroke="#7dd8cc">
+        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+      </svg>
+    ),
+    title: "Fonoaudiologia",
+    desc: "Linguagem, fala, PROMPT, DTTC e motricidade orofacial.",
+  },
+  {
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" className="w-8 h-8" stroke="#7dd8cc">
+        <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+      </svg>
+    ),
+    title: "Terapia Ocupacional",
+    desc: "Integração sensorial, praxia, autonomia e participação social.",
+  },
 ];
 
 const beneficios = [
@@ -311,8 +352,16 @@ export default function HomePage() {
               className="rounded-[20px] p-7 flex flex-col sm:flex-row gap-6 items-start sm:items-center"
               style={{ background: "linear-gradient(135deg, #0f2440, #143a62)", border: "1.5px solid rgba(31,140,123,0.4)" }}
             >
-              <div className="w-14 h-14 rounded-[16px] flex items-center justify-center text-2xl flex-shrink-0" style={{ background: "rgba(31,140,123,0.25)", border: "1.5px solid rgba(31,140,123,0.4)" }}>
-                🧩
+              <div className="w-14 h-14 rounded-[16px] flex items-center justify-center flex-shrink-0" style={{ background: "rgba(31,140,123,0.25)", border: "1.5px solid rgba(31,140,123,0.4)" }}>
+                <svg viewBox="0 0 24 24" fill="none" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" className="w-7 h-7" stroke="#7dd8cc">
+                  <path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"/>
+                  <path d="M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z"/>
+                  <path d="M15 13a4.5 4.5 0 0 1-3-4 4.5 4.5 0 0 1-3 4"/>
+                  <path d="M17.599 6.5a3 3 0 0 0 .399-1.375"/>
+                  <path d="M6.003 5.125A3 3 0 0 0 6.401 6.5"/>
+                  <path d="M3.477 10.896a4 4 0 0 1 .585-.396"/>
+                  <path d="M19.938 10.5a4 4 0 0 1 .585.396"/>
+                </svg>
               </div>
               <div className="flex-1">
                 <div className="flex flex-wrap gap-2 mb-2">
@@ -374,7 +423,7 @@ export default function HomePage() {
                 className="no-underline rounded-[16px] p-6 transition-all duration-300 cursor-pointer block h-full flex flex-col border border-white/10 hover:border-[#1f8c7b] hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(0,0,0,0.3)]"
                 style={{ background: "rgba(255,255,255,0.07)" }}
               >
-                <div className="text-[1.8rem] mb-3">{esp.emoji}</div>
+                <div className="mb-3">{esp.icon}</div>
                 <h3 className="text-white font-bold text-base mb-1.5">{esp.title}</h3>
                 <p className="text-white/60 text-[0.82rem] leading-relaxed">{esp.desc}</p>
               </Link>
@@ -719,7 +768,10 @@ export default function HomePage() {
             <AnimateIn>
               <div className="rounded-[18px] p-8 h-full" style={{ background: "linear-gradient(135deg, #e8f5f3 0%, #f0faf8 100%)", border: "1px solid rgba(31,140,123,0.18)" }}>
                 <div className="flex items-center gap-3 mb-4">
-                  <span className="text-3xl">🌱</span>
+                  <svg viewBox="0 0 24 24" fill="none" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" className="w-9 h-9 flex-shrink-0" stroke="#1f8c7b">
+                    <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10z"/>
+                    <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/>
+                  </svg>
                   <div>
                     <div className="text-[0.72rem] font-bold uppercase tracking-widest text-[#1f8c7b] mb-0.5">Missão</div>
                     <div className="text-lg font-bold text-[#143a62]">Ser Singular</div>
@@ -735,7 +787,10 @@ export default function HomePage() {
             <AnimateIn>
               <div className="rounded-[18px] p-8 h-full" style={{ background: "linear-gradient(135deg, #eef2f7 0%, #f4f8ff 100%)", border: "1px solid rgba(20,58,98,0.12)" }}>
                 <div className="flex items-center gap-3 mb-4">
-                  <span className="text-3xl">🌈</span>
+                  <svg viewBox="0 0 24 24" fill="none" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" className="w-9 h-9 flex-shrink-0" stroke="#143a62">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                    <circle cx="12" cy="12" r="3"/>
+                  </svg>
                   <div>
                     <div className="text-[0.72rem] font-bold uppercase tracking-widest text-[#143a62] mb-0.5">Visão</div>
                     <div className="text-lg font-bold text-[#143a62]">Ser Singular</div>
@@ -751,7 +806,9 @@ export default function HomePage() {
           {/* Valores */}
           <AnimateIn className="text-center mb-8">
             <div className="flex items-center justify-center gap-2 mb-1">
-              <span className="text-xl">🤍</span>
+              <svg viewBox="0 0 24 24" fill="none" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4" stroke="#143a62">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+              </svg>
               <span className="text-[0.72rem] font-bold uppercase tracking-widest text-[#143a62]">Valores</span>
             </div>
             <h3 className="text-xl font-bold text-[#143a62]">Os princípios que guiam cada passo</h3>
@@ -759,16 +816,73 @@ export default function HomePage() {
 
           <Stagger className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {[
-              { emoji: "✨", title: "Singularidade", desc: "Cada criança é única. Cada família é única. Nossos planos nascem a partir do olhar atento e do cuidado com cada detalhe." },
-              { emoji: "🤝", title: "Comprometimento da família", desc: "Acreditamos que o desenvolvimento acontece quando há confiança, segurança emocional e relações verdadeiras." },
-              { emoji: "📊", title: "Evidências científicas", desc: "Utilizamos avaliações e coleta de dados unificados com sistemas de gestão para acompanhar a evolução de forma clara, ética e responsável." },
-              { emoji: "🤍", title: "Ética e transparência", desc: "Respeitamos limites profissionais, não fazemos promessas irreais e atuamos com clareza em cada etapa do processo." },
-              { emoji: "🌱", title: "Evolução contínua", desc: "Acompanhamos, analisamos, ajustamos e evoluímos sempre respeitando a singularidade de cada criança e da família." },
-              { emoji: "🎈", title: "Brincar como princípio", desc: "Quando usamos o brincar, respeitamos a forma mais autêntica da criança aprender." },
+              {
+                icon: (
+                  <svg viewBox="0 0 24 24" fill="none" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" className="w-6 h-6" stroke="#1f8c7b">
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                  </svg>
+                ),
+                title: "Singularidade",
+                desc: "Cada criança é única. Cada família é única. Nossos planos nascem a partir do olhar atento e do cuidado com cada detalhe.",
+              },
+              {
+                icon: (
+                  <svg viewBox="0 0 24 24" fill="none" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" className="w-6 h-6" stroke="#1f8c7b">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                    <circle cx="9" cy="7" r="4"/>
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                  </svg>
+                ),
+                title: "Comprometimento da família",
+                desc: "Acreditamos que o desenvolvimento acontece quando há confiança, segurança emocional e relações verdadeiras.",
+              },
+              {
+                icon: (
+                  <svg viewBox="0 0 24 24" fill="none" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" className="w-6 h-6" stroke="#1f8c7b">
+                    <line x1="18" y1="20" x2="18" y2="10"/>
+                    <line x1="12" y1="20" x2="12" y2="4"/>
+                    <line x1="6" y1="20" x2="6" y2="14"/>
+                  </svg>
+                ),
+                title: "Evidências científicas",
+                desc: "Utilizamos avaliações e coleta de dados unificados com sistemas de gestão para acompanhar a evolução de forma clara, ética e responsável.",
+              },
+              {
+                icon: (
+                  <svg viewBox="0 0 24 24" fill="none" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" className="w-6 h-6" stroke="#1f8c7b">
+                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                  </svg>
+                ),
+                title: "Ética e transparência",
+                desc: "Respeitamos limites profissionais, não fazemos promessas irreais e atuamos com clareza em cada etapa do processo.",
+              },
+              {
+                icon: (
+                  <svg viewBox="0 0 24 24" fill="none" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" className="w-6 h-6" stroke="#1f8c7b">
+                    <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10z"/>
+                    <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/>
+                  </svg>
+                ),
+                title: "Evolução contínua",
+                desc: "Acompanhamos, analisamos, ajustamos e evoluímos sempre respeitando a singularidade de cada criança e da família.",
+              },
+              {
+                icon: (
+                  <svg viewBox="0 0 24 24" fill="none" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" className="w-6 h-6" stroke="#1f8c7b">
+                    <circle cx="12" cy="12" r="10"/>
+                    <path d="M8 14s1.5 2 4 2 4-2 4-2"/>
+                    <line x1="9" y1="9" x2="9.01" y2="9"/>
+                    <line x1="15" y1="9" x2="15.01" y2="9"/>
+                  </svg>
+                ),
+                title: "Brincar como princípio",
+                desc: "Quando usamos o brincar, respeitamos a forma mais autêntica da criança aprender.",
+              },
             ].map((v) => (
               <StaggerItem key={v.title}>
                 <div className="rounded-[14px] p-6 h-full bg-[#f8f9fb] border border-[#e8eaf0] hover:border-[#1f8c7b]/30 hover:shadow-md transition-all duration-300">
-                  <span className="text-2xl block mb-3">{v.emoji}</span>
+                  <div className="mb-3">{v.icon}</div>
                   <div className="text-[0.82rem] font-bold text-[#143a62] uppercase tracking-wide mb-2">{v.title}</div>
                   <p className="text-[#5a6a7e] text-[0.88rem] leading-relaxed">{v.desc}</p>
                 </div>

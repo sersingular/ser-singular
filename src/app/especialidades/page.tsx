@@ -9,7 +9,19 @@ export const metadata: Metadata = {
 const especialidades = [
   {
     id: "psicologia",
-    emoji: "🧠",
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" className="w-3.5 h-3.5 inline-block align-text-bottom">
+        <path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"/>
+        <path d="M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z"/>
+        <path d="M15 13a4.5 4.5 0 0 1-3-4 4.5 4.5 0 0 1-3 4"/>
+        <path d="M17.599 6.5a3 3 0 0 0 .399-1.375"/>
+        <path d="M6.003 5.125A3 3 0 0 0 6.401 6.5"/>
+        <path d="M3.477 10.896a4 4 0 0 1 .585-.396"/>
+        <path d="M19.938 10.5a4 4 0 0 1 .585.396"/>
+        <path d="M6 18a4 4 0 0 1-1.967-.516"/>
+        <path d="M19.967 17.484A4 4 0 0 1 18 18"/>
+      </svg>
+    ),
     tag: "Psicologia",
     title: "Psicologia Infantil",
     desc1: "A Psicologia na Ser Singular atua com crianças que apresentam dificuldades emocionais, comportamentais e de desenvolvimento. Nosso trabalho é baseado em evidências científicas, com abordagens como ABA (Análise do Comportamento Aplicada) e o Modelo Denver.",
@@ -33,7 +45,11 @@ const especialidades = [
   },
   {
     id: "fonoaudiologia",
-    emoji: "🗣️",
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" className="w-3.5 h-3.5 inline-block align-text-bottom">
+        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+      </svg>
+    ),
     tag: "Fonoaudiologia",
     title: "Fonoaudiologia",
     desc1: "A Fonoaudiologia na Ser Singular é especializada em linguagem infantil, fala e motricidade orofacial. Utilizamos abordagens baseadas em evidências como PROMPT (Prompts for Restructuring Oral Muscular Phonetic Targets) e DTTC (Dynamic Temporal and Tactile Cueing).",
@@ -56,7 +72,11 @@ const especialidades = [
   },
   {
     id: "terapia-ocupacional",
-    emoji: "👶",
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" className="w-3.5 h-3.5 inline-block align-text-bottom">
+        <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+      </svg>
+    ),
     tag: "Terapia Ocupacional",
     title: "Terapia Ocupacional",
     desc1: "A Terapia Ocupacional na Ser Singular trabalha com a integração sensorial, desenvolvimento motor e autonomia da criança. Atuamos com crianças que apresentam hipersensibilidade sensorial, dificuldades motoras e desafios na rotina diária.",
@@ -80,7 +100,12 @@ const especialidades = [
   },
   {
     id: "psicopedagogia",
-    emoji: "📖",
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" className="w-3.5 h-3.5 inline-block align-text-bottom">
+        <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
+        <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+      </svg>
+    ),
     tag: "Psicopedagogia",
     title: "Psicopedagogia",
     desc1: "A Psicopedagogia na Ser Singular investiga as dificuldades de aprendizagem da criança, identificando seu perfil cognitivo e traçando um plano de intervenção individualizado. Trabalhamos com dislexia, discalculia, TDAH e outros perfis de aprendizagem.",
@@ -125,7 +150,7 @@ export default function EspecialidadesPage() {
                 {/* Left */}
                 <div>
                   <span className="inline-block bg-[#e8f5f3] text-[#1f8c7b] px-3 py-0.5 rounded-full text-[0.78rem] font-semibold uppercase tracking-widest mb-3">
-                    {esp.emoji} {esp.tag}
+                    {esp.icon} {esp.tag}
                   </span>
                   <h2 className="text-2xl text-[#143a62] font-bold mb-4">{esp.title}</h2>
                   <p className="text-[0.92rem] text-[#5a6a7e] leading-relaxed mb-4">{esp.desc1}</p>

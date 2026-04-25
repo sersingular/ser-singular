@@ -146,10 +146,16 @@ export default async function BlogPostPage({ params }: Props) {
             </div>
           ) : (
             <div
-              className="text-6xl mb-8 p-8 rounded-[20px] flex items-center justify-center"
+              className="mb-8 p-8 rounded-[20px] flex items-center justify-center"
               style={{ background: post.categoryBg }}
             >
-              {post.emoji}
+              <svg viewBox="0 0 24 24" fill="none" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="w-20 h-20 opacity-40" stroke={post.categoryColor}>
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                <polyline points="14 2 14 8 20 8"/>
+                <line x1="16" y1="13" x2="8" y2="13"/>
+                <line x1="16" y1="17" x2="8" y2="17"/>
+                <polyline points="10 9 9 9 8 9"/>
+              </svg>
             </div>
           )}
 
@@ -193,7 +199,14 @@ export default async function BlogPostPage({ params }: Props) {
                     href={`/blog/${r.slug}`}
                     className="no-underline bg-white rounded-[16px] p-4 border border-[#e2e8f0] hover:shadow-md transition-shadow"
                   >
-                    <div className="text-2xl mb-2">{r.emoji}</div>
+                    <div className="mb-2">
+                      <svg viewBox="0 0 24 24" fill="none" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="w-7 h-7 opacity-60" stroke={r.categoryColor}>
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                        <polyline points="14 2 14 8 20 8"/>
+                        <line x1="16" y1="13" x2="8" y2="13"/>
+                        <line x1="16" y1="17" x2="8" y2="17"/>
+                      </svg>
+                    </div>
                     <p className="text-sm text-[#143a62] font-semibold leading-snug">{r.title}</p>
                     <p className="text-[0.78rem] text-[#5a6a7e] mt-1">{r.date}</p>
                   </Link>

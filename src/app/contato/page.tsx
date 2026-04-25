@@ -27,24 +27,39 @@ export default function ContatoPage() {
             <div className="space-y-5">
               {[
                 {
-                  icon: "📍",
+                  icon: (
+                    <svg viewBox="0 0 24 24" fill="none" stroke="#1f8c7b" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" className="w-6 h-6">
+                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                      <circle cx="12" cy="10" r="3"/>
+                    </svg>
+                  ),
                   title: "Endereço",
                   desc: "Av. José Callegari, 1820, Centro, Medianeira, PR",
                 },
                 {
-                  icon: "📱",
+                  icon: (
+                    <svg viewBox="0 0 24 24" fill="none" stroke="#1f8c7b" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" className="w-6 h-6">
+                      <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
+                      <line x1="12" y1="18" x2="12.01" y2="18"/>
+                    </svg>
+                  ),
                   title: "WhatsApp",
                   desc: "(45) 99977-1331",
                   href: "https://wa.me/554599771331",
                 },
                 {
-                  icon: "🕐",
+                  icon: (
+                    <svg viewBox="0 0 24 24" fill="none" stroke="#1f8c7b" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" className="w-6 h-6">
+                      <circle cx="12" cy="12" r="10"/>
+                      <polyline points="12 6 12 12 16 14"/>
+                    </svg>
+                  ),
                   title: "Horário de atendimento",
                   desc: "Seg a Sex · 07:15 às 11:45 e 13:30 às 17:45",
                 },
               ].map((item) => (
                 <div key={item.title} className="flex gap-4 items-start p-5 bg-white rounded-[16px] border border-[#e2e8f0]">
-                  <div className="text-2xl flex-shrink-0">{item.icon}</div>
+                  <div className="flex-shrink-0">{item.icon}</div>
                   <div>
                     <h4 className="font-semibold text-[#143a62] text-sm mb-0.5">{item.title}</h4>
                     {item.href ? (
