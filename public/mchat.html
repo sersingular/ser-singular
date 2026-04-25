@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Avaliação M-CHAT — Rastreamento do Autismo | Clínica Ser Singular</title>
+  <meta name="description" content="Ferramenta de rastreamento precoce do autismo baseada na M-CHAT. Responda 23 questões e receba um parecer orientativo. Clínica Ser Singular — Medianeira, PR.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --primary: #6B5CE7;
+      --primary-light: #EEEEFF;
+      --primary-dark: #5548C8;
+      --success: #27AE60;
+      --success-light: #E8F8EE;
+      --danger: #E74C3C;
+      --danger-light: #FDECEA;
+      --warning: #E8A020;
+      --warning-light: #FEF5E3;
+      --text: #1a1a2e;
+      --text-muted: #6B7280;
+      --border: #E5E7EB;
+      --bg: #F4F5FF;
+      --card: #FFFFFF;
+      --radius: 12px;
+      --shadow: 0 2px 16px rgba(107,92,231,0.09);
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      line-height: 1.6;
+    }
+
+    /* ── HEADER ── */
+    .header {
+      background: #fff;
+      border-bottom: 1px solid var(--border);
+      padding: 14px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 1px 8px rgba(0,0,0,0.06);
+    }
+    .header-inner {
+      max-width: 680px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+    .logo-wrap { display: flex; align-items: center; gap: 10px; }
+    .logo-mark {
+      width: 36px; height: 36px;
+      background: var(--primary);
+      border-radius: 9px;
+      display: flex; align-items: center; justify-content: center;
+      color: #fff; font-weight: 800; font-size: 15px; flex-shrink: 0;
+    }
+    .logo-name { font-size: 14px; font-weight: 700; line-height: 1.2; }
+    .logo-sub { font-size: 10px; color: var(--text-muted); }
+    .header-badge {
+      background: var(--primary-light);
+      color: var(--primary);
+      font-size: 11px;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 100px;
+      white-space: nowrap;
+      letter-spacing: 0.3px;
+    }
+
+    /* ── CONTAINER ── */
+    .container { max-width: 680px; margin: 0 auto; padding: 24px 16px 40px; }
+
+    /* ── STEPPER ── */
+    .stepper {
+      display: flex; align-items: flex-start;
+      margin-bottom: 28px;
+    }
+    .step-item {
+      flex: 1; display: flex; flex-direction: column; align-items: center;
+      gap: 6px; position: relative;
+    }
+    .step-item:not(:last-child)::after {
+      content: '';
+      position: absolute;
+      top: 15px; left: calc(50% + 16px);
+      right: calc(-50% + 16px);
+      height: 2px;
+      background: var(--border);
+      z-index: 0;
+      transition: background 0.3s;
+    }
+    .step-item.done:not(:last-child)::after { background: var(--primary); }
+    .step-circle {
+      width: 30px; height: 30px;
+      border-radius: 50%;
+      background: var(--border);
+      color: var(--text-muted);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 12px; font-weight: 700;
+      position: relative; z-index: 1;
+      transition: all 0.3s;
+    }
+    .step-item.active .step-circle {
+      background: var(--primary); color: #fff;
+      box-shadow: 0 0 0 4px rgba(107,92,231,0.18);
+    }
+    .step-item.done .step-circle { background: var(--primary); color: #fff; }
+    .step-label {
+      font-size: 10px; font-weight: 500; color: var(--text-muted);
+      text-align: center; line-height: 1.3;
+    }
+    .step-item.active .step-label,
+    .step-item.done .step-label { color: var(--primary); font-weight: 600; }
+
+    /* ── CARDS ── */
+    .card {
+      background: var(--card);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 24px;
+      margin-bottom: 14px;
+    }
+    .card-title { font-size: 20px; font-weight: 800; margin-bottom: 4px; }
+    .card-sub { font-size: 13px; color: var(--text-muted); margin-bottom: 20px; }
+
+    /* ── FORM ── */
+    .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    .form-grid .full { grid-column: 1 / -1; }
+    .form-group { display: flex; flex-direction: column; gap: 5px; }
+    .form-label { font-size: 13px; font-weight: 600; }
+    .form-label .req { color: var(--danger); margin-left: 2px; }
+    .form-input {
+      padding: 10px 13px;
+      border: 1.5px solid var(--border);
+      border-radius: 8px;
+      font-family: 'Inter', sans-serif;
+      font-size: 14px; color: var(--text);
+      background: #fff; outline: none;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    .form-input:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(107,92,231,0.12);
+    }
+    .form-input.err { border-color: var(--danger); }
+    .form-hint { font-size: 11px; color: var(--danger); display: none; }
+    .form-hint.show { display: block; }
+
+    .radio-group { display: flex; gap: 10px; flex-wrap: wrap; }
+    .radio-opt {
+      display: flex; align-items: center; gap: 7px;
+      padding: 8px 14px;
+      border: 1.5px solid var(--border);
+      border-radius: 8px; cursor: pointer;
+      font-size: 14px; font-weight: 500;
+      transition: all 0.18s; user-select: none;
+    }
+    .radio-opt input[type="radio"] { display: none; }
+    .radio-opt:hover { border-color: var(--primary); background: var(--primary-light); }
+    .radio-opt.sel {
+      border-color: var(--primary);
+      background: var(--primary-light);
+      color: var(--primary); font-weight: 700;
+    }
+
+    /* ── BUTTONS ── */
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center; gap: 7px;
+      padding: 12px 22px;
+      border-radius: 9px;
+      font-family: 'Inter', sans-serif;
+      font-size: 14px; font-weight: 700;
+      cursor: pointer; border: none;
+      transition: all 0.18s; text-decoration: none;
+      line-height: 1;
+    }
+    .btn-primary { background: var(--primary); color: #fff; }
+    .btn-primary:hover { background: var(--primary-dark); transform: translateY(-1px); box-shadow: 0 4px 12px rgba(107,92,231,0.3); }
+    .btn-outline { background: #fff; color: var(--primary); border: 1.5px solid var(--primary); }
+    .btn-outline:hover { background: var(--primary-light); }
+    .btn-success { background: var(--success); color: #fff; }
+    .btn-success:hover { background: #219a52; transform: translateY(-1px); }
+    .btn-ghost { background: #f3f4f6; color: var(--text-muted); }
+    .btn-ghost:hover { background: var(--border); }
+    .btn-full { width: 100%; }
+    .btn-row { display: flex; gap: 10px; margin-top: 22px; flex-wrap: wrap; }
+    .btn-row .btn { flex: 1; min-width: 130px; }
+
+    /* ── STEP 2 INSTRUCTIONS ── */
+    .info-box {
+      background: var(--primary-light);
+      border: 1.5px solid rgba(107,92,231,0.2);
+      border-radius: var(--radius);
+      padding: 18px 20px;
+      margin-bottom: 20px;
+    }
+    .info-box-title {
+      font-size: 14px; font-weight: 700; color: var(--primary);
+      margin-bottom: 10px; display: flex; align-items: center; gap: 8px;
+    }
+    .info-box-text { font-size: 14px; line-height: 1.75; color: var(--text); }
+
+    /* ── STEP 3 QUESTIONS ── */
+    .progress-bar-wrap {
+      background: #fff;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 14px 18px;
+      margin-bottom: 14px;
+    }
+    .progress-meta {
+      display: flex; justify-content: space-between; align-items: center;
+      font-size: 12px; font-weight: 600; color: var(--text-muted);
+      margin-bottom: 8px;
+    }
+    .progress-count { color: var(--primary); font-size: 14px; }
+    .progress-track {
+      background: var(--border); border-radius: 100px; height: 7px; overflow: hidden;
+    }
+    .progress-fill {
+      background: linear-gradient(90deg, var(--primary), #9580FF);
+      height: 100%; border-radius: 100px;
+      transition: width 0.35s ease; width: 0%;
+    }
+
+    .q-card {
+      background: #fff;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 16px 18px;
+      margin-bottom: 10px;
+      border-left: 4px solid transparent;
+      transition: border-color 0.2s;
+    }
+    .q-card.is-critical { border-left-color: var(--warning); }
+    .q-card.answered-safe { border-left-color: var(--success); }
+    .q-card.answered-risk { border-left-color: var(--danger); }
+    .q-card.missing { border-left-color: var(--danger); background: var(--danger-light); }
+
+    .q-header { display: flex; align-items: flex-start; gap: 10px; margin-bottom: 12px; }
+    .q-num {
+      min-width: 26px; height: 26px;
+      background: var(--bg); border-radius: 6px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 11px; font-weight: 700; color: var(--text-muted); flex-shrink: 0;
+    }
+    .q-card.is-critical .q-num { background: var(--warning-light); color: var(--warning); }
+    .q-body { flex: 1; }
+    .q-text { font-size: 14px; line-height: 1.6; font-weight: 500; }
+    .badge-critical {
+      display: inline-flex; align-items: center; gap: 3px;
+      background: var(--warning-light); color: var(--warning);
+      font-size: 10px; font-weight: 700;
+      padding: 2px 8px; border-radius: 100px;
+      border: 1px solid rgba(232,160,32,0.35);
+      margin-top: 6px;
+      text-transform: uppercase; letter-spacing: 0.5px;
+    }
+    .q-answers { display: flex; gap: 8px; }
+    .btn-ans {
+      flex: 1; padding: 9px 8px;
+      border-radius: 8px; font-family: 'Inter', sans-serif;
+      font-size: 13px; font-weight: 700;
+      cursor: pointer; border: 2px solid var(--border);
+      background: #fff; color: var(--text-muted);
+      transition: all 0.15s; letter-spacing: 0.5px;
+    }
+    .btn-ans.sim:hover, .btn-ans.sim.on { background: var(--success); border-color: var(--success); color: #fff; }
+    .btn-ans.nao:hover, .btn-ans.nao.on { background: var(--danger); border-color: var(--danger); color: #fff; }
+
+    .alert-missing {
+      background: var(--danger-light);
+      border: 1.5px solid rgba(231,76,60,0.3);
+      border-radius: 9px;
+      padding: 14px 16px;
+      font-size: 13px; color: var(--danger);
+      margin-top: 14px; display: none;
+    }
+    .alert-missing.show { display: block; }
+    .alert-missing strong { display: block; font-size: 14px; margin-bottom: 5px; }
+
+    /* ── STEP 4 RESULTS ── */
+    .result-banner {
+      border-radius: var(--radius);
+      padding: 28px 20px;
+      text-align: center;
+      margin-bottom: 14px;
+    }
+    .result-banner.is-risk {
+      background: linear-gradient(135deg, #FDECEA 0%, #FFE8E6 100%);
+      border: 1.5px solid rgba(231,76,60,0.2);
+    }
+    .result-banner.is-safe {
+      background: linear-gradient(135deg, #E8F8EE 0%, #D5F0DF 100%);
+      border: 1.5px solid rgba(39,174,96,0.2);
+    }
+    .result-emoji { font-size: 52px; line-height: 1; margin-bottom: 12px; }
+    .result-tag {
+      font-size: 11px; font-weight: 700; text-transform: uppercase;
+      letter-spacing: 1.2px; margin-bottom: 5px;
+    }
+    .is-risk .result-tag { color: var(--danger); }
+    .is-safe .result-tag { color: var(--success); }
+    .result-heading { font-size: 21px; font-weight: 800; margin-bottom: 6px; }
+    .is-risk .result-heading { color: var(--danger); }
+    .is-safe .result-heading { color: var(--success); }
+    .result-child-info { font-size: 13px; color: var(--text-muted); margin-top: 8px; }
+
+    .scores-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 14px; }
+    .score-box {
+      background: #fff; border-radius: 10px;
+      padding: 16px; text-align: center;
+      box-shadow: var(--shadow);
+    }
+    .score-num { font-size: 40px; font-weight: 800; line-height: 1; margin-bottom: 4px; }
+    .score-box.s-total .score-num { color: var(--primary); }
+    .score-box.s-crit .score-num { color: var(--warning); }
+    .score-lbl { font-size: 11px; color: var(--text-muted); font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
+
+    .parecer-box {
+      border-radius: var(--radius);
+      padding: 18px 20px;
+      margin-bottom: 14px;
+      font-size: 14px; line-height: 1.75;
+    }
+    .parecer-box.is-risk { background: var(--danger-light); border: 1.5px solid rgba(231,76,60,0.2); color: #7a2a20; }
+    .parecer-box.is-safe { background: var(--success-light); border: 1.5px solid rgba(39,174,96,0.2); color: #1a6336; }
+    .parecer-box-title { font-weight: 700; font-size: 15px; margin-bottom: 10px; }
+
+    .review-wrap { background: #fff; border-radius: var(--radius); box-shadow: var(--shadow); padding: 20px; margin-bottom: 14px; }
+    .review-heading { font-size: 15px; font-weight: 700; margin-bottom: 14px; display: flex; align-items: center; gap: 8px; }
+    .review-row {
+      display: flex; align-items: flex-start; gap: 10px;
+      padding: 9px 11px; border-radius: 8px; margin-bottom: 7px;
+      font-size: 13px;
+    }
+    .review-row.r-risk { background: #fff5f5; border: 1px solid rgba(231,76,60,0.15); }
+    .review-row.r-safe { background: #f6fff9; border: 1px solid rgba(39,174,96,0.15); }
+    .review-idx { font-weight: 700; font-size: 12px; min-width: 22px; }
+    .r-risk .review-idx { color: var(--danger); }
+    .r-safe .review-idx { color: var(--success); }
+    .review-q { flex: 1; line-height: 1.5; }
+    .crit-tag {
+      font-size: 9px; font-weight: 700;
+      background: var(--warning-light); color: var(--warning);
+      padding: 1px 5px; border-radius: 4px; margin-left: 5px;
+    }
+    .review-ans {
+      font-size: 11px; font-weight: 700;
+      padding: 2px 8px; border-radius: 5px; white-space: nowrap;
+    }
+    .r-risk .review-ans { background: var(--danger); color: #fff; }
+    .r-safe .review-ans { background: var(--success); color: #fff; }
+
+    .disclaimer-box {
+      background: #FFFBEB;
+      border: 1.5px solid rgba(232,160,32,0.35);
+      border-radius: 9px;
+      padding: 14px 16px;
+      font-size: 12px; color: #7a5a00; line-height: 1.65;
+      margin-bottom: 16px;
+    }
+
+    /* ── FOOTER ── */
+    .footer {
+      text-align: center;
+      padding: 20px 16px;
+      font-size: 11px; color: var(--text-muted);
+      border-top: 1px solid var(--border); margin-top: 32px;
+      line-height: 1.8;
+    }
+
+    /* ── UTILITY ── */
+    .hidden { display: none !important; }
+    .divider { height: 1px; background: var(--border); margin: 18px 0; }
+    .text-muted { color: var(--text-muted); font-size: 13px; }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 480px) {
+      .form-grid { grid-template-columns: 1fr; }
+      .form-grid .full { grid-column: 1; }
+      .card { padding: 18px 14px; }
+      .container { padding: 14px 10px 36px; }
+      .step-label { font-size: 9px; }
+      .scores-row { grid-template-columns: 1fr 1fr; }
+      .btn-row { flex-direction: column; }
+      .btn-row .btn { min-width: 0; }
+      .header-badge { display: none; }
+    }
+
+    /* ── PRINT ── */
+    @media print {
+      .header { position: static; box-shadow: none; border-bottom: 1px solid #ccc; }
+      .stepper, .btn-row, .no-print { display: none !important; }
+      .card, .q-card, .review-wrap, .score-box { box-shadow: none; border: 1px solid #ddd; }
+      body { background: #fff; }
+      .result-banner, .parecer-box, .disclaimer-box {
+        -webkit-print-color-adjust: exact; print-color-adjust: exact;
+      }
+      .container { padding: 0 16px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header-inner">
+      <div class="logo-wrap">
+        <div class="logo-mark">SS</div>
+        <div>
+          <div class="logo-name">Clínica Ser Singular</div>
+          <div class="logo-sub">Centro de Desenvolvimento e Treinamento</div>
+        </div>
+      </div>
+      <div class="header-badge">M-CHAT · Rastreamento</div>
+    </div>
+  </header>
+
+  <div class="container">
+
+    <!-- STEPPER -->
+    <div class="stepper" id="stepper">
+      <div class="step-item active" id="step-item-1">
+        <div class="step-circle">1</div>
+        <div class="step-label">Dados</div>
+      </div>
+      <div class="step-item" id="step-item-2">
+        <div class="step-circle">2</div>
+        <div class="step-label">Instruções</div>
+      </div>
+      <div class="step-item" id="step-item-3">
+        <div class="step-circle">3</div>
+        <div class="step-label">Avaliação</div>
+      </div>
+      <div class="step-item" id="step-item-4">
+        <div class="step-circle">4</div>
+        <div class="step-label">Resultado</div>
+      </div>
+    </div>
+
+    <!-- ══ ETAPA 1 — IDENTIFICAÇÃO ══ -->
+    <div id="step1">
+      <div class="card">
+        <div class="card-title">Identificação</div>
+        <div class="card-sub">Preencha os dados antes de iniciar a avaliação.</div>
+
+        <div class="form-grid">
+          <div class="form-group full">
+            <label class="form-label" for="responsavel">Nome do responsável <span class="req">*</span></label>
+            <input class="form-input" type="text" id="responsavel" placeholder="Nome completo">
+            <span class="form-hint" id="err-responsavel">Por favor, informe o nome do responsável.</span>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="email">E-mail <span class="req">*</span></label>
+            <input class="form-input" type="email" id="email" placeholder="email@exemplo.com">
+            <span class="form-hint" id="err-email">Informe um e-mail válido.</span>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="whatsapp">WhatsApp <span class="req">*</span></label>
+            <input class="form-input" type="tel" id="whatsapp" placeholder="(45) 99999-9999" maxlength="15">
+            <span class="form-hint" id="err-whatsapp">Informe o número com DDD.</span>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="criancaNome">Nome da criança <span class="req">*</span></label>
+            <input class="form-input" type="text" id="criancaNome" placeholder="Nome da criança">
+            <span class="form-hint" id="err-criancaNome">Informe o nome da criança.</span>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="criancaNascimento">Data de nascimento <span class="req">*</span></label>
+            <input class="form-input" type="date" id="criancaNascimento">
+            <span class="form-hint" id="err-criancaNascimento">Informe a data de nascimento.</span>
+          </div>
+
+          <div class="form-group full">
+            <label class="form-label">Quem está preenchendo <span class="req">*</span></label>
+            <div class="radio-group" id="quem-group">
+              <label class="radio-opt" onclick="selectQuem(this, 'Mãe')">
+                <input type="radio" name="quem" value="Mãe"> 👩 Mãe
+              </label>
+              <label class="radio-opt" onclick="selectQuem(this, 'Pai')">
+                <input type="radio" name="quem" value="Pai"> 👨 Pai
+              </label>
+              <label class="radio-opt" onclick="selectQuem(this, 'Outro')">
+                <input type="radio" name="quem" value="Outro"> 🙋 Outro
+              </label>
+            </div>
+            <span class="form-hint" id="err-quem">Selecione quem está preenchendo.</span>
+          </div>
+
+          <div class="form-group full">
+            <label class="form-label" for="dataPreenchimento">Data de preenchimento</label>
+            <input class="form-input" type="text" id="dataPreenchimento" readonly>
+          </div>
+        </div>
+
+        <div class="btn-row">
+          <button class="btn btn-primary" onclick="goStep2()">
+            Próximo &rarr;
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══ ETAPA 2 — INSTRUÇÕES ══ -->
+    <div id="step2" class="hidden">
+      <div class="card">
+        <div class="card-title">&#128221; Instruções</div>
+        <div class="card-sub">Leia com atenção antes de iniciar.</div>
+
+        <div class="info-box">
+          <div class="info-box-title">&#128226; Como responder</div>
+          <div class="info-box-text">
+            Por favor, responda as questões abaixo sobre como seu filho(a) se comporta. Tente responder todas as questões. Caso o comportamento seja <strong>raro</strong> (observou apenas uma ou duas vezes), responda como se a criança <strong>não tivesse o comportamento</strong>.
+          </div>
+        </div>
+
+        <div class="info-box" style="background:#F0FFF6; border-color:rgba(39,174,96,0.25);">
+          <div class="info-box-title" style="color:#27AE60;">&#9733; Itens Críticos</div>
+          <div class="info-box-text">
+            Algumas questões são marcadas como <strong style="color:var(--warning)">Item Crítico</strong>. Esses itens têm maior peso na avaliação e merecem atenção especial ao responder.
+          </div>
+        </div>
+
+        <div class="info-box" style="background:#F8F9FF; border-color:var(--border);">
+          <div class="info-box-title" style="color:var(--text-muted);">&#128221; Sobre esta ferramenta</div>
+          <div class="info-box-text" style="color:var(--text-muted);">
+            A M-CHAT (Modified Checklist for Autism in Toddlers) é uma escala de rastreamento desenvolvida para crianças entre 16 e 30 meses de idade. Esta ferramenta tem caráter informativo e não substitui avaliação clínica profissional.
+          </div>
+        </div>
+
+        <div class="btn-row">
+          <button class="btn btn-ghost no-print" onclick="goStep1()">&#8592; Voltar</button>
+          <button class="btn btn-primary" onclick="goStep3()">
+            Entendi, iniciar avaliação &rarr;
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══ ETAPA 3 — AVALIAÇÃO ══ -->
+    <div id="step3" class="hidden">
+
+      <!-- Progress bar -->
+      <div class="progress-bar-wrap">
+        <div class="progress-meta">
+          <span>Progresso</span>
+          <span class="progress-count" id="prog-label">0 de 23 respondidas</span>
+        </div>
+        <div class="progress-track">
+          <div class="progress-fill" id="prog-fill"></div>
+        </div>
+      </div>
+
+      <!-- Questions container -->
+      <div id="questions-container"></div>
+
+      <!-- Missing alert -->
+      <div class="alert-missing" id="alert-missing">
+        <strong>&#9888; Questões sem resposta</strong>
+        <span id="missing-list"></span>
+      </div>
+
+      <div class="btn-row no-print">
+        <button class="btn btn-ghost" onclick="goStep2()">&#8592; Voltar</button>
+        <button class="btn btn-primary" onclick="tryGoStep4()">
+          Ver resultado &rarr;
+        </button>
+      </div>
+    </div>
+
+    <!-- ══ ETAPA 4 — RESULTADO ══ -->
+    <div id="step4" class="hidden">
+      <div id="result-content"></div>
+
+      <div class="btn-row no-print">
+        <button class="btn btn-ghost" onclick="goStep3()">&#8592; Rever respostas</button>
+        <button class="btn btn-outline" onclick="window.print()">&#128438; Imprimir</button>
+        <button class="btn btn-success" onclick="resetAll()">&#43; Nova avaliação</button>
+      </div>
+    </div>
+
+  </div><!-- /container -->
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div>Instrumento baseado na M-CHAT | Robins, Fein &amp; Barton (1999)</div>
+    <div style="margin-top:4px;">Clínica Ser Singular · Medianeira, PR &nbsp;·&nbsp; Esta ferramenta tem caráter exclusivamente informativo</div>
+  </footer>
+
+  <script>
+    /* ─────────────────────────────────────────
+       DATA
+    ───────────────────────────────────────── */
+    const QUESTIONS = [
+      { id:  1, text: 'A criança gosta de se balançar ou de pular no seu joelho etc.?', critical: false },
+      { id:  2, text: 'Tem interesse por outras crianças?', critical: true },
+      { id:  3, text: 'Gosta de subir em coisas, como escadas ou móveis?', critical: false },
+      { id:  4, text: 'Gosta de brincar de esconder e mostrar o rosto ou de esconde-esconde?', critical: false },
+      { id:  5, text: 'Já brincou de "faz de conta", como, por exemplo, fingir que está falando ao telefone ou que está cuidando da boneca ou qualquer outra brincadeira parecida?', critical: false },
+      { id:  6, text: 'Aponta com dedo indicador para pedir alguma coisa?', critical: false },
+      { id:  7, text: 'Aponta com o dedo indicador para demonstrar interesse por algo?', critical: true },
+      { id:  8, text: 'Consegue brincar de forma correta com brinquedos pequenos (ex.: carros ou blocos) sem apenas colocar na boca, remexer no brinquedo ou deixar o brinquedo cair?', critical: false },
+      { id:  9, text: 'Alguma vez a criança trouxe objetos para mostrá-lo a você?', critical: true },
+      { id: 10, text: 'Olha para você nos olhos por mais de um segundo ou dois?', critical: false },
+      { id: 11, text: 'É muito sensível ao barulho (ex.: tapando os ouvidos)?', critical: false },
+      { id: 12, text: 'Sorri como resposta às suas expressões faciais ou ao seu sorriso?', critical: false },
+      { id: 13, text: 'Imita você (ex.: você faz expressões/caretas e ela o imita)?', critical: true },
+      { id: 14, text: 'Responde/olha quando você a chama pelo nome?', critical: true },
+      { id: 15, text: 'Se você apontar para um brinquedo do outro lado da sala, a criança acompanha com o olhar?', critical: true },
+      { id: 16, text: 'Já sabe andar?', critical: false },
+      { id: 17, text: 'Olha para coisas que você está olhando?', critical: false },
+      { id: 18, text: 'Faz movimentos estranhos com os dedos perto do rosto dele?', critical: false },
+      { id: 19, text: 'Tenta atrair a sua atenção para a atividade dele?', critical: false },
+      { id: 20, text: 'Você alguma vez já se perguntou se a criança é surda?', critical: false },
+      { id: 21, text: 'Entende o que as pessoas dizem?', critical: false },
+      { id: 22, text: 'Às vezes fica aérea, "olhando para o nada" ou caminhando sem direção definida?', critical: false },
+      { id: 23, text: 'Olha para o seu rosto para conferir a sua reação quando vê algo estranho?', critical: false },
+    ];
+
+    // Pontuam como RISCO quando NÃO
+    const RISK_NO  = new Set([1,2,3,4,5,6,7,8,9,10,12,13,14,15,16,17,19,21,23]);
+    // Pontuam como RISCO quando SIM
+    const RISK_YES = new Set([11,18,20,22]);
+    // Itens críticos
+    const CRITICAL = new Set([2,7,9,13,14,15]);
+
+    /* ─────────────────────────────────────────
+       STATE
+    ───────────────────────────────────────── */
+    const state = {
+      step: 1,
+      quemPreencheu: '',
+      answers: {}, // { 1: 'sim' | 'nao', ... }
+    };
+
+    /* ─────────────────────────────────────────
+       INIT
+    ───────────────────────────────────────── */
+    document.addEventListener('DOMContentLoaded', () => {
+      // Auto fill today's date
+      document.getElementById('dataPreenchimento').value = new Date().toLocaleDateString('pt-BR');
+      // WhatsApp mask
+      document.getElementById('whatsapp').addEventListener('input', maskPhone);
+      // Render questions
+      renderQuestions();
+    });
+
+    /* ─────────────────────────────────────────
+       PHONE MASK
+    ───────────────────────────────────────── */
+    function maskPhone(e) {
+      let v = e.target.value.replace(/\D/g, '').slice(0, 11);
+      if (v.length <= 10) {
+        v = v.replace(/^(\d{2})(\d{4})(\d{0,4})/, (_, a, b, c) => `(${a}) ${b}${c ? '-' + c : ''}`);
+      } else {
+        v = v.replace(/^(\d{2})(\d{5})(\d{0,4})/, (_, a, b, c) => `(${a}) ${b}${c ? '-' + c : ''}`);
+      }
+      e.target.value = v;
+    }
+
+    /* ─────────────────────────────────────────
+       RADIO — QUEM PREENCHEU
+    ───────────────────────────────────────── */
+    function selectQuem(el, val) {
+      document.querySelectorAll('#quem-group .radio-opt').forEach(o => o.classList.remove('sel'));
+      el.classList.add('sel');
+      state.quemPreencheu = val;
+    }
+
+    /* ─────────────────────────────────────────
+       STEPPER UPDATE
+    ───────────────────────────────────────── */
+    function updateStepper(active) {
+      for (let i = 1; i <= 4; i++) {
+        const el = document.getElementById('step-item-' + i);
+        el.classList.remove('active', 'done');
+        if (i < active) el.classList.add('done');
+        else if (i === active) el.classList.add('active');
+      }
+    }
+
+    /* ─────────────────────────────────────────
+       SHOW STEP
+    ───────────────────────────────────────── */
+    function showStep(n) {
+      [1,2,3,4].forEach(i => {
+        document.getElementById('step' + i).classList.toggle('hidden', i !== n);
+      });
+      updateStepper(n);
+      state.step = n;
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    /* ─────────────────────────────────────────
+       STEP 1 → 2
+    ───────────────────────────────────────── */
+    function goStep2() {
+      if (!validateStep1()) return;
+      showStep(2);
+    }
+
+    function goStep1() { showStep(1); }
+
+    function validateStep1() {
+      let ok = true;
+
+      const fields = [
+        { id: 'responsavel', errId: 'err-responsavel', check: v => v.trim().length >= 2 },
+        { id: 'email',       errId: 'err-email',       check: v => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v) },
+        { id: 'whatsapp',    errId: 'err-whatsapp',    check: v => v.replace(/\D/g,'').length >= 10 },
+        { id: 'criancaNome', errId: 'err-criancaNome', check: v => v.trim().length >= 2 },
+        { id: 'criancaNascimento', errId: 'err-criancaNascimento', check: v => v.length > 0 },
+      ];
+
+      fields.forEach(({ id, errId, check }) => {
+        const inp = document.getElementById(id);
+        const err = document.getElementById(errId);
+        const valid = check(inp.value);
+        inp.classList.toggle('err', !valid);
+        err.classList.toggle('show', !valid);
+        if (!valid) ok = false;
+      });
+
+      const errQuem = document.getElementById('err-quem');
+      if (!state.quemPreencheu) {
+        errQuem.classList.add('show');
+        ok = false;
+      } else {
+        errQuem.classList.remove('show');
+      }
+
+      return ok;
+    }
+
+    /* ─────────────────────────────────────────
+       STEP 2 → 3
+    ───────────────────────────────────────── */
+    function goStep3() { showStep(3); updateProgress(); }
+    function goStep2FromStep3() { showStep(2); }
+
+    /* ─────────────────────────────────────────
+       RENDER QUESTIONS
+    ───────────────────────────────────────── */
+    function renderQuestions() {
+      const container = document.getElementById('questions-container');
+      container.innerHTML = '';
+      QUESTIONS.forEach(q => {
+        const div = document.createElement('div');
+        div.className = 'q-card' + (q.critical ? ' is-critical' : '');
+        div.id = 'qcard-' + q.id;
+        div.innerHTML = `
+          <div class="q-header">
+            <div class="q-num">${q.id}</div>
+            <div class="q-body">
+              <div class="q-text">${q.text}</div>
+              ${q.critical ? '<span class="badge-critical">&#9733; Item Crítico</span>' : ''}
+            </div>
+          </div>
+          <div class="q-answers">
+            <button class="btn-ans sim" id="btn-sim-${q.id}" onclick="setAnswer(${q.id}, 'sim')">&#10003; SIM</button>
+            <button class="btn-ans nao" id="btn-nao-${q.id}" onclick="setAnswer(${q.id}, 'nao')">&#10007; NÃO</button>
+          </div>
+        `;
+        container.appendChild(div);
+      });
+    }
+
+    /* ─────────────────────────────────────────
+       SET ANSWER
+    ───────────────────────────────────────── */
+    function setAnswer(id, val) {
+      state.answers[id] = val;
+
+      const simBtn = document.getElementById('btn-sim-' + id);
+      const naoBtn = document.getElementById('btn-nao-' + id);
+      simBtn.classList.toggle('on', val === 'sim');
+      naoBtn.classList.toggle('on', val === 'nao');
+
+      // Update card border
+      const card = document.getElementById('qcard-' + id);
+      card.classList.remove('answered-safe', 'answered-risk', 'missing', 'is-critical');
+      if (CRITICAL.has(id)) card.classList.add('is-critical');
+
+      const isRisk = (RISK_NO.has(id) && val === 'nao') || (RISK_YES.has(id) && val === 'sim');
+      card.classList.add(isRisk ? 'answered-risk' : 'answered-safe');
+
+      updateProgress();
+
+      // Hide missing alert if it was showing
+      document.getElementById('alert-missing').classList.remove('show');
+    }
+
+    /* ─────────────────────────────────────────
+       PROGRESS
+    ───────────────────────────────────────── */
+    function updateProgress() {
+      const answered = Object.keys(state.answers).length;
+      document.getElementById('prog-label').textContent = `${answered} de 23 respondidas`;
+      document.getElementById('prog-fill').style.width = (answered / 23 * 100) + '%';
+    }
+
+    /* ─────────────────────────────────────────
+       STEP 3 → 4
+    ───────────────────────────────────────── */
+    function tryGoStep4() {
+      const missing = QUESTIONS.filter(q => !(q.id in state.answers)).map(q => q.id);
+      if (missing.length > 0) {
+        // Highlight missing
+        QUESTIONS.forEach(q => {
+          const card = document.getElementById('qcard-' + q.id);
+          if (missing.includes(q.id)) {
+            card.classList.add('missing');
+            card.classList.remove('answered-safe', 'answered-risk');
+          }
+        });
+        const alertEl = document.getElementById('alert-missing');
+        alertEl.classList.add('show');
+        document.getElementById('missing-list').textContent =
+          'Questões não respondidas: ' + missing.join(', ') + '. Role a tela e responda todas antes de continuar.';
+        // Scroll to first missing
+        document.getElementById('qcard-' + missing[0]).scrollIntoView({ behavior: 'smooth', block: 'center' });
+        return;
+      }
+
+      const score = calcScore();
+      saveToStorage(score);
+      renderResult(score);
+      showStep(4);
+    }
+
+    /* ─────────────────────────────────────────
+       SCORING
+    ───────────────────────────────────────── */
+    function calcScore() {
+      let total = 0, critical = 0;
+      const riskItems = [];
+
+      QUESTIONS.forEach(({ id }) => {
+        const ans = state.answers[id];
+        const isRisk = (RISK_NO.has(id) && ans === 'nao') || (RISK_YES.has(id) && ans === 'sim');
+        if (isRisk) {
+          total++;
+          if (CRITICAL.has(id)) critical++;
+          riskItems.push(id);
+        }
+      });
+
+      const isHighRisk = total >= 3 || critical >= 2;
+      return { total, critical, isHighRisk, riskItems };
+    }
+
+    /* ─────────────────────────────────────────
+       RENDER RESULT
+    ───────────────────────────────────────── */
+    function renderResult({ total, critical, isHighRisk, riskItems }) {
+      const criancaNome = document.getElementById('criancaNome').value;
+      const nasc = document.getElementById('criancaNascimento').value;
+      const nascFmt = nasc ? new Date(nasc + 'T12:00:00').toLocaleDateString('pt-BR') : '';
+
+      const bannerClass = isHighRisk ? 'is-risk' : 'is-safe';
+      const emoji       = isHighRisk ? '⚠️' : '✅';
+      const tag         = isHighRisk ? 'Indicativo de Risco' : 'Sem Indicativo de Risco';
+      const heading     = isHighRisk ? 'Risco Elevado Identificado' : 'Sem Indicativos Significativos';
+
+      const parecer = isHighRisk
+        ? `Com base nas respostas fornecidas, a avaliação indica a presença de indicativos que merecem atenção. Isso não significa um diagnóstico de autismo — a M-CHAT é uma escala de rastreamento, não um instrumento diagnóstico. Recomendamos que você procure um profissional especializado (neuropediatra, psicólogo ou neuropsicólogo) para uma avaliação completa. A identificação precoce é fundamental para garantir o melhor desenvolvimento para seu filho(a). Nossa equipe da Clínica Ser Singular pode te orientar nos próximos passos — entraremos em contato em breve.`
+        : `Com base nas respostas fornecidas, a avaliação não identificou indicativos de risco significativos para o espectro autista neste momento. Isso é um resultado tranquilizador! Lembre-se que o acompanhamento pediátrico regular é sempre recomendado. Caso você observe mudanças no comportamento do seu filho(a) futuramente ou tenha alguma dúvida, a Clínica Ser Singular está à disposição para te apoiar.`;
+
+      // Review rows
+      const reviewRows = QUESTIONS.map(({ id, text, critical: isCrit }) => {
+        const ans    = state.answers[id];
+        const isRisk = riskItems.includes(id);
+        const rowClass = isRisk ? 'r-risk' : 'r-safe';
+        const ansLabel = ans === 'sim' ? 'SIM' : 'NÃO';
+        const critTag  = isCrit ? '<span class="crit-tag">Crítico</span>' : '';
+        return `
+          <div class="review-row ${rowClass}">
+            <span class="review-idx">${id}.</span>
+            <span class="review-q">${text}${critTag}</span>
+            <span class="review-ans">${ansLabel}</span>
+          </div>`;
+      }).join('');
+
+      document.getElementById('result-content').innerHTML = `
+        <!-- Banner -->
+        <div class="result-banner ${bannerClass}">
+          <div class="result-emoji">${emoji}</div>
+          <div class="result-tag">${tag}</div>
+          <div class="result-heading">${heading}</div>
+          <div class="result-child-info">
+            ${criancaNome}${nascFmt ? ' · Nascimento: ' + nascFmt : ''}
+            &nbsp;·&nbsp; Avaliação: ${new Date().toLocaleDateString('pt-BR')}
+          </div>
+        </div>
+
+        <!-- Scores -->
+        <div class="scores-row">
+          <div class="score-box s-total">
+            <div class="score-num">${total}</div>
+            <div class="score-lbl">Pontuação Total<br><span style="font-size:10px;color:#aaa">(risco em ≥ 3)</span></div>
+          </div>
+          <div class="score-box s-crit">
+            <div class="score-num">${critical}</div>
+            <div class="score-lbl">Itens Críticos<br><span style="font-size:10px;color:#aaa">(risco em ≥ 2)</span></div>
+          </div>
+        </div>
+
+        <!-- Parecer -->
+        <div class="card" style="padding:0;">
+          <div class="parecer-box ${bannerClass}">
+            <div class="parecer-box-title">${isHighRisk ? '📋 Parecer' : '📋 Parecer'}</div>
+            ${parecer}
+          </div>
+        </div>
+
+        <!-- Disclaimer -->
+        <div class="disclaimer-box">
+          ⚠️ Esta avaliação tem caráter exclusivamente informativo e de triagem. Não substitui avaliação clínica, diagnóstico ou laudo de profissional habilitado. Em caso de dúvidas, consulte sempre um especialista.
+        </div>
+
+        <!-- Review completa -->
+        <div class="review-wrap">
+          <div class="review-heading">📄 Revisão das respostas</div>
+          ${reviewRows}
+        </div>
+      `;
+    }
+
+    /* ─────────────────────────────────────────
+       LOCAL STORAGE
+    ───────────────────────────────────────── */
+    function saveToStorage({ total, critical, isHighRisk }) {
+      const entry = {
+        responsavel:        document.getElementById('responsavel').value,
+        email:              document.getElementById('email').value,
+        whatsapp:           document.getElementById('whatsapp').value,
+        criancaNome:        document.getElementById('criancaNome').value,
+        criancaNascimento:  document.getElementById('criancaNascimento').value,
+        quemPreencheu:      state.quemPreencheu,
+        dataPreenchimento:  document.getElementById('dataPreenchimento').value,
+        respostas:          { ...state.answers },
+        pontuacaoTotal:     total,
+        pontuacaoCriticos:  critical,
+        classificacao:      isHighRisk ? 'RISCO_ELEVADO' : 'SEM_INDICATIVO',
+        timestamp:          new Date().toISOString(),
+      };
+
+      const key = 'mchat_submissions';
+      const existing = JSON.parse(localStorage.getItem(key) || '[]');
+      existing.push(entry);
+      localStorage.setItem(key, JSON.stringify(existing));
+    }
+
+    /* ─────────────────────────────────────────
+       RESET
+    ───────────────────────────────────────── */
+    function resetAll() {
+      // Clear form
+      ['responsavel','email','whatsapp','criancaNome','criancaNascimento'].forEach(id => {
+        document.getElementById(id).value = '';
+        document.getElementById(id).classList.remove('err');
+      });
+      document.getElementById('dataPreenchimento').value = new Date().toLocaleDateString('pt-BR');
+
+      // Clear radio
+      document.querySelectorAll('#quem-group .radio-opt').forEach(o => o.classList.remove('sel'));
+      document.querySelectorAll('#quem-group input').forEach(i => i.checked = false);
+      state.quemPreencheu = '';
+
+      // Clear errors
+      document.querySelectorAll('.form-hint').forEach(e => e.classList.remove('show'));
+
+      // Clear answers
+      state.answers = {};
+
+      // Re-render questions (clears visual states)
+      renderQuestions();
+      updateProgress();
+
+      showStep(1);
+    }
+  </script>
+
+</body>
+</html>
