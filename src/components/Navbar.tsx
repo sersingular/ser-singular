@@ -24,6 +24,7 @@ export default function Navbar() {
     { href: "/profissionais", label: "Profissionais" },
     { href: "/especialidades", label: "Especialidades" },
     { href: "/blog", label: "Blog" },
+    { href: "/nossa-essencia", label: "Nossa Essência" },
   ];
 
   return (
