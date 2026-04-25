@@ -701,6 +701,83 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* NOSSA ESSÊNCIA */}
+      <section className="py-20 px-8 bg-white">
+        <div className="max-w-[1100px] mx-auto">
+          <AnimateIn className="text-center mb-14">
+            <span className="inline-block bg-[#e8f5f3] text-[#1f8c7b] px-3.5 py-1 rounded-full text-[0.78rem] font-semibold uppercase tracking-widest mb-4">
+              Nossa Essência
+            </span>
+            <h2 className="text-3xl lg:text-4xl font-bold text-[#143a62] leading-snug">
+              O que nos move e orienta cada atendimento
+            </h2>
+          </AnimateIn>
+
+          {/* Missão e Visão */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
+            {/* Missão */}
+            <AnimateIn>
+              <div className="rounded-[18px] p-8 h-full" style={{ background: "linear-gradient(135deg, #e8f5f3 0%, #f0faf8 100%)", border: "1px solid rgba(31,140,123,0.18)" }}>
+                <div className="flex items-center gap-3 mb-4">
+                  <span className="text-3xl">🌱</span>
+                  <div>
+                    <div className="text-[0.72rem] font-bold uppercase tracking-widest text-[#1f8c7b] mb-0.5">Missão</div>
+                    <div className="text-lg font-bold text-[#143a62]">Ser Singular</div>
+                  </div>
+                </div>
+                <p className="text-[#3a5068] text-[0.95rem] leading-relaxed">
+                  Promover o desenvolvimento infantil de forma humana, ética e personalizada, respeitando a singularidade de cada criança e fortalecendo o vínculo com sua família.
+                </p>
+              </div>
+            </AnimateIn>
+
+            {/* Visão */}
+            <AnimateIn>
+              <div className="rounded-[18px] p-8 h-full" style={{ background: "linear-gradient(135deg, #eef2f7 0%, #f4f8ff 100%)", border: "1px solid rgba(20,58,98,0.12)" }}>
+                <div className="flex items-center gap-3 mb-4">
+                  <span className="text-3xl">🌈</span>
+                  <div>
+                    <div className="text-[0.72rem] font-bold uppercase tracking-widest text-[#143a62] mb-0.5">Visão</div>
+                    <div className="text-lg font-bold text-[#143a62]">Ser Singular</div>
+                  </div>
+                </div>
+                <p className="text-[#3a5068] text-[0.95rem] leading-relaxed">
+                  Ser referência em desenvolvimento infantil por unir acolhimento, vínculo familiar e excelência técnica, utilizando gestão organizada e sistemas inteligentes para acompanhar evoluções, ajustar caminhos e garantir resultados reais.
+                </p>
+              </div>
+            </AnimateIn>
+          </div>
+
+          {/* Valores */}
+          <AnimateIn className="text-center mb-8">
+            <div className="flex items-center justify-center gap-2 mb-1">
+              <span className="text-xl">🤍</span>
+              <span className="text-[0.72rem] font-bold uppercase tracking-widest text-[#143a62]">Valores</span>
+            </div>
+            <h3 className="text-xl font-bold text-[#143a62]">Os princípios que guiam cada passo</h3>
+          </AnimateIn>
+
+          <Stagger className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            {[
+              { emoji: "✨", title: "Singularidade", desc: "Cada criança é única. Cada família é única. Nossos planos nascem a partir do olhar atento e do cuidado com cada detalhe." },
+              { emoji: "🤝", title: "Comprometimento da família", desc: "Acreditamos que o desenvolvimento acontece quando há confiança, segurança emocional e relações verdadeiras." },
+              { emoji: "📊", title: "Evidências científicas", desc: "Utilizamos avaliações e coleta de dados unificados com sistemas de gestão para acompanhar a evolução de forma clara, ética e responsável." },
+              { emoji: "🤍", title: "Ética e transparência", desc: "Respeitamos limites profissionais, não fazemos promessas irreais e atuamos com clareza em cada etapa do processo." },
+              { emoji: "🌱", title: "Evolução contínua", desc: "Acompanhamos, analisamos, ajustamos e evoluímos sempre respeitando a singularidade de cada criança e da família." },
+              { emoji: "🎈", title: "Brincar como princípio", desc: "Quando usamos o brincar, respeitamos a forma mais autêntica da criança aprender." },
+            ].map((v) => (
+              <StaggerItem key={v.title}>
+                <div className="rounded-[14px] p-6 h-full bg-[#f8f9fb] border border-[#e8eaf0] hover:border-[#1f8c7b]/30 hover:shadow-md transition-all duration-300">
+                  <span className="text-2xl block mb-3">{v.emoji}</span>
+                  <div className="text-[0.82rem] font-bold text-[#143a62] uppercase tracking-wide mb-2">{v.title}</div>
+                  <p className="text-[#5a6a7e] text-[0.88rem] leading-relaxed">{v.desc}</p>
+                </div>
+              </StaggerItem>
+            ))}
+          </Stagger>
+        </div>
+      </section>
+
       {/* CTA FINAL */}
       <section
         className="py-24 px-8 text-center relative overflow-hidden"
