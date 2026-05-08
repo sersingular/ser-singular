@@ -48,6 +48,16 @@ const profissionais = [
     especialidades: ["Integração Sensorial", "Praxia", "Autonomia", "Participação Social"],
     wa: "https://wa.me/554599771331?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20com%20a%20Romelli.",
   },
+  {
+    name: "Roberta Winter",
+    badge: "Nutricionista Infantil",
+    featured: false,
+    photo: "/Roberta.jpeg",
+    photoPosition: "center 10%",
+    desc: "Nutricionista infantil especializada em Nutrição Neonatal e Terapia Alimentar, Roberta atua com crianças que apresentam seletividade alimentar, recusa alimentar e dificuldades na introdução alimentar. Utiliza abordagens baseadas em evidências como ABA aplicada à alimentação, promovendo avanços reais com acolhimento e parceria com as famílias.",
+    especialidades: ["Seletividade Alimentar", "Introdução Alimentar", "Terapia Alimentar", "ABA", "Nutrição Neonatal"],
+    wa: "https://wa.me/554599771331?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20com%20a%20Roberta.",
+  },
 ];
 
 export default function ProfissionaisPage() {
