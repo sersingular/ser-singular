@@ -18,6 +18,9 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
+  verification: {
+    google: "vVUEifVQB0koJDupnVSJEzSFI9-JC-mJjtQeHsbblLQ",
+  },
   title: "Ser Singular — Centro de Desenvolvimento e Treinamento | Medianeira",
   description:
     "Clínica especializada em desenvolvimento infantil em Medianeira. Psicologia, Fonoaudiologia, Terapia Ocupacional e Psicopedagogia. Agende uma avaliação.",
