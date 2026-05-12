@@ -99,8 +99,34 @@ export default async function BlogPostPage({ params }: Props) {
 
   const related = blogPosts.filter((p) => p.slug !== post.slug).slice(0, 3);
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: post.title,
+    description: post.excerpt,
+    datePublished: post.dateISO,
+    author: {
+      "@type": "Person",
+      name: post.author.split("·")[0].trim(),
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "Ser Singular",
+      url: "https://sersingularmed.com.br",
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `https://sersingularmed.com.br/blog/${post.slug}`,
+    },
+    ...(post.image && { image: `https://sersingularmed.com.br${post.image}` }),
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       {/* Header */}
       <div
         className="pt-[70px] py-16 px-8"
