@@ -1082,6 +1082,93 @@ Na Ser Singular, acreditamos que o seu filho merece um cuidado que não opera no
 Se você quer saber mais sobre como a psicologia pode ajudar o desenvolvimento do seu filho, entre em contato com a nossa equipe. Estamos aqui para ouvir, avaliar e caminhar junto com a sua família.
     `.trim(),
   },
+  {
+    slug: "meu-filho-nao-come-na-escola",
+    title: "Meu filho não come nada na escola: o que está acontecendo e o que fazer",
+    excerpt: "A recusa alimentar na escola é um desafio real para muitas famílias, especialmente quando a criança tem autismo, TDAH ou hipersensibilidade sensorial. Entenda os motivos e o que pode ajudar.",
+    category: "Nutrição Infantil",
+    categoryColor: "#b45309",
+    categoryBg: "#fef3c7",
+    emoji: "🥗",
+    date: "Mai 2026",
+    dateISO: "2026-05-13",
+    author: "Roberta Winter · Nutricionista Infantil",
+    content: `
+"Meu filho não come nada na escola."
+
+Essa frase chega até a gente com uma frequência que dói. E a maioria das mães que vivem isso carrega junto uma culpa que não é dela.
+
+A verdade é que, para muitas crianças, especialmente aquelas com autismo, TDAH ou hipersensibilidade sensorial, o refeitório da escola é um dos ambientes mais difíceis do dia. E entender o porquê disso é o primeiro passo para ajudar.
+
+## O refeitório visto pelos olhos da criança
+
+Pense no refeitório de uma escola. Barulho de talheres, vozes sobrepostas, o cheiro de diferentes alimentos misturados, crianças se movendo em todas as direções. Para a maioria das pessoas, esse ambiente é apenas animado. Para uma criança com sistema nervoso hipersensível, esse mesmo ambiente pode ser avassalador.
+
+Quando o sistema nervoso está em modo de alerta, comer passa a ser impossível. Não é frescura. Não é birra. É uma resposta fisiológica real, o corpo priorizando a sobrevivência e não a digestão.
+
+Além disso, a escola traz outros fatores que aumentam a dificuldade:
+
+- **Falta de controle:** em casa, a criança sabe o que vai encontrar no prato. Na escola, nem sempre.
+- **Falta de previsibilidade:** o cardápio muda, o lugar muda, o colega ao lado muda.
+- **Pressão social:** ser olhado enquanto come, ter que comer rápido, não poder recusar sem chamar atenção.
+- **Alimentos desconhecidos:** texturas, cheiros e sabores que nunca foram apresentados de forma gradual.
+
+Para uma criança com seletividade alimentar, cada um desses fatores sozinho já seria um obstáculo. Juntos, tornam a refeição algo que o corpo simplesmente recusa.
+
+## O que é seletividade alimentar?
+
+Seletividade alimentar é quando a criança aceita apenas um número muito restrito de alimentos, geralmente por características sensoriais como textura, cor, cheiro, temperatura ou consistência. Ela não está escolhendo ser difícil. O sistema nervoso dela está processando a comida de uma forma diferente.
+
+É muito comum em crianças com:
+
+- **Transtorno do Espectro Autista (TEA):** estudos mostram que entre 70% e 90% das crianças autistas apresentam algum grau de seletividade alimentar.
+- **TDAH:** a impulsividade, a baixa tolerância à frustração e as dificuldades de regulação interferem diretamente na relação com a comida.
+- **Hipersensibilidade sensorial:** crianças com perfil sensorial diferente podem ter aversão intensa a determinadas texturas ou cheiros, mesmo sem diagnóstico fechado.
+
+## Por que não adianta forçar
+
+Forçar a criança a comer, esconder alimentos, fazer chantagem emocional ou transformar a refeição em campo de batalha são estratégias que, além de não funcionarem, costumam piorar o quadro.
+
+Quando a criança associa a hora de comer com estresse, pressão ou conflito, o sistema nervoso reforça a aversão. O que era difícil se torna ainda mais difícil.
+
+A mudança real acontece de forma gradual, em um ambiente seguro, com um plano estruturado e com a família como parceira do processo.
+
+## O que a terapia alimentar faz de diferente
+
+A terapia alimentar baseada em evidências não começa colocando comida nova no prato e esperando a criança aceitar. Ela começa muito antes disso.
+
+O processo envolve:
+
+- **Avaliação individualizada:** entender o perfil sensorial da criança, os alimentos aceitos, os padrões de recusa e o histórico alimentar.
+- **Dessensibilização gradual:** apresentar os alimentos de forma lenta e respeitosa, começando pela tolerância visual, depois tátil, e só então o sabor.
+- **Construção de repertório:** ampliar os alimentos aceitos de forma sustentável, sem pressão e sem retrocesso.
+- **Orientação familiar:** ensinar os pais e cuidadores como conduzir as refeições em casa para reforçar o que acontece no consultório.
+- **Integração com a escola:** orientar a equipe escolar sobre como adaptar o ambiente e a abordagem durante as refeições.
+
+A alimentação não muda da noite para o dia. Mas com o suporte certo, ela muda.
+
+## Quando buscar ajuda
+
+Algumas situações indicam que vale procurar avaliação com uma nutricionista especializada em terapia alimentar:
+
+- A criança aceita menos de 20 alimentos diferentes
+- Há perda de peso ou comprometimento do crescimento
+- As refeições geram crises, choro ou comportamentos extremos
+- A seletividade está piorando com o tempo
+- A criança nunca aceitou determinadas texturas ou grupos alimentares
+- A situação está afetando a vida social e escolar
+
+Você não precisa esperar o quadro se agravar para buscar ajuda. Quanto mais cedo, mais fácil é intervir.
+
+## O papel da nutricionista infantil especializada
+
+A Roberta Winter, nutricionista infantil da Ser Singular, é especializada em Nutrição Neonatal e Terapia Alimentar. Ela atua com crianças que apresentam seletividade alimentar, recusa alimentar e dificuldades na introdução alimentar, utilizando abordagens baseadas em evidências como a ABA aplicada à alimentação.
+
+O trabalho é feito com acolhimento, parceria com as famílias e respeito ao tempo de cada criança. O objetivo não é fazer a criança comer tudo. É ajudar ela a ter uma relação mais segura, tranquila e saudável com a comida.
+
+Se você se identificou com alguma parte desse texto, o próximo passo é simples: entre em contato e agende uma avaliação. A gente vai entender o que está acontecendo e construir um caminho junto com você.
+    `.trim(),
+  },
 ];
 
 export function getPostBySlug(slug: string): BlogPost | undefined {
