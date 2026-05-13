@@ -1090,6 +1090,7 @@ Se você quer saber mais sobre como a psicologia pode ajudar o desenvolvimento d
     categoryColor: "#b45309",
     categoryBg: "#fef3c7",
     emoji: "🥗",
+    image: "/meu-filho-nao-come-na-escola.png",
     date: "Mai 2026",
     dateISO: "2026-05-13",
     author: "Roberta Winter · Nutricionista Infantil",
