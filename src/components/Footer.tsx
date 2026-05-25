@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import CookieSettingsButton from "@/components/CookieSettingsButton";
 
 const MAPS_URL = "https://www.google.com/maps/search/?api=1&query=Av.+José+Callegari,+1820,+Centro,+Medianeira,+PR";
 const MAPS_EMBED = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3599.6!2d-54.0940!3d-25.2950!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f3e5b6b5c5c5c5%3A0x0!2sAv.+Jos%C3%A9+Callegari%2C+1820%2C+Centro%2C+Medianeira%2C+PR!5e0!3m2!1spt-BR!2sbr!4v1700000000000";
@@ -109,6 +110,7 @@ export default function Footer() {
                   { href: "/especialidades", label: "Especialidades" },
                   { href: "/blog", label: "Blog" },
                   { href: "/contato", label: "Contato" },
+                  { href: "/politica-de-privacidade", label: "Política de Privacidade" },
                 ].map((link) => (
                   <li key={link.href}>
                     <Link
@@ -123,9 +125,12 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="border-t border-white/10 pt-6 flex flex-col sm:flex-row justify-between items-center gap-2 text-xs text-white/35">
+          <div className="border-t border-white/10 pt-6 flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-white/35">
             <span className="font-semibold text-white/50">Ser Singular · Centro de Desenvolvimento e Treinamento</span>
-            <span className="whitespace-nowrap">© 2025 Ser Singular. Todos os direitos reservados.</span>
+            <div className="flex items-center gap-4 flex-wrap justify-center">
+              <CookieSettingsButton />
+              <span className="whitespace-nowrap">© 2025 Ser Singular. Todos os direitos reservados.</span>
+            </div>
           </div>
         </div>
       </footer>
