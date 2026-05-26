@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { blogPosts } from "@/data/blog";
+import { cities, specialties } from "@/data/localSeo";
 
 const BASE_URL = "https://sersingularmed.com.br";
 
@@ -50,5 +51,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
-  return [...staticPages, ...blogPages];
+  const localSeoPages: MetadataRoute.Sitemap = [];
+  for (const city of cities) {
+    for (const specialty of specialties) {
+      localSeoPages.push({
+        url: `${BASE_URL}/${city.slug}/${specialty.slug}`,
+        lastModified: new Date(),
+        changeFrequency: "monthly",
+        priority: 0.7,
+      });
+    }
+  }
+
+  return [...staticPages, ...blogPages, ...localSeoPages];
 }
