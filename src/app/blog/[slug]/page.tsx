@@ -111,7 +111,8 @@ export default async function BlogPostPage({ params }: Props) {
     },
     publisher: {
       "@type": "Organization",
-      name: "Ser Singular",
+      name: "Clínica Ser Singular",
+      alternateName: "Ser Singular",
       url: "https://sersingularmed.com.br",
     },
     mainEntityOfPage: {

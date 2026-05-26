@@ -22,11 +22,12 @@ export const metadata: Metadata = {
   verification: {
     google: "vVUEifVQB0koJDupnVSJEzSFI9-JC-mJjtQeHsbblLQ",
   },
-  title: "Ser Singular — Centro de Desenvolvimento e Treinamento | Medianeira",
+  title: "Clínica Ser Singular | Centro de Desenvolvimento e Treinamento infantil em Medianeira-PR",
   description:
     "Clínica especializada em desenvolvimento infantil em Medianeira. Psicologia, Fonoaudiologia, Terapia Ocupacional e Psicopedagogia. Agende uma avaliação.",
   openGraph: {
-    title: "Ser Singular — Centro de Desenvolvimento e Treinamento",
+    siteName: "Clínica Ser Singular",
+    title: "Clínica Ser Singular | Medianeira-PR",
     description:
       "Clínica especializada em desenvolvimento infantil em Medianeira.",
     locale: "pt_BR",
