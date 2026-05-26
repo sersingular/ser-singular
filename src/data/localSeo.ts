@@ -3,8 +3,7 @@ export interface City {
   name: string;
   distance: string;
   travelTime: string;
-  via: string;
-  route: string;
+  mapsUrl: string;
   cityDescription: string;
 }
 
@@ -22,45 +21,41 @@ export const cities: City[] = [
     slug: "matelandia",
     name: "Matelândia",
     distance: "20 km",
-    travelTime: "cerca de 20 minutos",
-    via: "BR-277",
-    route:
-      "De Matelândia, siga pela BR-277 sentido Foz do Iguaçu por aproximadamente 20 km até Medianeira. Ao entrar na cidade, acesse o Centro pela Av. Brasil e depois pela Av. José Callegari.",
+    travelTime: "cerca de 20 min",
+    mapsUrl:
+      "https://www.google.com/maps/dir/Matel%C3%A2ndia,+PR/Av.+Jos%C3%A9+Callegari,+1820,+Medianeira,+PR",
     cityDescription:
       "Matelândia fica a apenas 20 km de Medianeira pela BR-277 — um trajeto rápido que torna o acesso ao atendimento especializado prático para as famílias da região.",
   },
   {
     slug: "sao-miguel-do-iguacu",
     name: "São Miguel do Iguaçu",
-    distance: "60 km",
-    travelTime: "cerca de 55 minutos",
-    via: "BR-277",
-    route:
-      "De São Miguel do Iguaçu, acesse a BR-277 sentido Cascavel e siga até Medianeira, aproximadamente 60 km. Ao chegar, entre no Centro pela Av. Brasil e depois pela Av. José Callegari.",
+    distance: "17 km",
+    travelTime: "cerca de 15 min",
+    mapsUrl:
+      "https://www.google.com/maps/dir/S%C3%A3o+Miguel+do+Igua%C3%A7u,+PR/Av.+Jos%C3%A9+Callegari,+1820,+Medianeira,+PR",
     cityDescription:
-      "São Miguel do Iguaçu está a cerca de 60 km de Medianeira pela BR-277. Muitas famílias da região já fazem esse trajeto regularmente para ter acesso a atendimento especializado em desenvolvimento infantil.",
+      "São Miguel do Iguaçu fica a apenas 17 km de Medianeira — vizinhas pela BR-277, o deslocamento é rápido e as famílias da cidade chegam à clínica em poucos minutos.",
   },
   {
     slug: "itaipulandia",
     name: "Itaipulândia",
-    distance: "55 km",
-    travelTime: "cerca de 50 minutos",
-    via: "BR-277",
-    route:
-      "De Itaipulândia, acesse a BR-277 sentido Cascavel e siga até Medianeira, aproximadamente 55 km. Entre no Centro pela Av. Brasil e depois pela Av. José Callegari.",
+    distance: "32 km",
+    travelTime: "cerca de 30 min",
+    mapsUrl:
+      "https://www.google.com/maps/dir/Itaipul%C3%A2ndia,+PR/Av.+Jos%C3%A9+Callegari,+1820,+Medianeira,+PR",
     cityDescription:
-      "Itaipulândia está a cerca de 55 km de Medianeira com trajeto direto pela BR-277. As famílias de Itaipulândia encontram na Ser Singular o atendimento especializado que buscavam para seus filhos.",
+      "Itaipulândia está a cerca de 32 km de Medianeira. As famílias de Itaipulândia encontram na Ser Singular o atendimento especializado em desenvolvimento infantil que buscavam para seus filhos.",
   },
   {
     slug: "serranopolis-do-iguacu",
     name: "Serranópolis do Iguaçu",
-    distance: "35 km",
-    travelTime: "cerca de 35 minutos",
-    via: "BR-277",
-    route:
-      "De Serranópolis do Iguaçu, siga pelas rodovias locais até a BR-277 e depois até Medianeira, aproximadamente 35 km no total. Acesse o Centro pela Av. Brasil e depois pela Av. José Callegari.",
+    distance: "15 km",
+    travelTime: "cerca de 15 min",
+    mapsUrl:
+      "https://www.google.com/maps/dir/Serran%C3%B3polis+do+Igua%C3%A7u,+PR/Av.+Jos%C3%A9+Callegari,+1820,+Medianeira,+PR",
     cityDescription:
-      "Serranópolis do Iguaçu está a apenas 35 km de Medianeira — um trajeto curto que coloca as famílias da cidade a poucos minutos do atendimento especializado da Clínica Ser Singular.",
+      "Serranópolis do Iguaçu está a apenas 15 km de Medianeira — um dos trajetos mais curtos da região, colocando as famílias a poucos minutos do atendimento especializado da Clínica Ser Singular.",
   },
 ];
 

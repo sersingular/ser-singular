@@ -60,8 +60,8 @@ export default async function LocalSeoPage({ params }: Props) {
       a: `O processo começa com uma avaliação inicial, onde o profissional conhece a criança, entende o histórico e define o plano terapêutico. Para famílias de ${city.name}, recomendamos agendar as sessões com frequência regular — geralmente semanal — para garantir a continuidade e melhores resultados.`,
     },
     {
-      q: `Qual o endereço e como chegar de ${city.name}?`,
-      a: `Nossa clínica fica na Av. José Callegari, 1820 · Centro · Medianeira, PR. ${city.route}`,
+      q: `Qual o endereço da Clínica Ser Singular?`,
+      a: `Nossa clínica fica na Av. José Callegari, 1820 · Centro · Medianeira, PR. De ${city.name} são apenas ${city.distance} — ${city.travelTime} de trajeto. Use o botão do Google Maps na seção acima para ver a rota completa.`,
     },
   ];
 
@@ -174,26 +174,39 @@ export default async function LocalSeoPage({ params }: Props) {
           <h2 className="text-2xl font-bold text-[#143a62] mb-6">
             Como chegar de {city.name}
           </h2>
-          <div className="grid grid-cols-3 gap-4 mb-6">
+          <div className="grid grid-cols-2 gap-4 mb-6">
             {[
               { label: "Distância", value: city.distance },
               { label: "Tempo estimado", value: city.travelTime },
-              { label: "Via principal", value: city.via },
             ].map((item) => (
               <div
                 key={item.label}
                 className="p-5 bg-white rounded-[16px] border border-[#e2e8f0] text-center"
               >
                 <p className="text-xs text-[#8a9ab0] uppercase tracking-wide mb-1">{item.label}</p>
-                <p className="text-base font-bold text-[#143a62]">{item.value}</p>
+                <p className="text-lg font-bold text-[#143a62]">{item.value}</p>
               </div>
             ))}
           </div>
           <div className="p-5 bg-white rounded-[16px] border border-[#e2e8f0]">
-            <p className="text-[#5a6a7e] text-sm leading-relaxed mb-3">{city.route}</p>
-            <p className="text-sm font-semibold text-[#143a62]">
-              Endereço: Av. José Callegari, 1820 · Centro · Medianeira, Paraná
+            <p className="text-sm font-semibold text-[#143a62] mb-1">
+              Av. José Callegari, 1820 · Centro · Medianeira, Paraná
             </p>
+            <p className="text-[#5a6a7e] text-sm mb-4">
+              Clique para abrir a rota no Google Maps a partir de {city.name}.
+            </p>
+            <a
+              href={city.mapsUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-[12px] font-semibold text-sm text-white no-underline transition-opacity hover:opacity-90"
+              style={{ background: "#4285F4" }}
+            >
+              <svg viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4">
+                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+              </svg>
+              Ver rota no Google Maps
+            </a>
           </div>
         </div>
       </section>
