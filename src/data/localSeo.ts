@@ -28,7 +28,7 @@ export const cities: City[] = [
       "Matelândia fica a apenas 20 km de Medianeira pela BR-277 — um trajeto rápido que torna o acesso ao atendimento especializado prático para as famílias da região.",
   },
   {
-    slug: "sao-miguel-do-iguacu",
+    slug: "sao-miguel",
     name: "São Miguel do Iguaçu",
     distance: "17 km",
     travelTime: "cerca de 15 min",
@@ -48,7 +48,7 @@ export const cities: City[] = [
       "Itaipulândia está a cerca de 32 km de Medianeira. As famílias de Itaipulândia encontram na Ser Singular o atendimento especializado em desenvolvimento infantil que buscavam para seus filhos.",
   },
   {
-    slug: "serranopolis-do-iguacu",
+    slug: "serranopolis",
     name: "Serranópolis do Iguaçu",
     distance: "15 km",
     travelTime: "cerca de 15 min",
