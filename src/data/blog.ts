@@ -85,7 +85,7 @@ O TDAH, por sua vez, tem como núcleo a desregulação da atenção e do control
 
 Distinguir TEA de TDAH à olho nu é um desafio mesmo para profissionais experientes. A avaliação com instrumentos padronizados é o único caminho seguro para um diagnóstico preciso. Isso importa muito na prática: o tratamento adequado para cada condição é diferente, e um diagnóstico incorreto pode significar anos de intervenções que não estão alinhadas com as reais necessidades da criança.
 
-Uma avaliação interdisciplinar bem conduzida consegue identificar com clareza o perfil da criança, apontar se existe uma ou as duas condições e tratar as bases para um plano terapêutico individualizado.
+Uma avaliação multidisciplinar bem conduzida consegue identificar com clareza o perfil da criança, apontar se existe uma ou as duas condições e tratar as bases para um plano terapêutico individualizado.
 
 Na Ser Singular, realizamos avaliações diagnósticas de TEA e TDAH com instrumentos validados e equipe interdisciplinar. Agende uma avaliação e descubra o perfil real do seu filho.
     `.trim(),
@@ -109,9 +109,9 @@ Uma dúvida muito comum entre famílias que estão começando esse processo é: 
 
 O neuropediatra é o médico especializado que atua no diagnóstico e tratamento de doenças e disfunções do sistema nervoso e do sistema muscular de crianças e adolescentes. Ele tem um papel fundamental no processo: identificar os primeiros sinais, descartar causas neurológicas ou genéticas associadas e coordenar o cuidado clínico da criança.
 
-No contexto do TEA, o neuropediatra realiza a consulta clínica, observa o comportamento da criança, conversa com a família e, na maioria dos casos, solicita a avaliação interdisciplinar justamente porque o diagnóstico de autismo requer informações que vão além de uma consulta médica.
+No contexto do TEA, o neuropediatra realiza a consulta clínica, observa o comportamento da criança, conversa com a família e, na maioria dos casos, solicita a avaliação multidisciplinar justamente porque o diagnóstico de autismo requer informações que vão além de uma consulta médica.
 
-## O papel da avaliação psicológica e interdisciplinar
+## O papel da avaliação psicológica e multidisciplinar
 
 A avaliação psicológica acrescenta ao processo uma investigação profunda e padronizada do perfil comportamental, cognitivo e de desenvolvimento da criança. Por meio de instrumentos específicos como o ADOS-2 e o ADI-R, o psicólogo consegue mapear com precisão as áreas de comprometimento e as potencialidades da criança.
 
@@ -191,7 +191,7 @@ Receber a informação de que seu filho pode estar no espectro autista é um mom
 
 Quando um pediatra ou neuropediatra menciona suspeita de TEA (Transtorno do Espectro Autista), ele está dizendo que observou sinais que precisam ser investigados com mais profundidade. Essa suspeita não é um diagnóstico: é um ponto de partida.
 
-O diagnóstico de TEA é clínico e interdisciplinar. Ele é construído a partir de avaliações detalhadas realizadas por profissionais especializados como psicólogos, fonoaudiólogos e terapeutas ocupacionais, que usam instrumentos padronizados e validados pela ciência.
+O diagnóstico de TEA é clínico e multidisciplinar. Ele é construído a partir de avaliações detalhadas realizadas por profissionais especializados como psicólogos, fonoaudiólogos e terapeutas ocupacionais, que usam instrumentos padronizados e validados pela ciência.
 
 ## Qual é o próximo passo depois da suspeita?
 

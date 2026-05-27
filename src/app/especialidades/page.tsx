@@ -138,7 +138,7 @@ export default function EspecialidadesPage() {
       >
         <h1 className="text-3xl lg:text-4xl text-white font-bold mb-3">Especialidades</h1>
         <p className="text-white/80 text-base max-w-[480px] mx-auto">
-          Atendimento interdisciplinar e integrado para o desenvolvimento do seu filho.
+          Atendimento integrado para o desenvolvimento do seu filho.
         </p>
       </div>
 
