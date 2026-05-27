@@ -892,6 +892,63 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Cidades atendidas */}
+      <section className="py-14 px-8 bg-white">
+        <div className="max-w-[1100px] mx-auto">
+          <div className="text-center mb-10">
+            <h2 className="text-2xl lg:text-3xl font-bold text-[#143a62] mb-3">
+              Atendemos famílias de toda a região
+            </h2>
+            <p className="text-[#5a6a7e] text-base max-w-[560px] mx-auto">
+              A Clínica Ser Singular fica em Medianeira e recebe pacientes de Matelândia, São Miguel do Iguaçu, Itaipulândia, Serranópolis do Iguaçu e cidades vizinhas do oeste do Paraná.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {[
+              {
+                city: "Matelândia",
+                distance: "20 km",
+                slug: "matelandia",
+              },
+              {
+                city: "São Miguel do Iguaçu",
+                distance: "17 km",
+                slug: "sao-miguel",
+              },
+              {
+                city: "Itaipulândia",
+                distance: "32 km",
+                slug: "itaipulandia",
+              },
+              {
+                city: "Serranópolis do Iguaçu",
+                distance: "15 km",
+                slug: "serranopolis",
+              },
+            ].map((item) => (
+              <Link
+                key={item.slug}
+                href={`/${item.slug}/psicologia-infantil`}
+                className="group p-5 rounded-[16px] border border-[#e2e8f0] hover:border-[#1f8c7b] hover:shadow-md transition-all duration-300 no-underline"
+              >
+                <div className="flex items-start gap-3">
+                  <span className="flex-shrink-0 w-8 h-8 rounded-full bg-[#e8f5f3] flex items-center justify-center mt-0.5">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="#1f8c7b" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4">
+                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                      <circle cx="12" cy="10" r="3"/>
+                    </svg>
+                  </span>
+                  <div>
+                    <p className="font-semibold text-[#143a62] text-sm group-hover:text-[#1f8c7b] transition-colors">{item.city}</p>
+                    <p className="text-xs text-[#8a9ab0] mt-0.5">{item.distance} de Medianeira</p>
+                  </div>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* CTA FINAL */}
       <section
         className="py-24 px-8 text-center relative overflow-hidden"
