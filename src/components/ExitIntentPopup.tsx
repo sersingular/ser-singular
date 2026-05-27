@@ -76,7 +76,7 @@ export default function ExitIntentPopup() {
               }}
             >
               <p className="text-white/90 text-sm leading-relaxed">
-                Na <strong className="text-[#7dd8cc]">Clínica Ser Singular</strong> em Medianeira, realizamos avaliação completa com equipe multidisciplinar especializada em desenvolvimento infantil.
+                Na <strong className="text-[#7dd8cc]">Clínica Ser Singular</strong> em Medianeira, realizamos avaliação completa com equipe interdisciplinar especializada em desenvolvimento infantil.
               </p>
             </div>
           </div>

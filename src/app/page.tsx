@@ -221,7 +221,7 @@ export default function HomePage() {
               <p className="text-white/90 text-[0.92rem] leading-relaxed">
                 Se o neuropediatra indicou uma avaliação para seu filho, você está no lugar certo.
                 Somos especializados em <strong className="text-[#7dd8cc] font-semibold">avaliação diagnóstica de autismo (TEA) e TDAH</strong>,
-                com equipe multidisciplinar que entrega laudos completos e orienta a família em cada etapa.
+                com equipe interdisciplinar que entrega laudos completos e orienta a família em cada etapa.
               </p>
             </div>
             <div
@@ -610,7 +610,7 @@ export default function HomePage() {
               <div className="rounded-[12px] overflow-hidden bg-white" style={{ border: "0.5px solid #9FE1CB" }}>
                 {[
                   { title: "Evolução medida com dados reais", desc: "Cada sessão é registrada. Metas são definidas, acompanhadas e ajustadas com base em evidências, sem achismo.", badge: "baseado em evidências" },
-                  { title: "Equipe multidisciplinar integrada", desc: "Psicologia, psicopedagogia, terapia ocupacional e fonoaudiologia trabalhando juntas, com comunicação contínua entre os profissionais.", badge: "equipe alinhada" },
+                  { title: "Equipe interdisciplinar integrada", desc: "Psicologia, psicopedagogia, terapia ocupacional e fonoaudiologia trabalhando juntas, com comunicação contínua entre os profissionais.", badge: "equipe alinhada" },
                   { title: "Plano Individual de Tratamento (PIT)", desc: "Cada criança tem o seu próprio plano, construído a partir da avaliação real do seu perfil, potencialidades e necessidades.", badge: "100% individualizado" },
                   { title: "Família como parceira ativa", desc: "Os pais participam do planejamento, recebem orientações práticas e entendem o que acontece em cada etapa do tratamento.", badge: "família no centro" },
                   { title: "Relatórios periódicos de evolução", desc: "Devolutivas estruturadas com dados concretos sobre o desenvolvimento da criança, para a família e para a escola.", badge: "transparência total" },

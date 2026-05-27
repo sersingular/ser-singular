@@ -67,7 +67,7 @@ const especialidades = [
       "PROMPT e DTTC para transtornos motores de fala",
       "Estimulação da linguagem oral e escrita",
       "Orientação para pais e cuidadores",
-      "Integração com a equipe multidisciplinar",
+      "Integração com a equipe interdisciplinar",
     ],
   },
   {
@@ -138,7 +138,7 @@ export default function EspecialidadesPage() {
       >
         <h1 className="text-3xl lg:text-4xl text-white font-bold mb-3">Especialidades</h1>
         <p className="text-white/80 text-base max-w-[480px] mx-auto">
-          Atendimento multidisciplinar e integrado para o desenvolvimento do seu filho.
+          Atendimento interdisciplinar e integrado para o desenvolvimento do seu filho.
         </p>
       </div>
 
