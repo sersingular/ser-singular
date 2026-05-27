@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { cities, specialties } from "@/data/localSeo";
+import AlertForm from "@/components/AlertForm";
 
 interface Props {
   params: Promise<{ cidade: string; especialidade: string }>;
@@ -49,7 +50,7 @@ export default async function LocalSeoPage({ params }: Props) {
   const faqs = [
     {
       q: `A Clínica Ser Singular atende crianças de ${city.name}?`,
-      a: `Sim! Atendemos regularmente famílias de ${city.name} e de toda a região oeste do Paraná. Nossa clínica fica em Medianeira, a apenas ${city.distance} de ${city.name} — ${city.travelTime} de trajeto pela rodovia.`,
+      a: `Sim! Atendemos regularmente famílias de ${city.name} e de toda a região oeste do Paraná. Nossa clínica fica em Medianeira, a apenas ${city.distance} de ${city.name}, ${city.travelTime} de trajeto pela rodovia.`,
     },
     {
       q: `Vale a pena vir de ${city.name} até Medianeira para ${specialty.name}?`,
@@ -57,11 +58,11 @@ export default async function LocalSeoPage({ params }: Props) {
     },
     {
       q: `Como funciona o primeiro atendimento vindo de ${city.name}?`,
-      a: `O processo começa com uma avaliação inicial, onde o profissional conhece a criança, entende o histórico e define o plano terapêutico. Para famílias de ${city.name}, recomendamos agendar as sessões com frequência regular — geralmente semanal — para garantir a continuidade e melhores resultados.`,
+      a: `O processo começa com uma avaliação inicial, onde o profissional conhece a criança, entende o histórico e define o plano terapêutico. Para famílias de ${city.name}, recomendamos agendar as sessões com frequência regular, geralmente semanal, para garantir a continuidade e melhores resultados.`,
     },
     {
       q: `Qual o endereço da Clínica Ser Singular?`,
-      a: `Nossa clínica fica na Av. José Callegari, 1820 · Centro · Medianeira, PR. De ${city.name} são apenas ${city.distance} — ${city.travelTime} de trajeto. Use o botão do Google Maps na seção acima para ver a rota completa.`,
+      a: `Nossa clínica fica na Av. José Callegari, 1820, Centro, Medianeira, PR. De ${city.name} são apenas ${city.distance}, ${city.travelTime} de trajeto. Use o botão do Google Maps na seção acima para ver a rota completa.`,
     },
   ];
 
@@ -168,8 +169,21 @@ export default async function LocalSeoPage({ params }: Props) {
         </div>
       </section>
 
-      {/* Como chegar */}
+      {/* Sinais de alerta */}
       <section className="py-14 px-8 bg-[#f8f9fb]">
+        <div className="max-w-[800px] mx-auto">
+          <h2 className="text-2xl font-bold text-[#143a62] mb-2">
+            Seu filho pode precisar de avaliação?
+          </h2>
+          <p className="text-[#5a6a7e] text-sm mb-8">
+            Responda as perguntas abaixo. Se identificar um ou mais sinais, entre em contato, nossa equipe pode ajudar.
+          </p>
+          <AlertForm />
+        </div>
+      </section>
+
+      {/* Como chegar */}
+      <section className="py-14 px-8 bg-white">
         <div className="max-w-[800px] mx-auto">
           <h2 className="text-2xl font-bold text-[#143a62] mb-6">
             Como chegar de {city.name}
@@ -181,16 +195,16 @@ export default async function LocalSeoPage({ params }: Props) {
             ].map((item) => (
               <div
                 key={item.label}
-                className="p-5 bg-white rounded-[16px] border border-[#e2e8f0] text-center"
+                className="p-5 bg-[#f8f9fb] rounded-[16px] border border-[#e2e8f0] text-center"
               >
                 <p className="text-xs text-[#8a9ab0] uppercase tracking-wide mb-1">{item.label}</p>
                 <p className="text-lg font-bold text-[#143a62]">{item.value}</p>
               </div>
             ))}
           </div>
-          <div className="p-5 bg-white rounded-[16px] border border-[#e2e8f0]">
+          <div className="p-5 bg-[#f8f9fb] rounded-[16px] border border-[#e2e8f0]">
             <p className="text-sm font-semibold text-[#143a62] mb-1">
-              Av. José Callegari, 1820 · Centro · Medianeira, Paraná
+              Av. José Callegari, 1820, Centro, Medianeira, Paraná
             </p>
             <p className="text-[#5a6a7e] text-sm mb-4">
               Clique para abrir a rota no Google Maps a partir de {city.name}.
@@ -212,16 +226,16 @@ export default async function LocalSeoPage({ params }: Props) {
       </section>
 
       {/* FAQ */}
-      <section className="py-14 px-8 bg-white">
+      <section className="py-14 px-8 bg-[#f8f9fb]">
         <div className="max-w-[800px] mx-auto">
           <h2 className="text-2xl font-bold text-[#143a62] mb-8">
-            Perguntas frequentes — {specialty.name} para {city.name}
+            Perguntas frequentes, {specialty.name} para {city.name}
           </h2>
           <div className="space-y-4">
             {faqs.map((faq, i) => (
               <div
                 key={i}
-                className="p-6 bg-[#f8f9fb] rounded-[16px] border border-[#e2e8f0]"
+                className="p-6 bg-white rounded-[16px] border border-[#e2e8f0]"
               >
                 <h3 className="font-semibold text-[#143a62] mb-2">{faq.q}</h3>
                 <p className="text-[#5a6a7e] text-sm leading-relaxed">{faq.a}</p>
