@@ -63,9 +63,9 @@ export default function AlertForm() {
     const name = (form.elements.namedItem("nome") as HTMLInputElement).value;
     const phone = (form.elements.namedItem("telefone") as HTMLInputElement).value;
     const answers: string[] = [];
-    alertSigns.forEach((_, i) => {
+    alertSigns.forEach((sign, i) => {
       const el = form.elements.namedItem(`q${i}`) as HTMLSelectElement;
-      if (el?.value) answers.push(`${i + 1}. ${el.value}`);
+      if (el?.value) answers.push(`${i + 1}. ${sign.question}\n   R: ${el.value}`);
     });
     const msg = encodeURIComponent(
       `Olá! Me chamo ${name} (${phone}) e vim pelo site.\n\nRespostas sobre meu filho:\n${answers.join("\n")}\n\nGostaria de saber mais sobre avaliação.`
