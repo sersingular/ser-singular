@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
 import CookieConsentBanner from "@/components/CookieConsentBanner";
 import TrackingScripts from "@/components/TrackingScripts";
+import ExitIntentPopup from "@/components/ExitIntentPopup";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -49,6 +50,7 @@ export default function RootLayout({
         <WhatsAppFloat />
         <CookieConsentBanner />
         <TrackingScripts />
+        <ExitIntentPopup />
       </body>
     </html>
   );
