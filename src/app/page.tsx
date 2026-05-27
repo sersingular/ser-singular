@@ -900,7 +900,7 @@ export default function HomePage() {
               Atendemos famílias de toda a região
             </h2>
             <p className="text-[#5a6a7e] text-base max-w-[560px] mx-auto">
-              A Clínica Ser Singular fica em Medianeira e recebe pacientes de Matelândia, São Miguel do Iguaçu, Itaipulândia, Serranópolis do Iguaçu e cidades vizinhas do oeste do Paraná.
+              A Clínica Ser Singular fica em Medianeira e recebe pacientes de Matelândia, São Miguel do Iguaçu, Itaipulândia, Missal, Serranópolis do Iguaçu e cidades vizinhas do oeste do Paraná.
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -924,6 +924,11 @@ export default function HomePage() {
                 city: "Serranópolis do Iguaçu",
                 distance: "15 km",
                 slug: "serranopolis",
+              },
+              {
+                city: "Missal",
+                distance: "29 km",
+                slug: "missal",
               },
             ].map((item) => (
               <Link

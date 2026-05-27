@@ -57,6 +57,16 @@ export const cities: City[] = [
     cityDescription:
       "Serranópolis do Iguaçu está a apenas 15 km de Medianeira — um dos trajetos mais curtos da região, colocando as famílias a poucos minutos do atendimento especializado da Clínica Ser Singular.",
   },
+  {
+    slug: "missal",
+    name: "Missal",
+    distance: "29 km",
+    travelTime: "cerca de 30 min",
+    mapsUrl:
+      "https://www.google.com/maps/dir/Missal,+PR/Av.+Jos%C3%A9+Callegari,+1820,+Medianeira,+PR",
+    cityDescription:
+      "Missal está a cerca de 29 km de Medianeira, com trajeto rápido que permite às famílias da cidade acessar atendimento especializado em desenvolvimento infantil com facilidade.",
+  },
 ];
 
 export const specialties: Specialty[] = [
