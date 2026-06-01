@@ -23,7 +23,7 @@ export const cities: City[] = [
     distance: "20 km",
     travelTime: "cerca de 20 min",
     mapsUrl:
-      "https://www.google.com/maps/dir/Matel%C3%A2ndia,+PR/Av.+Jos%C3%A9+Callegari,+1820,+Medianeira,+PR",
+      "https://www.google.com/maps/dir/Matel%C3%A2ndia,+PR/-25.299434,-54.096035",
     cityDescription:
       "Matelândia fica a apenas 20 km de Medianeira pela BR-277 — um trajeto rápido que torna o acesso ao atendimento especializado prático para as famílias da região.",
   },
@@ -33,7 +33,7 @@ export const cities: City[] = [
     distance: "17 km",
     travelTime: "cerca de 15 min",
     mapsUrl:
-      "https://www.google.com/maps/dir/S%C3%A3o+Miguel+do+Igua%C3%A7u,+PR/Av.+Jos%C3%A9+Callegari,+1820,+Medianeira,+PR",
+      "https://www.google.com/maps/dir/S%C3%A3o+Miguel+do+Igua%C3%A7u,+PR/-25.299434,-54.096035",
     cityDescription:
       "São Miguel do Iguaçu fica a apenas 17 km de Medianeira — vizinhas pela BR-277, o deslocamento é rápido e as famílias da cidade chegam à clínica em poucos minutos.",
   },
@@ -43,7 +43,7 @@ export const cities: City[] = [
     distance: "32 km",
     travelTime: "cerca de 30 min",
     mapsUrl:
-      "https://www.google.com/maps/dir/Itaipul%C3%A2ndia,+PR/Av.+Jos%C3%A9+Callegari,+1820,+Medianeira,+PR",
+      "https://www.google.com/maps/dir/Itaipul%C3%A2ndia,+PR/-25.299434,-54.096035",
     cityDescription:
       "Itaipulândia está a cerca de 32 km de Medianeira. As famílias de Itaipulândia encontram na Ser Singular o atendimento especializado em desenvolvimento infantil que buscavam para seus filhos.",
   },
@@ -53,7 +53,7 @@ export const cities: City[] = [
     distance: "15 km",
     travelTime: "cerca de 15 min",
     mapsUrl:
-      "https://www.google.com/maps/dir/Serran%C3%B3polis+do+Igua%C3%A7u,+PR/Av.+Jos%C3%A9+Callegari,+1820,+Medianeira,+PR",
+      "https://www.google.com/maps/dir/Serran%C3%B3polis+do+Igua%C3%A7u,+PR/-25.299434,-54.096035",
     cityDescription:
       "Serranópolis do Iguaçu está a apenas 15 km de Medianeira — um dos trajetos mais curtos da região, colocando as famílias a poucos minutos do atendimento especializado da Clínica Ser Singular.",
   },
@@ -63,7 +63,7 @@ export const cities: City[] = [
     distance: "29 km",
     travelTime: "cerca de 30 min",
     mapsUrl:
-      "https://www.google.com/maps/dir/Missal,+PR/Av.+Jos%C3%A9+Callegari,+1820,+Medianeira,+PR",
+      "https://www.google.com/maps/dir/Missal,+PR/-25.299434,-54.096035",
     cityDescription:
       "Missal está a cerca de 29 km de Medianeira, com trajeto rápido que permite às famílias da cidade acessar atendimento especializado em desenvolvimento infantil com facilidade.",
   },
