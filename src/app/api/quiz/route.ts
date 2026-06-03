@@ -37,7 +37,7 @@ export async function POST(req: NextRequest) {
       )
       .join("");
 
-    await resend.emails.send({
+    const { error: clinicError } = await resend.emails.send({
       from: "Ser Singular <noreply@sersingularmed.com.br>",
       to: [toEmail],
       replyTo: email || undefined,
@@ -117,6 +117,11 @@ export async function POST(req: NextRequest) {
         </div>
       `,
     });
+
+    if (clinicError) {
+      console.error("Clinic email error:", JSON.stringify(clinicError));
+      return NextResponse.json({ error: "Erro ao enviar e-mail." }, { status: 500 });
+    }
 
     if (email) {
       await resend.emails.send({
