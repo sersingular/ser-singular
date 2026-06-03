@@ -148,7 +148,8 @@ export async function POST(req: NextRequest) {
 
     return NextResponse.json({ success: true });
   } catch (err) {
-    console.error("Quiz API error:", err);
+    const msg = err instanceof Error ? err.message : String(err);
+    console.error("Quiz API error FULL:", msg);
     return NextResponse.json(
       { error: "Erro interno. Tente novamente." },
       { status: 500 }
