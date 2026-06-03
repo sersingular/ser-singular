@@ -38,7 +38,7 @@ export async function POST(req: NextRequest) {
       .join("");
 
     await resend.emails.send({
-      from: "Ser Singular <onboarding@resend.dev>",
+      from: "Ser Singular <noreply@sersingularmed.com.br>",
       to: [toEmail],
       replyTo: email || undefined,
       subject: `Triagem TEA — ${name}${showAlert ? " ⚠️ 4+ sinais positivos" : ""}`,
@@ -120,7 +120,7 @@ export async function POST(req: NextRequest) {
 
     if (email) {
       await resend.emails.send({
-        from: "Ser Singular <onboarding@resend.dev>",
+        from: "Ser Singular <noreply@sersingularmed.com.br>",
         to: [email],
         subject: "Recebemos seu questionário — Clínica Ser Singular",
         html: `
@@ -148,8 +148,7 @@ export async function POST(req: NextRequest) {
 
     return NextResponse.json({ success: true });
   } catch (err) {
-    const msg = err instanceof Error ? err.message : String(err);
-    console.error("Quiz API error FULL:", msg);
+    console.error("Quiz API error:", err);
     return NextResponse.json(
       { error: "Erro interno. Tente novamente." },
       { status: 500 }
