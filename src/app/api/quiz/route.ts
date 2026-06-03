@@ -38,7 +38,7 @@ export async function POST(req: NextRequest) {
       .join("");
 
     await resend.emails.send({
-      from: "Ser Singular <noreply@sersingularmed.com.br>",
+      from: "Ser Singular <onboarding@resend.dev>",
       to: [toEmail],
       replyTo: email || undefined,
       subject: `Triagem TEA — ${name}${showAlert ? " ⚠️ 4+ sinais positivos" : ""}`,
@@ -120,7 +120,7 @@ export async function POST(req: NextRequest) {
 
     if (email) {
       await resend.emails.send({
-        from: "Ser Singular <noreply@sersingularmed.com.br>",
+        from: "Ser Singular <onboarding@resend.dev>",
         to: [email],
         subject: "Recebemos seu questionário — Clínica Ser Singular",
         html: `

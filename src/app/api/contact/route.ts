@@ -16,7 +16,7 @@ export async function POST(req: NextRequest) {
     const toEmail = process.env.CONTACT_EMAIL || "singular.cdt@gmail.com";
 
     await resend.emails.send({
-      from: "Ser Singular <noreply@sersingularmed.com.br>",
+      from: "Ser Singular <onboarding@resend.dev>",
       to: [toEmail],
       replyTo: email || undefined,
       subject: `Novo contato via site — ${name}`,
@@ -64,7 +64,7 @@ export async function POST(req: NextRequest) {
     // Confirmation email to user
     if (email) {
       await resend.emails.send({
-        from: "Ser Singular <noreply@sersingularmed.com.br>",
+        from: "Ser Singular <onboarding@resend.dev>",
         to: [email],
         subject: "Recebemos seu contato — Ser Singular",
         html: `
