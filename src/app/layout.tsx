@@ -1,12 +1,9 @@
 import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
-import WhatsAppFloat from "@/components/WhatsAppFloat";
+import ConditionalLayout from "@/components/ConditionalLayout";
 import CookieConsentBanner from "@/components/CookieConsentBanner";
 import TrackingScripts from "@/components/TrackingScripts";
-import ExitIntentPopup from "@/components/ExitIntentPopup";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -44,13 +41,9 @@ export default function RootLayout({
   return (
     <html lang="pt-BR" className={inter.variable}>
       <body>
-        <Navbar />
-        <main>{children}</main>
-        <Footer />
-        <WhatsAppFloat />
+        <ConditionalLayout>{children}</ConditionalLayout>
         <CookieConsentBanner />
         <TrackingScripts />
-        <ExitIntentPopup />
       </body>
     </html>
   );
