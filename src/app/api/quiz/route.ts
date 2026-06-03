@@ -20,7 +20,7 @@ export async function POST(req: NextRequest) {
 
     const resend = new Resend(process.env.RESEND_API_KEY);
     const toEmail =
-      process.env.CONTACT_EMAIL || "contato@sersingularmed.com.br";
+      process.env.CONTACT_EMAIL || "singular.cdt@gmail.com";
 
     const answersHtml = (answers as QuizAnswer[])
       .map(
