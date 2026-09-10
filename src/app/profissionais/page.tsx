@@ -58,6 +58,36 @@ const profissionais = [
     especialidades: ["Seletividade Alimentar", "Introdução Alimentar", "Terapia Alimentar", "ABA", "Nutrição Neonatal"],
     wa: "https://wa.me/554599771331?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20com%20a%20Roberta.",
   },
+  {
+    name: "Tamara Silvestre",
+    badge: "Psicóloga Infantil",
+    featured: false,
+    photo: "/Tamara01.jpg",
+    photoPosition: "center 10%",
+    desc: "Tamara chegou à Ser Singular movida pela convicção de que a psicologia alcança resultados muito maiores quando caminha junto com outras especialidades. Com foco em crianças de até 10 anos, atua com TEA, TDAH, ansiedade infantil e dificuldades emocionais e comportamentais, utilizando a Terapia Cognitiva Comportamental como base da prática clínica e a família como parte ativa de todo o processo.",
+    especialidades: ["Psicologia Infantil", "Terapia Cognitiva Comportamental", "TEA e TDAH", "Ansiedade Infantil", "Dificuldades Emocionais e Comportamentais", "Orientação de Pais"],
+    wa: "https://wa.me/554599771331?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20com%20a%20Tamara.",
+  },
+  {
+    name: "Andreia de Lima",
+    badge: "Psicopedagoga",
+    featured: false,
+    photo: "/Adreia01.jpg",
+    photoPosition: "center 10%",
+    desc: "Graduada em Letras e pós-graduada em Psicopedagogia, Educação Especial e Inclusão, Andreia construiu sua trajetória dentro das salas de aula, como professora e alfabetizadora. Esse olhar de quem viveu o processo de aprendizagem de perto é o que orienta sua prática clínica: identificar potencialidades, compreender dificuldades e criar caminhos que favoreçam o desenvolvimento de cada criança de forma respeitosa e individualizada.",
+    especialidades: ["Psicopedagogia", "Alfabetização", "Educação Especial e Inclusão", "Dificuldades de Aprendizagem", "Funções Executivas", "Neurodesenvolvimento"],
+    wa: "https://wa.me/554599771331?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20com%20a%20Andreia.",
+  },
+  {
+    name: "Daiane Goldoni",
+    badge: "Psicóloga",
+    featured: false,
+    photo: "/Daiane01.jpg",
+    photoPosition: "center 10%",
+    desc: "Especializada em Transtornos Psicológicos da Infância e Adolescência, Daiane atua com foco no acolhimento genuíno e na promoção da saúde mental de crianças, adolescentes e famílias. Sua prática integra técnicas comportamentais baseadas em evidências com uma escuta sensível que respeita a individualidade e a história de cada pessoa atendida.",
+    especialidades: ["Psicologia Infantil e do Adolescente", "Transtornos Psicológicos da Infância e Adolescência", "Saúde Mental Infantil", "Técnicas Comportamentais", "Orientação Familiar"],
+    wa: "https://wa.me/554599771331?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20com%20a%20Daiane.",
+  },
 ];
 
 export default function ProfissionaisPage() {
