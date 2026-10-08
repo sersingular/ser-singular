@@ -101,7 +101,7 @@ const beneficios = [
         <path d="M16 3.13a4 4 0 0 1 0 7.75" />
       </svg>
     ),
-    title: "Equipe Multidisciplinar",
+    title: "Equipe Interdisciplinar",
     desc: "Psicóloga, fonoaudióloga, psicopedagoga e terapeuta ocupacional atuando de forma integrada.",
   },
   {
