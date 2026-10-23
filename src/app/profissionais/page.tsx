@@ -79,6 +79,16 @@ const profissionais = [
     wa: "https://wa.me/554599771331?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20com%20a%20Andreia.",
   },
   {
+    name: "Elisane",
+    badge: "Musicoterapeuta",
+    featured: false,
+    photo: "/Elisane01.jpg",
+    photoPosition: "center 10%",
+    desc: "Graduada em Mediação Cultural, mestre em Literatura Comparada pela UNILA e pós-graduada em Musicoterapia pela UNISE, Elisane utiliza a música e seus elementos como caminho terapêutico para favorecer comunicação, expressão, interação e desenvolvimento. Cada sessão é construída para as necessidades daquela criança, com raciocínio clínico específico. Onde a música encontra cada singularidade.",
+    especialidades: ["Musicoterapia Clínica", "Comunicação e Expressão", "Desenvolvimento Infantil", "TEA", "Interação Social", "Estimulação Sensorial"],
+    wa: "https://wa.me/554599771331?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20a%20Musicoterapia%20com%20a%20Elisane.",
+  },
+  {
     name: "Daiane Goldoni",
     badge: "Psicóloga",
     featured: false,

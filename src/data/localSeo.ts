@@ -166,6 +166,30 @@ export const specialties: Specialty[] = [
     ],
   },
   {
+    slug: "musicoterapia",
+    name: "Musicoterapia",
+    professional: "Elisane — Musicoterapeuta (pós-graduada em Musicoterapia pela UNISE)",
+    intro:
+      "A Musicoterapia na Clínica Ser Singular é conduzida pela musicoterapeuta Elisane, pós-graduada em Musicoterapia pela UNISE. A musicoterapia é ciência e intervenção clínica: utiliza a música e seus elementos, como ritmo, melodia, harmonia, sons e instrumentos, dentro de um processo terapêutico com objeto próprio de intervenção. Não é aula de música. É um caminho terapêutico para favorecer comunicação, expressão, interação e desenvolvimento infantil.",
+    cases: [
+      "Dificuldades de comunicação verbal e não verbal",
+      "TEA com baixa interação social",
+      "Dificuldades de expressão emocional",
+      "Atraso no desenvolvimento da linguagem",
+      "Dificuldades de regulação sensorial e emocional",
+      "Baixo engajamento em atividades terapêuticas",
+      "Crianças com TDAH e dificuldade de atenção",
+    ],
+    methods: [
+      "Musicoterapia Clínica Individual",
+      "Improvisação Musical Terapêutica",
+      "Recriação e Composição Musical",
+      "Estimulação Rítmica e Sensorial",
+      "Integração com Equipe Interdisciplinar",
+      "Orientação Familiar",
+    ],
+  },
+  {
     slug: "terapia-alimentar",
     name: "Terapia Alimentar",
     professional: "Roberta — Nutricionista",
