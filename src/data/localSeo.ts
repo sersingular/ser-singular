@@ -121,7 +121,7 @@ export const specialties: Specialty[] = [
   {
     slug: "terapia-ocupacional",
     name: "Terapia Ocupacional",
-    professional: "Terapeuta Ocupacional especializada",
+    professional: "Natalia Ferrari — Terapeuta Ocupacional",
     intro:
       "A Terapia Ocupacional na Clínica Ser Singular trabalha com integração sensorial, desenvolvimento motor e autonomia nas atividades do dia a dia. A abordagem é individualizada, respeitando o perfil sensorial e funcional de cada criança para que ela conquiste mais independência em casa, na escola e na vida social.",
     cases: [
