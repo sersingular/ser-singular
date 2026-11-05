@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Especialidades — Ser Singular",
-  description: "Conheça as especialidades da Ser Singular: Psicologia, Fonoaudiologia, Terapia Ocupacional e Psicopedagogia para desenvolvimento infantil.",
+  description: "Conheça as especialidades da Ser Singular: Psicologia, Fonoaudiologia, Terapia Ocupacional, Psicopedagogia, Musicoterapia e Psicomotricidade para desenvolvimento infantil.",
 };
 
 const especialidades = [
@@ -125,6 +125,68 @@ const especialidades = [
       "Apoio à alfabetização",
       "Desenvolvimento das funções executivas",
       "Relatório para escola e equipe",
+    ],
+  },
+  {
+    id: "musicoterapia",
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" className="w-3.5 h-3.5 inline-block align-text-bottom">
+        <path d="M9 18V5l12-2v13"/>
+        <circle cx="6" cy="18" r="3"/>
+        <circle cx="18" cy="16" r="3"/>
+      </svg>
+    ),
+    tag: "Musicoterapia",
+    title: "Musicoterapia",
+    desc1: "A Musicoterapia na Ser Singular é uma intervenção clínica baseada em ciência. Não é aula de música: é o uso terapêutico da música e de seus elementos — ritmo, melodia, harmonia, sons e instrumentos — como caminho para favorecer comunicação, expressão, interação e desenvolvimento infantil.",
+    desc2: "Conduzida por musicoterapeuta habilitada, cada sessão é construída para as necessidades daquela criança, com raciocínio clínico específico e integração com a equipe interdisciplinar da clínica.",
+    problems: [
+      "Dificuldades de comunicação verbal e não verbal",
+      "TEA com baixa interação e engajamento",
+      "Dificuldade de expressão emocional",
+      "Atraso no desenvolvimento da linguagem",
+      "Dificuldades de regulação sensorial e emocional",
+      "Baixo engajamento em atividades terapêuticas",
+    ],
+    benefits: [
+      "Musicoterapia clínica individualizada",
+      "Improvisação musical terapêutica",
+      "Estimulação rítmica e sensorial",
+      "Favorecimento da comunicação e expressão",
+      "Integração com a equipe interdisciplinar",
+      "Orientação para pais e cuidadores",
+    ],
+  },
+  {
+    id: "psicomotricidade",
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" className="w-3.5 h-3.5 inline-block align-text-bottom">
+        <circle cx="12" cy="5" r="2"/>
+        <path d="M12 7v5l3 3"/>
+        <path d="M9 12l-3 3"/>
+        <path d="M12 17v4"/>
+        <path d="M9 21h6"/>
+      </svg>
+    ),
+    tag: "Psicomotricidade",
+    title: "Psicomotricidade",
+    desc1: "A Psicomotricidade na Ser Singular trabalha a relação entre o movimento, o corpo e o desenvolvimento cognitivo e emocional da criança. Por meio de atividades lúdicas e corporais, estimula o esquema corporal, a coordenação, o equilíbrio, a lateralidade e a organização espacial e temporal.",
+    desc2: "A intervenção é indicada para crianças com atrasos no desenvolvimento neuromotor, dificuldades de aprendizagem associadas ao corpo e ao movimento, e perfis do neurodesenvolvimento como TEA e TDAH.",
+    problems: [
+      "Atraso no desenvolvimento neuromotor",
+      "Dificuldades de coordenação e equilíbrio",
+      "Problemas de lateralidade e orientação espacial",
+      "Dificuldades de escrita relacionadas ao tônus e postura",
+      "TEA com dificuldades motoras e corporais",
+      "Baixo tônus muscular",
+    ],
+    benefits: [
+      "Avaliação psicomotora completa",
+      "Estimulação do esquema corporal",
+      "Desenvolvimento da coordenação motora global e fina",
+      "Trabalho de equilíbrio e lateralidade",
+      "Atividades lúdicas e corporais individualizadas",
+      "Integração com a equipe interdisciplinar",
     ],
   },
 ];

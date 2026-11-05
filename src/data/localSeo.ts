@@ -190,6 +190,30 @@ export const specialties: Specialty[] = [
     ],
   },
   {
+    slug: "psicomotricidade",
+    name: "Psicomotricidade",
+    professional: "Equipe Ser Singular — Psicomotricidade",
+    intro:
+      "A Psicomotricidade na Clínica Ser Singular trabalha a relação entre o movimento, o corpo e o desenvolvimento cognitivo e emocional da criança. Por meio de atividades lúdicas e corporais, estimula o esquema corporal, a coordenação, o equilíbrio, a lateralidade e a organização espacial e temporal.",
+    cases: [
+      "Atraso no desenvolvimento neuromotor",
+      "Dificuldades de coordenação e equilíbrio",
+      "Problemas de lateralidade e orientação espacial",
+      "Dificuldades de escrita relacionadas ao tônus e postura",
+      "TEA com dificuldades motoras e corporais",
+      "Baixo tônus muscular",
+      "TDAH com dificuldades de organização corporal",
+    ],
+    methods: [
+      "Avaliação Psicomotora Completa",
+      "Estimulação do Esquema Corporal",
+      "Desenvolvimento da Coordenação Motora Global e Fina",
+      "Trabalho de Equilíbrio e Lateralidade",
+      "Atividades Lúdicas e Corporais Individualizadas",
+      "Integração com Equipe Interdisciplinar",
+    ],
+  },
+  {
     slug: "terapia-alimentar",
     name: "Terapia Alimentar",
     professional: "Roberta — Nutricionista",
