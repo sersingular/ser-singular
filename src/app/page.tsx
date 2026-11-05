@@ -285,8 +285,8 @@ export default function HomePage() {
                 <div className="text-[0.78rem] text-white/60 mt-1">Famílias atendidas</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-white leading-none">4</div>
-                <div className="text-[0.78rem] text-white/60 mt-1">Especialidades</div>
+                <div className="text-3xl font-bold text-white leading-none">9</div>
+                <div className="text-[0.78rem] text-white/60 mt-1">Profissionais</div>
               </div>
             </div>
             </AnimateIn>
@@ -579,6 +579,106 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* NOSSO ESPAÇO */}
+      <section className="py-20 px-8 bg-[#f8f9fb]">
+        <div className="max-w-[1200px] mx-auto">
+          <AnimateIn className="text-center mb-12">
+            <span className="inline-block bg-[#e8f5f3] text-[#1f8c7b] px-3.5 py-1 rounded-full text-[0.78rem] font-semibold uppercase tracking-widest mb-4">
+              Nosso Espaço
+            </span>
+            <h2 className="text-3xl lg:text-4xl text-[#143a62] leading-tight mb-4">
+              Um ambiente pensado para a criança
+            </h2>
+            <p className="text-[#5a6a7e] text-lg max-w-xl mx-auto leading-relaxed">
+              Da recepção ao consultório, cada detalhe foi criado para acolher crianças e famílias.
+            </p>
+          </AnimateIn>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <AnimateIn direction="left" className="lg:row-span-2 rounded-[24px] overflow-hidden relative h-[320px] lg:h-auto lg:min-h-[500px]">
+              <Image
+                src="/clinica-recepcao.jpg"
+                alt="Recepção Clínica Ser Singular"
+                fill
+                className="object-cover hover:scale-105 transition-transform duration-700"
+                sizes="(max-width: 1024px) 100vw, 33vw"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+              <div className="absolute bottom-5 left-5 right-5">
+                <p className="text-white font-semibold text-sm">Recepção</p>
+                <p className="text-white/70 text-xs">Acolhedor desde o primeiro passo</p>
+              </div>
+            </AnimateIn>
+
+            <AnimateIn className="rounded-[24px] overflow-hidden relative h-[240px]">
+              <Image
+                src="/clinica-espera.jpg"
+                alt="Sala de espera Ser Singular"
+                fill
+                className="object-cover hover:scale-105 transition-transform duration-700"
+                sizes="(max-width: 1024px) 100vw, 33vw"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+              <div className="absolute bottom-5 left-5 right-5">
+                <p className="text-white font-semibold text-sm">Sala de Espera</p>
+                <p className="text-white/70 text-xs">Espaço lúdico e acolhedor</p>
+              </div>
+            </AnimateIn>
+
+            <AnimateIn direction="right" className="rounded-[24px] overflow-hidden relative h-[240px]">
+              <Image
+                src="/atendimento-01.jpg"
+                alt="Profissional em atendimento"
+                fill
+                className="object-cover hover:scale-105 transition-transform duration-700"
+                sizes="(max-width: 1024px) 100vw, 33vw"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+              <div className="absolute bottom-5 left-5 right-5">
+                <p className="text-white font-semibold text-sm">Consultórios</p>
+                <p className="text-white/70 text-xs">Pensados para cada especialidade</p>
+              </div>
+            </AnimateIn>
+
+            <AnimateIn className="rounded-[24px] overflow-hidden relative h-[240px]">
+              <Image
+                src="/clinica-detalhe.jpg"
+                alt="Detalhe da clínica"
+                fill
+                className="object-cover hover:scale-105 transition-transform duration-700"
+                sizes="(max-width: 1024px) 100vw, 33vw"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+              <div className="absolute bottom-5 left-5 right-5">
+                <p className="text-white font-semibold text-sm">Nosso Propósito</p>
+                <p className="text-white/70 text-xs">Cada detalhe comunica cuidado</p>
+              </div>
+            </AnimateIn>
+
+            <AnimateIn direction="right" className="rounded-[24px] overflow-hidden relative h-[240px]">
+              <Image
+                src="/clinica-recepcao2.jpg"
+                alt="Vista da clínica"
+                fill
+                className="object-cover hover:scale-105 transition-transform duration-700"
+                sizes="(max-width: 1024px) 100vw, 33vw"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+              <div className="absolute bottom-5 left-5 right-5">
+                <p className="text-white font-semibold text-sm">Área de Convivência</p>
+                <p className="text-white/70 text-xs">Medianeira, PR</p>
+              </div>
+            </AnimateIn>
+          </div>
+
+          <AnimateIn className="mt-8 text-center">
+            <p className="text-[#5a6a7e] text-base italic leading-relaxed">
+              "Cada passo é construído com responsabilidade, afeto e propósito"
+            </p>
+          </AnimateIn>
+        </div>
+      </section>
+
       {/* POR QUE SER SINGULAR */}
       <section id="por-que-ser-singular" className="py-20 px-6 bg-white">
         <div className="max-w-[900px] mx-auto">
@@ -710,6 +810,65 @@ export default function HomePage() {
           >
             Agendar uma avaliação
           </Link>
+        </div>
+      </section>
+
+      {/* NOSSA EQUIPE EM AÇÃO */}
+      <section
+        className="py-20 px-8"
+        style={{ background: "linear-gradient(135deg, #143a62 0%, #1a4d7c 50%, #1a5a6e 100%)" }}
+      >
+        <div className="max-w-[1200px] mx-auto">
+          <AnimateIn className="text-center mb-12">
+            <span className="inline-block text-[#7dd8cc] text-[0.78rem] font-semibold uppercase tracking-widest mb-3">
+              Nossa Equipe
+            </span>
+            <h2 className="text-3xl lg:text-4xl text-white font-bold mb-4">
+              Profissionais apaixonadas pelo que fazem
+            </h2>
+            <p className="text-white/70 text-lg max-w-xl mx-auto leading-relaxed">
+              9 especialistas trabalhando de forma integrada pelo desenvolvimento do seu filho.
+            </p>
+          </AnimateIn>
+
+          <Stagger className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-10">
+            {[
+              { photo: "/daiana-02.jpg", name: "Daiana Plauth", badge: "Fundadora · Psicóloga" },
+              { photo: "/thaina-action.jpg", name: "Thainá Samara", badge: "Fonoaudióloga" },
+              { photo: "/fono-shark.jpg", name: "Profissional", badge: "Fonoaudiologia" },
+              { photo: "/andreia-02.jpg", name: "Andreia de Lima", badge: "Psicopedagoga" },
+            ].map((item) => (
+              <StaggerItem key={item.photo}>
+                <div className="relative rounded-[20px] overflow-hidden h-[280px] lg:h-[320px] group cursor-pointer">
+                  <Image
+                    src={item.photo}
+                    alt={item.name}
+                    fill
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    sizes="(max-width: 640px) 50vw, 25vw"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+                  <div className="absolute bottom-4 left-4 right-4">
+                    <p className="text-white font-bold text-sm leading-tight">{item.name}</p>
+                    <p className="text-white/75 text-xs mt-0.5">{item.badge}</p>
+                  </div>
+                </div>
+              </StaggerItem>
+            ))}
+          </Stagger>
+
+          <AnimateIn className="text-center">
+            <Link
+              href="/profissionais"
+              className="inline-flex items-center gap-2.5 px-7 py-3.5 rounded-[14px] font-semibold text-[#143a62] no-underline transition-all duration-300 hover:-translate-y-0.5"
+              style={{ background: "#7dd8cc", boxShadow: "0 8px 24px rgba(125,216,204,0.35)" }}
+            >
+              Conhecer toda a equipe
+              <svg viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4">
+                <path fillRule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clipRule="evenodd" />
+              </svg>
+            </Link>
+          </AnimateIn>
         </div>
       </section>
 
