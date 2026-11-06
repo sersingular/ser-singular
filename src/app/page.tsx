@@ -171,32 +171,35 @@ export default function HomePage() {
   return (
     <>
       {/* HERO */}
-      <section className="min-h-screen flex items-center pt-[70px] relative overflow-hidden">
-        {/* Background photo */}
-        <Image
-          src="/daiana-recepcao-hero.jpg"
-          alt="Daiana Plauth — Clínica Ser Singular"
-          fill
-          className="object-cover"
-          style={{ objectPosition: "0% center" }}
-          priority
-          quality={90}
-          sizes="100vw"
-        />
-        {/* Gradiente: transparente na esquerda (Daiana visível) → escuro na direita (texto) */}
-        <div
-          className="absolute inset-0"
-          style={{
-            background: "linear-gradient(to left, rgba(10,24,45,0.96) 0%, rgba(10,24,45,0.88) 30%, rgba(10,24,45,0.50) 55%, rgba(10,24,45,0.08) 80%, rgba(10,24,45,0.0) 100%)",
-          }}
-        />
-        {/* Bottom vignette */}
-        <div
-          className="absolute inset-0"
-          style={{ background: "linear-gradient(to top, rgba(10,24,45,0.5) 0%, transparent 25%)" }}
-        />
+      <section
+        className="min-h-screen flex items-center pt-[70px] relative overflow-hidden"
+        style={{ background: "linear-gradient(135deg, #0a1830 0%, #143a62 60%, #1a4d7c 100%)" }}
+      >
+        {/* Foto posicionada à direita — mostra Daiana (lado esquerdo da foto) no centro-direito */}
+        <div className="absolute top-0 bottom-0 right-0 w-[65%] lg:w-[70%]">
+          <Image
+            src="/daiana-recepcao-hero.jpg"
+            alt="Daiana Plauth — Clínica Ser Singular"
+            fill
+            className="object-cover"
+            style={{ objectPosition: "0% center" }}
+            priority
+            quality={90}
+            sizes="70vw"
+          />
+          {/* Degrade no lado esquerdo da foto fundindo com o background azul */}
+          <div
+            className="absolute inset-y-0 left-0 w-[55%]"
+            style={{ background: "linear-gradient(to right, #0d2040 0%, rgba(13,32,64,0.85) 30%, rgba(13,32,64,0.4) 65%, transparent 100%)" }}
+          />
+          {/* Vinheta no rodapé */}
+          <div
+            className="absolute inset-x-0 bottom-0 h-[30%]"
+            style={{ background: "linear-gradient(to top, rgba(10,24,45,0.6) 0%, transparent 100%)" }}
+          />
+        </div>
 
-        <div className="max-w-[1200px] mx-auto px-8 py-16 relative z-10 w-full flex justify-end">
+        <div className="max-w-[1200px] mx-auto px-8 py-16 relative z-10 w-full">
           <div className="max-w-[560px]">
             <AnimateIn delay={0}>
             <div
