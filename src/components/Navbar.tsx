@@ -35,7 +35,10 @@ export default function Navbar() {
           : "bg-white border-b border-[#e2e8f0] shadow-[0_4px_24px_rgba(20,58,98,0.10)]"
       }`}
     >
-      <Link href="/" className="flex items-center no-underline">
+      <Link
+        href="/"
+        className={`flex items-center no-underline transition-all duration-300 ${dark ? "bg-white/90 rounded-xl px-3 py-1" : ""}`}
+      >
         <Image
           src="/logo-natal.png"
           alt="Ser Singular — Centro de Desenvolvimento e Treinamento"
