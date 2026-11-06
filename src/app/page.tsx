@@ -171,22 +171,33 @@ export default function HomePage() {
   return (
     <>
       {/* HERO */}
-      <section
-        className="min-h-screen flex items-center pt-[70px] relative overflow-hidden"
-        style={{
-          background: "linear-gradient(135deg, #143a62 0%, #1a4d7c 40%, #1a5a6e 100%)",
-        }}
-      >
-        {/* dot pattern */}
+      <section className="min-h-screen flex items-center pt-[70px] relative overflow-hidden">
+        {/* Background photo */}
+        <Image
+          src="/daiana-recepcao-hero.jpg"
+          alt="Daiana Plauth — Clínica Ser Singular"
+          fill
+          className="object-cover"
+          style={{ objectPosition: "60% center" }}
+          priority
+          quality={90}
+          sizes="100vw"
+        />
+        {/* Gradient overlay: dark on the left, fading right */}
         <div
           className="absolute inset-0"
           style={{
-            backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Ccircle cx='30' cy='30' r='4'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
+            background: "linear-gradient(to right, rgba(10,24,45,0.92) 0%, rgba(10,24,45,0.80) 35%, rgba(10,24,45,0.45) 60%, rgba(10,24,45,0.10) 100%)",
           }}
         />
-        <div className="max-w-[1200px] mx-auto px-8 py-16 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center relative z-10">
-          {/* Left */}
-          <div>
+        {/* Bottom vignette */}
+        <div
+          className="absolute inset-0"
+          style={{ background: "linear-gradient(to top, rgba(10,24,45,0.4) 0%, transparent 30%)" }}
+        />
+
+        <div className="max-w-[1200px] mx-auto px-8 py-16 relative z-10 w-full">
+          <div className="max-w-[600px]">
             <AnimateIn delay={0}>
             <div
               className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-[0.78rem] font-medium tracking-widest uppercase text-[#7dd8cc] mb-6"
@@ -208,11 +219,11 @@ export default function HomePage() {
             </h1>
             </AnimateIn>
             <AnimateIn delay={0.2}>
-            <p className="text-white/75 text-lg leading-relaxed mb-5 font-light">
-              Cada criança carrega uma história única. Na Ser Singular, respeitamos essa singularidade com atendimento individualizado e evolução medida por dados reais, sem achismo mas com resultado.
+            <p className="text-white/80 text-lg leading-relaxed mb-5 font-light">
+              Cada criança carrega uma história única. Na Ser Singular, respeitamos essa singularidade com atendimento individualizado e evolução medida por dados reais.
             </p>
             <div
-              className="rounded-[14px] px-5 py-4 mb-6"
+              className="rounded-[14px] px-5 py-4 mb-8"
               style={{
                 background: "rgba(31,140,123,0.15)",
                 border: "1px solid rgba(31,140,123,0.35)",
@@ -223,19 +234,6 @@ export default function HomePage() {
                 Somos especializados em <strong className="text-[#7dd8cc] font-semibold">avaliação diagnóstica de autismo (TEA) e TDAH</strong>,
                 com equipe interdisciplinar que entrega laudos completos e orienta a família em cada etapa.
               </p>
-            </div>
-            <div
-              className="inline-flex items-center gap-3 px-4 py-3 rounded-[12px] mb-8"
-              style={{
-                background: "rgba(125,216,204,0.12)",
-                border: "1px solid rgba(125,216,204,0.3)",
-              }}
-            >
-              <span className="text-[#7dd8cc] text-lg leading-none">"</span>
-              <span className="text-[#7dd8cc] text-[0.92rem] font-medium italic">
-                Criar lares onde a infância seja respeitada
-              </span>
-              <span className="text-[#7dd8cc] text-lg leading-none">"</span>
             </div>
             </AnimateIn>
             <AnimateIn delay={0.3}>
@@ -265,17 +263,15 @@ export default function HomePage() {
                   background: "rgba(255,255,255,0.10)",
                   border: "1.5px solid rgba(255,255,255,0.30)",
                   backdropFilter: "blur(16px)",
-                  boxShadow: "0 4px 24px rgba(255,255,255,0.06), inset 0 1px 0 rgba(255,255,255,0.18)",
                 }}
               >
                 Agendar Avaliação
               </Link>
             </div>
-
             </AnimateIn>
             {/* Stats */}
             <AnimateIn delay={0.4}>
-            <div className="flex gap-8 mt-10 pt-8" style={{ borderTop: "1px solid rgba(255,255,255,0.12)" }}>
+            <div className="flex gap-8 mt-10 pt-8" style={{ borderTop: "1px solid rgba(255,255,255,0.15)" }}>
               <div>
                 <div className="text-3xl font-bold text-white leading-none">13+</div>
                 <div className="text-[0.78rem] text-white/60 mt-1">Anos de experiência</div>
@@ -291,44 +287,6 @@ export default function HomePage() {
             </div>
             </AnimateIn>
           </div>
-
-          {/* Right — placeholder image */}
-          <AnimateIn delay={0.2} direction="right" className="flex justify-center">
-            <div className="relative">
-              <div
-                className="w-[340px] h-[420px] lg:w-[380px] lg:h-[480px] rounded-[24px] overflow-hidden relative"
-                style={{
-                  border: "3px solid rgba(255,255,255,0.15)",
-                  boxShadow: "0 32px 64px rgba(0,0,0,0.35)",
-                }}
-              >
-                <Image
-                  src="/daiana-hero.jpeg"
-                  alt="Daiana Plauth — Psicóloga Ser Singular"
-                  fill
-                  className="object-cover object-top"
-                  priority
-                  quality={90}
-                  sizes="(max-width: 1024px) 680px, 760px"
-                />
-              </div>
-              {/* Card */}
-              <div
-                className="absolute -bottom-5 -left-7 flex items-center gap-3 px-4 py-3 rounded-[18px] min-w-[210px]"
-                style={{
-                  background: "rgba(255,255,255,0.85)",
-                  backdropFilter: "blur(16px)",
-                  border: "1px solid rgba(255,255,255,0.6)",
-                  boxShadow: "0 8px 32px rgba(20,58,98,0.18), inset 0 1px 0 rgba(255,255,255,0.9)",
-                }}
-              >
-                <div>
-                  <strong className="block text-[0.88rem] text-[#143a62] font-bold">Daiana Plauth</strong>
-                  <span className="text-[0.72rem] text-[#5a6a7e]">Especialista em TEA e TDAH</span>
-                </div>
-              </div>
-            </div>
-          </AnimateIn>
         </div>
       </section>
 
