@@ -84,13 +84,13 @@ export default function Footer() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mb-10">
             {/* Brand */}
             <div>
-              <div className="mb-5">
+              <div className="mb-5 inline-block bg-white/90 rounded-xl px-3 py-1">
                 <Image
                   src="/logo-natal.png"
                   alt="Ser Singular"
                   width={200}
                   height={74}
-                  className="h-[44px] w-auto object-contain brightness-0 invert"
+                  className="h-[44px] w-auto object-contain"
                 />
               </div>
               <p className="text-white/55 text-sm leading-relaxed">
