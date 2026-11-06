@@ -187,17 +187,19 @@ export default function HomePage() {
             quality={90}
             sizes="70vw"
           />
-          {/* Degrade no lado esquerdo da foto fundindo com o background azul */}
-          <div
-            className="absolute inset-y-0 left-0 w-[55%]"
-            style={{ background: "linear-gradient(to right, #0d2040 0%, rgba(13,32,64,0.85) 30%, rgba(13,32,64,0.4) 65%, transparent 100%)" }}
-          />
           {/* Vinheta no rodapé */}
           <div
             className="absolute inset-x-0 bottom-0 h-[30%]"
             style={{ background: "linear-gradient(to top, rgba(10,24,45,0.6) 0%, transparent 100%)" }}
           />
         </div>
+        {/* Gradiente global da seção: cobre a borda esquerda da foto completamente */}
+        <div
+          className="absolute inset-0"
+          style={{
+            background: "linear-gradient(to right, #0d1f3c 0%, #0d1f3c 28%, rgba(13,31,60,0.95) 36%, rgba(13,31,60,0.6) 48%, rgba(13,31,60,0.15) 62%, transparent 78%)",
+          }}
+        />
 
         <div className="max-w-[1200px] mx-auto px-8 py-16 relative z-10 w-full">
           <div className="max-w-[560px]">
