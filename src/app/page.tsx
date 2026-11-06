@@ -173,7 +173,7 @@ export default function HomePage() {
       {/* HERO */}
       <section
         className="min-h-screen flex items-center pt-[70px] relative overflow-hidden"
-        style={{ background: "linear-gradient(135deg, #0a1830 0%, #143a62 60%, #1a4d7c 100%)" }}
+        style={{ background: "#0c1d38" }}
       >
         {/* Foto posicionada à direita — mostra Daiana (lado esquerdo da foto) no centro-direito */}
         <div className="absolute top-0 bottom-0 right-0 w-[65%] lg:w-[70%]">
@@ -193,11 +193,11 @@ export default function HomePage() {
             style={{ background: "linear-gradient(to top, rgba(10,24,45,0.6) 0%, transparent 100%)" }}
           />
         </div>
-        {/* Gradiente global da seção: cobre a borda esquerda da foto completamente */}
+        {/* Gradiente global: mesmo tom do fundo, cobre a borda completamente */}
         <div
           className="absolute inset-0"
           style={{
-            background: "linear-gradient(to right, #0d1f3c 0%, #0d1f3c 28%, rgba(13,31,60,0.95) 36%, rgba(13,31,60,0.6) 48%, rgba(13,31,60,0.15) 62%, transparent 78%)",
+            background: "linear-gradient(to right, #0c1d38 0%, #0c1d38 32%, rgba(12,29,56,0.97) 40%, rgba(12,29,56,0.80) 52%, rgba(12,29,56,0.30) 65%, rgba(12,29,56,0.0) 80%)",
           }}
         />
 
