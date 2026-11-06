@@ -37,7 +37,7 @@ export default function Navbar() {
     >
       <Link href="/" className="flex items-center no-underline">
         <Image
-          src={dark ? "/logo-natal-branca.png" : "/logo-natal.png"}
+          src="/logo-natal.png"
           alt="Ser Singular — Centro de Desenvolvimento e Treinamento"
           width={300}
           height={112}
