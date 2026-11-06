@@ -178,22 +178,22 @@ export default function HomePage() {
           alt="Daiana Plauth — Clínica Ser Singular"
           fill
           className="object-cover"
-          style={{ objectPosition: "60% center" }}
+          style={{ objectPosition: "28% center" }}
           priority
           quality={90}
           sizes="100vw"
         />
-        {/* Gradient overlay: dark on the left, fading right */}
+        {/* Gradient: dark left (text area) → claro no centro (Daiana) → escuro direita (esconde corte) */}
         <div
           className="absolute inset-0"
           style={{
-            background: "linear-gradient(to right, rgba(10,24,45,0.92) 0%, rgba(10,24,45,0.80) 35%, rgba(10,24,45,0.45) 60%, rgba(10,24,45,0.10) 100%)",
+            background: "linear-gradient(to right, rgba(10,24,45,0.93) 0%, rgba(10,24,45,0.75) 28%, rgba(10,24,45,0.25) 48%, rgba(10,24,45,0.55) 72%, rgba(10,24,45,0.92) 100%)",
           }}
         />
         {/* Bottom vignette */}
         <div
           className="absolute inset-0"
-          style={{ background: "linear-gradient(to top, rgba(10,24,45,0.4) 0%, transparent 30%)" }}
+          style={{ background: "linear-gradient(to top, rgba(10,24,45,0.5) 0%, transparent 25%)" }}
         />
 
         <div className="max-w-[1200px] mx-auto px-8 py-16 relative z-10 w-full">
