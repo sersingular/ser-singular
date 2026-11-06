@@ -41,7 +41,7 @@ export default function Navbar() {
           alt="Ser Singular — Centro de Desenvolvimento e Treinamento"
           width={300}
           height={112}
-          className="h-[54px] w-auto object-contain transition-all duration-300"
+          className="h-[64px] w-auto object-contain transition-all duration-300"
           priority
         />
       </Link>
