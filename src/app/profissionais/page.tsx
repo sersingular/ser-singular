@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
+import ProfissionaisClient from "@/components/ProfissionaisClient";
 
 export const metadata: Metadata = {
   title: "Profissionais — Ser Singular",
@@ -103,83 +103,32 @@ const profissionais = [
 export default function ProfissionaisPage() {
   return (
     <>
-      {/* Page Hero */}
+      {/* Hero */}
       <div
-        className="pt-[70px] py-16 px-8 text-center"
+        className="pt-[70px] pb-16 px-8 text-center"
         style={{ background: "linear-gradient(160deg, #0f2440 0%, #143a62 100%)" }}
       >
+        <p className="text-[#1f8c7b] text-[0.78rem] font-bold uppercase tracking-widest mb-3">Nossa Equipe</p>
         <h1 className="text-3xl lg:text-4xl text-white font-bold mb-3">
-          Nossa Equipe
+          Profissionais que fazem a diferença
         </h1>
-        <p className="text-white/80 text-base max-w-[480px] mx-auto">
-          Profissionais especializadas e apaixonadas pelo desenvolvimento infantil.
+        <p className="text-white/70 text-base max-w-[480px] mx-auto">
+          Especializadas em desenvolvimento infantil e movidas pelo propósito de transformar cada atendimento.
         </p>
       </div>
 
-      <section className="py-16 px-8 bg-[#f8f9fb]">
-        <div className="max-w-[1100px] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-          {profissionais.map((prof) => (
-            <div
-              key={prof.name}
-              className={`bg-white rounded-[24px] overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_24px_48px_rgba(20,58,98,0.14)] ${
-                prof.featured
-                  ? "border-2 border-[#1f8c7b]"
-                  : "border border-[#e2e8f0]"
-              }`}
-              style={{ boxShadow: "0 4px 16px rgba(20,58,98,0.06)" }}
-            >
-              {/* Photo */}
-              <div className="w-full h-[300px] relative overflow-hidden">
-                <Image
-                  src={prof.photo}
-                  alt={prof.name}
-                  fill
-                  className="object-cover"
-                  style={{ objectPosition: prof.photoPosition }}
-                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
-                />
-              </div>
-              <div className="p-6">
-                <span
-                  className={`inline-block px-3 py-0.5 rounded-full text-[0.75rem] font-semibold uppercase tracking-wider mb-3 ${
-                    prof.featured
-                      ? "bg-[#143a62] text-white"
-                      : "bg-[#e8f5f3] text-[#1f8c7b]"
-                  }`}
-                >
-                  {prof.badge}
-                </span>
-                <h3 className="text-[1.2rem] text-[#143a62] font-bold mb-2">{prof.name}</h3>
-                <p className="text-[0.87rem] text-[#5a6a7e] leading-relaxed mb-4">{prof.desc}</p>
-                <div className="flex flex-wrap gap-1.5 mb-4">
-                  {prof.especialidades.map((esp) => (
-                    <span
-                      key={esp}
-                      className="text-[0.72rem] px-2 py-0.5 rounded-full bg-[#f8f9fb] text-[#5a6a7e] border border-[#e2e8f0]"
-                    >
-                      {esp}
-                    </span>
-                  ))}
-                </div>
-                <a
-                  href={prof.wa}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-[#1f8c7b] no-underline text-[0.85rem] font-semibold transition-all duration-200 hover:gap-3"
-                >
-                  Agendar com {prof.name.split(" ")[0]} →
-                </a>
-              </div>
-            </div>
-          ))}
+      {/* Grid */}
+      <section className="py-14 px-6 md:px-10 bg-[#f8f9fb]">
+        <div className="max-w-[1200px] mx-auto">
+          <ProfissionaisClient profissionais={profissionais} />
         </div>
 
         {/* CTA */}
-        <div className="max-w-[1100px] mx-auto mt-12 text-center">
-          <p className="text-[#5a6a7e] mb-4">Não sabe com quem agendar? A nossa equipe te orienta.</p>
+        <div className="max-w-[1200px] mx-auto mt-14 text-center">
+          <p className="text-[#5a6a7e] mb-4 text-[0.95rem]">Não sabe com quem agendar? Nossa equipe te orienta.</p>
           <Link
             href="/contato"
-            className="inline-flex items-center gap-2 px-8 py-4 rounded-[14px] font-semibold text-white no-underline"
+            className="inline-flex items-center gap-2 px-8 py-4 rounded-[14px] font-semibold text-white no-underline transition-all hover:opacity-90"
             style={{ background: "linear-gradient(135deg, #143a62, #1f8c7b)", boxShadow: "0 8px 24px rgba(20,58,98,0.2)" }}
           >
             Entrar em contato
