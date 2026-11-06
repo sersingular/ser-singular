@@ -178,16 +178,16 @@ export default function HomePage() {
           alt="Daiana Plauth — Clínica Ser Singular"
           fill
           className="object-cover"
-          style={{ objectPosition: "28% center" }}
+          style={{ objectPosition: "0% center" }}
           priority
           quality={90}
           sizes="100vw"
         />
-        {/* Gradient: dark left (text area) → claro no centro (Daiana) → escuro direita (esconde corte) */}
+        {/* Gradiente: transparente na esquerda (Daiana visível) → escuro na direita (texto) */}
         <div
           className="absolute inset-0"
           style={{
-            background: "linear-gradient(to right, rgba(10,24,45,0.93) 0%, rgba(10,24,45,0.75) 28%, rgba(10,24,45,0.25) 48%, rgba(10,24,45,0.55) 72%, rgba(10,24,45,0.92) 100%)",
+            background: "linear-gradient(to left, rgba(10,24,45,0.96) 0%, rgba(10,24,45,0.88) 30%, rgba(10,24,45,0.50) 55%, rgba(10,24,45,0.08) 80%, rgba(10,24,45,0.0) 100%)",
           }}
         />
         {/* Bottom vignette */}
@@ -196,8 +196,8 @@ export default function HomePage() {
           style={{ background: "linear-gradient(to top, rgba(10,24,45,0.5) 0%, transparent 25%)" }}
         />
 
-        <div className="max-w-[1200px] mx-auto px-8 py-16 relative z-10 w-full">
-          <div className="max-w-[600px]">
+        <div className="max-w-[1200px] mx-auto px-8 py-16 relative z-10 w-full flex justify-end">
+          <div className="max-w-[560px]">
             <AnimateIn delay={0}>
             <div
               className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-[0.78rem] font-medium tracking-widest uppercase text-[#7dd8cc] mb-6"
